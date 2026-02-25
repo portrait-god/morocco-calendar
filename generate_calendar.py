@@ -107,7 +107,8 @@ def generate_data():
     # Chef: Days 15-17 | Mar 25 - Mar 27 (3 days)
     # Fez: Days 18-26 | Mar 28 - Apr 5 (9 days)
     # Rabat: Days 27-40 | Apr 6 - Apr 19 (14 days)
-    # Essaouira: Days 41-55 | Apr 20 - May 4 (15 days)
+    # Casablanca: Days 41-54 | Apr 20 - May 3 (14 days)
+    # Essaouira: Days 55-69 | May 4 - May 18 (15 days)
     # Casablanca: Days 56-69 | May 5 - May 18 (14 days)
     # Taghazout: Days 70-76 | May 19 - May 25 (7 days)
     # Marrakech: Days 77-90 | May 26 - Jun 8 (14 days)
@@ -148,15 +149,15 @@ def generate_data():
             35: [{"title": "Mawazine Festival Pre-Party, Rabat", "description": "Lead-up events to Morocco's biggest music festival. Free outdoor stages begin setting up along the Rabat coast. Check the official lineup for warm-up acts.", "link": "https://www.mawazine.ma/"}],
             36: [{"title": "Mawazine Festival (Rabat)", "description": "One of the world's largest music festivals — free outdoor stages, 2M attendees, international headliners + Arab superstars. The city transformed.", "link": "https://www.mawazine.ma/"}],
             38: [{"title": "Friday Kasbah Oudayas Cultural Event", "description": "Regular Friday evening of traditional Andalusian music in the 17th-century Kasbah's garden. Free. Only 40-50 people, very intimate.", "link": None}],
-            # === ESSAOUIRA (Days 41-55) ===
-            42: [{"title": "Essaouira Beach Bonfire & Surf Session", "description": "Recurring Saturday evening bonfire at Sidi Kaouki bay, 30km south. The vanlife + surf community gathers. Bring food to share.", "link": None}],
-            45: [{"title": "Essaouira Kite & Windsurf Competition", "description": "Annual kitesurfing championship. Spectator beach with food trucks, live gnaoua music performance in the evening near the port.", "link": "https://www.essaouira-mogador.com/"}],
-            48: [{"title": "Gnaoua Festival Warm-Up Concerts, Essaouira Port", "description": "The iconic Gnaoua festival begins. Free outdoor stages on the port. World-class mâalems (gnaoua masters) perform spiritual trance music. Goes until 3am.", "link": "https://festival-gnaoua.net/en/"}],
-            49: [{"title": "Gnaoua World Music Festival — Main Weekend", "description": "The biggest night of the Gnaoua Festival. Multiple stages, fusion collaborations with international jazz and blues artists. The entire medina is a concert venue.", "link": "https://festival-gnaoua.net/en/"}],
-            52: [{"title": "Essaouira Wednesday Artisan Market", "description": "The souk outside Bab Doukkala has the best thuya wood craftsmen in Morocco. Photographers report golden-hour light at 6pm through the argan oil stalls.", "link": None}],
-            # === CASABLANCA (Days 56-69) ===
-            61: [{"title": "L'Boulevard Festival — Urban Music", "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Discover Morocco's best new urban artists.", "link": "https://www.blvd.ma/"}],
-            68: [{"title": "Casablanca Street Art Tour", "description": "Organized weekend walk through the murals of Mers Sultan and L'Abattoir. Incredible urban photography.", "link": None}],
+            # === CASABLANCA (Days 41-54) ===
+            44: [{"title": "L'Boulevard Festival — Urban Music", "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Discover Morocco's best new urban artists.", "link": "https://www.blvd.ma/"}],
+            51: [{"title": "Casablanca Street Art Tour", "description": "Organized weekend walk through the murals of Mers Sultan and L'Abattoir. Incredible urban photography.", "link": None}],
+            # === ESSAOUIRA (Days 55-69) ===
+            57: [{"title": "Essaouira Beach Bonfire & Surf Session", "description": "Recurring Saturday evening bonfire at Sidi Kaouki bay, 30km south. The vanlife + surf community gathers. Bring food to share.", "link": None}],
+            61: [{"title": "Essaouira Kite & Windsurf Competition", "description": "Annual kitesurfing championship. Spectator beach with food trucks, live gnaoua music performance in the evening near the port.", "link": "https://www.essaouira-mogador.com/"}],
+            64: [{"title": "Gnaoua Festival Warm-Up Concerts, Essaouira Port", "description": "The iconic Gnaoua festival begins. Free outdoor stages on the port. World-class mâalems (gnaoua masters) perform spiritual trance music. Goes until 3am.", "link": "https://festival-gnaoua.net/en/"}],
+            65: [{"title": "Gnaoua World Music Festival — Main Weekend", "description": "The biggest night of the Gnaoua Festival. Multiple stages, fusion collaborations with international jazz and blues artists. The entire medina is a concert venue.", "link": "https://festival-gnaoua.net/en/"}],
+            68: [{"title": "Essaouira Wednesday Artisan Market", "description": "The souk outside Bab Doukkala has the best thuya wood craftsmen in Morocco. Photographers report golden-hour light at 6pm through the argan oil stalls.", "link": None}],
             # === TAGHAZOUT (Days 70-76) ===
             72: [{"title": "Anchor Point Surf Jam", "description": "Local surf competition at the famous Anchor Point break. Great energetic vibe and community meetup.", "link": None}],
             # === MARRAKECH (Days 77-90) ===
@@ -261,18 +262,32 @@ def generate_data():
                 day_entry["transport"] = {"route": "Fez → Rabat (Al Boraq / ONCF)", "duration": "2.5-3h", "cost": "€12-16"}
                 day_entry["notes"] = "Most reliable internet. Perfect for deep backlog work."
 
-        # Essaouira (Days 41-55)
-        elif day_num <= 55:
+        # Casablanca (Days 41-54)
+        elif day_num <= 54:
+            city = "Casablanca"
+            day_entry["city"] = city
+            day_entry["city_emoji"] = "🏢"
+            day_entry["hostel"] = hostels["Casablanca"]
+            day_entry["categories"] = ["photo", "skate", "music"]
+            day_entry["content_plan"] = {"theme": f"Urban Jungle - Day {day_num - 40}", "tiktok": "Street art & hustle", "instagram": "Hassan II scale", "youtube": "Casablanca urban doc"}
+            
+            if day_num == 41:
+                day_entry["content_plan"]["theme"] = "Arrival in the Metropolis"
+                day_entry["transport"] = {"route": "Rabat → Casablanca (ONCF train)", "duration": "1h", "cost": "€4-6"}
+                day_entry["notes"] = "Biggest city in Morocco. Focus on urban subcultures and street photography."
+
+        # Essaouira (Days 55-69)
+        elif day_num <= 69:
             city = "Essaouira"
             day_entry["city"] = city
             day_entry["city_emoji"] = "🌊"
             day_entry["hostel"] = hostels["Essaouira"]
             day_entry["categories"] = ["photo", "surf"]
-            day_entry["content_plan"] = {"theme": f"Windy City - Day {day_num - 40}", "tiktok": "Ocean breeze vibes", "instagram": "Surf action shots", "youtube": "Sidi Kaouki surf doc"}
+            day_entry["content_plan"] = {"theme": f"Windy City - Day {day_num - 54}", "tiktok": "Ocean breeze vibes", "instagram": "Surf action shots", "youtube": "Sidi Kaouki surf doc"}
             
-            if day_num == 41:
+            if day_num == 55:
                 day_entry["content_plan"]["theme"] = "Coastal Escape South"
-                day_entry["transport"] = {"route": "Rabat → Essaouira (Train to Casa/Marrakech then Supratours)", "duration": "7-8h", "cost": "€18-25"}
+                day_entry["transport"] = {"route": "Casablanca → Essaouira (Supratours bus)", "duration": "5-6h", "cost": "€12-15"}
             elif current_date.weekday() in [5, 6]:
                 day_entry["notes"] = "Day Trip: Imsouane (Surf Village) - Check out the longboard waves."
                 day_entry["transport"] = {"route": "Essaouira → Imsouane (Grand Taxi)", "duration": "1h 15m", "cost": "30-50 MAD"}
@@ -289,20 +304,6 @@ def generate_data():
                      "golden_hour_time": get_golden_hour(current_date)
                  }
 
-        # Casablanca (Days 56-69)
-        elif day_num <= 69:
-            city = "Casablanca"
-            day_entry["city"] = city
-            day_entry["city_emoji"] = "🏢"
-            day_entry["hostel"] = hostels["Casablanca"]
-            day_entry["categories"] = ["photo", "skate", "music"]
-            day_entry["content_plan"] = {"theme": f"Urban Jungle - Day {day_num - 55}", "tiktok": "Street art & hustle", "instagram": "Hassan II scale", "youtube": "Casablanca urban doc"}
-            
-            if day_num == 56:
-                day_entry["content_plan"]["theme"] = "Arrival in the Metropolis"
-                day_entry["transport"] = {"route": "Essaouira → Casablanca (Supratours bus)", "duration": "5-6h", "cost": "€12-15"}
-                day_entry["notes"] = "Biggest city in Morocco. Focus on urban subcultures and street photography."
-
         # Taghazout (Days 70-76)
         elif day_num <= 76:
             city = "Taghazout"
@@ -314,7 +315,7 @@ def generate_data():
             
             if day_num == 70:
                 day_entry["content_plan"]["theme"] = "South to the Surf"
-                day_entry["transport"] = {"route": "Casablanca → Taghazout (Train to Agadir, Taxi/Bus to Taghazout)", "duration": "5-6h", "cost": "€20-25"}
+                day_entry["transport"] = {"route": "Essaouira → Taghazout (Grand Taxi via Agadir)", "duration": "3-4h", "cost": "€10-15"}
                 day_entry["notes"] = "Slower pace. Connect with surf and skate communities."
 
         # Marrakech (Days 77-90)

@@ -1696,9 +1696,585 @@
       "card_number": 20,
       "weekday": 0,
       "transport": {
-        "route": "Rabat \u2192 Essaouira (Train to Casa/Marrakech then Supratours)",
-        "duration": "7-8h",
-        "cost": "\u20ac18-25"
+        "route": "Rabat \u2192 Casablanca (ONCF train)",
+        "duration": "1h",
+        "cost": "\u20ac4-6"
+      },
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "Biggest city in Morocco. Focus on urban subcultures and street photography.",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Arrival in the Metropolis",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Corniche Ain Diab, Casablanca",
+          "Derb Ghallef electronics market, Casablanca"
+        ],
+        "subcultures": [
+          "L'Abattoir (Fabrique Culturelle), Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:16 - 20:01"
+      }
+    },
+    {
+      "date": "2026-04-21",
+      "month_name": "April 2026",
+      "day_number": 42,
+      "card_number": 21,
+      "weekday": 1,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 2",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Derb Ghallef electronics market, Casablanca",
+          "Habous Quarter, Casablanca"
+        ],
+        "subcultures": [
+          "Nevada Skatepark, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:16 - 20:01"
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "month_name": "April 2026",
+      "day_number": 43,
+      "card_number": 22,
+      "weekday": 2,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 3",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Habous Quarter, Casablanca",
+          "Villa des Arts, Casablanca"
+        ],
+        "subcultures": [
+          "Underground hip-hop venues, Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:17 - 20:02"
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "month_name": "April 2026",
+      "day_number": 44,
+      "card_number": 23,
+      "weekday": 3,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "L'Boulevard Festival \u2014 Urban Music",
+          "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Discover Morocco's best new urban artists.",
+          "link": "https://www.blvd.ma/"
+        }
+      ],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 4",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Villa des Arts, Casablanca",
+          "Parc de la Ligue Arabe, Casablanca"
+        ],
+        "subcultures": [
+          "Surfers at Ain Diab, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:18 - 20:03"
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "month_name": "April 2026",
+      "day_number": 45,
+      "card_number": 24,
+      "weekday": 4,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 5",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Parc de la Ligue Arabe, Casablanca",
+          "Anfa residential streets, Casablanca"
+        ],
+        "subcultures": [
+          "Street artists in Mers Sultan, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:19 - 20:04"
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "month_name": "April 2026",
+      "day_number": 46,
+      "card_number": 25,
+      "weekday": 5,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 6",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Anfa residential streets, Casablanca",
+          "Corniche Ain Diab, Casablanca"
+        ],
+        "subcultures": [
+          "L'Abattoir (Fabrique Culturelle), Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:20 - 20:05"
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "month_name": "April 2026",
+      "day_number": 47,
+      "card_number": 26,
+      "weekday": 6,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 7",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Corniche Ain Diab, Casablanca",
+          "Derb Ghallef electronics market, Casablanca"
+        ],
+        "subcultures": [
+          "Nevada Skatepark, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:20 - 20:05"
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "month_name": "April 2026",
+      "day_number": 48,
+      "card_number": 27,
+      "weekday": 0,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 8",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Derb Ghallef electronics market, Casablanca",
+          "Habous Quarter, Casablanca"
+        ],
+        "subcultures": [
+          "Underground hip-hop venues, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:21 - 20:06"
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "month_name": "April 2026",
+      "day_number": 49,
+      "card_number": 28,
+      "weekday": 1,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 9",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Habous Quarter, Casablanca",
+          "Villa des Arts, Casablanca"
+        ],
+        "subcultures": [
+          "Surfers at Ain Diab, Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:22 - 20:07"
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "month_name": "April 2026",
+      "day_number": 50,
+      "card_number": 29,
+      "weekday": 2,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 10",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Villa des Arts, Casablanca",
+          "Parc de la Ligue Arabe, Casablanca"
+        ],
+        "subcultures": [
+          "Street artists in Mers Sultan, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:23 - 20:08"
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "month_name": "April 2026",
+      "day_number": 51,
+      "card_number": 30,
+      "weekday": 3,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "Casablanca Street Art Tour",
+          "description": "Organized weekend walk through the murals of Mers Sultan and L'Abattoir. Incredible urban photography.",
+          "link": null
+        }
+      ],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 11",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Parc de la Ligue Arabe, Casablanca",
+          "Anfa residential streets, Casablanca"
+        ],
+        "subcultures": [
+          "L'Abattoir (Fabrique Culturelle), Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:24 - 20:09"
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "month_name": "May 2026",
+      "day_number": 52,
+      "card_number": 1,
+      "weekday": 4,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 12",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Anfa residential streets, Casablanca",
+          "Corniche Ain Diab, Casablanca"
+        ],
+        "subcultures": [
+          "Nevada Skatepark, Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:24 - 20:09"
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "month_name": "May 2026",
+      "day_number": 53,
+      "card_number": 2,
+      "weekday": 5,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 13",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Corniche Ain Diab, Casablanca",
+          "Derb Ghallef electronics market, Casablanca"
+        ],
+        "subcultures": [
+          "Underground hip-hop venues, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:25 - 20:10"
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "month_name": "May 2026",
+      "day_number": 54,
+      "card_number": 3,
+      "weekday": 6,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 14",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Derb Ghallef electronics market, Casablanca",
+          "Habous Quarter, Casablanca"
+        ],
+        "subcultures": [
+          "Surfers at Ain Diab, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:26 - 20:11"
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "month_name": "May 2026",
+      "day_number": 55,
+      "card_number": 4,
+      "weekday": 0,
+      "transport": {
+        "route": "Casablanca \u2192 Essaouira (Supratours bus)",
+        "duration": "5-6h",
+        "cost": "\u20ac12-15"
       },
       "categories": [
         "photo",
@@ -1729,14 +2305,14 @@
           "Essaouira Beach (Kitesurfers and longboarders)"
         ],
         "golden_hour_spot": "Skala de la Ville ramparts, Essaouira",
-        "golden_hour_time": "19:16 - 20:01"
+        "golden_hour_time": "19:27 - 20:12"
       }
     },
     {
-      "date": "2026-04-21",
-      "month_name": "April 2026",
-      "day_number": 42,
-      "card_number": 21,
+      "date": "2026-05-05",
+      "month_name": "May 2026",
+      "day_number": 56,
+      "card_number": 5,
       "weekday": 1,
       "transport": null,
       "categories": [
@@ -1744,13 +2320,7 @@
         "surf"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Essaouira Beach Bonfire & Surf Session",
-          "description": "Recurring Saturday evening bonfire at Sidi Kaouki bay, 30km south. The vanlife + surf community gathers. Bring food to share.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1774,14 +2344,14 @@
           "Essaouira Port (fishermen)"
         ],
         "golden_hour_spot": "Essaouira Port fortifications",
-        "golden_hour_time": "19:16 - 20:01"
+        "golden_hour_time": "19:27 - 20:12"
       }
     },
     {
-      "date": "2026-04-22",
-      "month_name": "April 2026",
-      "day_number": 43,
-      "card_number": 22,
+      "date": "2026-05-06",
+      "month_name": "May 2026",
+      "day_number": 57,
+      "card_number": 6,
       "weekday": 2,
       "transport": null,
       "categories": [
@@ -1789,7 +2359,13 @@
         "surf"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Essaouira Beach Bonfire & Surf Session",
+          "description": "Recurring Saturday evening bonfire at Sidi Kaouki bay, 30km south. The vanlife + surf community gathers. Bring food to share.",
+          "link": null
+        }
+      ],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1813,14 +2389,14 @@
           "Essaouira Medina (Gnawa musicians)"
         ],
         "golden_hour_spot": "Plage Essaouira coastline",
-        "golden_hour_time": "19:17 - 20:02"
+        "golden_hour_time": "19:28 - 20:13"
       }
     },
     {
-      "date": "2026-04-23",
-      "month_name": "April 2026",
-      "day_number": 44,
-      "card_number": 23,
+      "date": "2026-05-07",
+      "month_name": "May 2026",
+      "day_number": 58,
+      "card_number": 7,
       "weekday": 3,
       "transport": null,
       "categories": [
@@ -1852,14 +2428,14 @@
           "Local woodcarvers, Essaouira"
         ],
         "golden_hour_spot": "Skala de la Ville ramparts, Essaouira",
-        "golden_hour_time": "19:18 - 20:03"
+        "golden_hour_time": "19:29 - 20:14"
       }
     },
     {
-      "date": "2026-04-24",
-      "month_name": "April 2026",
-      "day_number": 45,
-      "card_number": 24,
+      "date": "2026-05-08",
+      "month_name": "May 2026",
+      "day_number": 59,
+      "card_number": 8,
       "weekday": 4,
       "transport": null,
       "categories": [
@@ -1867,13 +2443,7 @@
         "surf"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Essaouira Kite & Windsurf Competition",
-          "description": "Annual kitesurfing championship. Spectator beach with food trucks, live gnaoua music performance in the evening near the port.",
-          "link": "https://www.essaouira-mogador.com/"
-        }
-      ],
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1897,14 +2467,14 @@
           "Hippie market vendors, Essaouira"
         ],
         "golden_hour_spot": "Essaouira Port fortifications",
-        "golden_hour_time": "19:19 - 20:04"
+        "golden_hour_time": "19:30 - 20:15"
       }
     },
     {
-      "date": "2026-04-25",
-      "month_name": "April 2026",
-      "day_number": 46,
-      "card_number": 25,
+      "date": "2026-05-09",
+      "month_name": "May 2026",
+      "day_number": 60,
+      "card_number": 9,
       "weekday": 5,
       "transport": {
         "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
@@ -1941,14 +2511,14 @@
           "Local board shapers, Imsouane"
         ],
         "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:20 - 20:05"
+        "golden_hour_time": "19:31 - 20:16"
       }
     },
     {
-      "date": "2026-04-26",
-      "month_name": "April 2026",
-      "day_number": 47,
-      "card_number": 26,
+      "date": "2026-05-10",
+      "month_name": "May 2026",
+      "day_number": 61,
+      "card_number": 10,
       "weekday": 6,
       "transport": {
         "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
@@ -1960,7 +2530,13 @@
         "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
-      "events": [],
+      "events": [
+        {
+          "title": "Essaouira Kite & Windsurf Competition",
+          "description": "Annual kitesurfing championship. Spectator beach with food trucks, live gnaoua music performance in the evening near the port.",
+          "link": "https://www.essaouira-mogador.com/"
+        }
+      ],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1985,14 +2561,14 @@
           "Local board shapers, Imsouane"
         ],
         "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:20 - 20:05"
+        "golden_hour_time": "19:31 - 20:16"
       }
     },
     {
-      "date": "2026-04-27",
-      "month_name": "April 2026",
-      "day_number": 48,
-      "card_number": 27,
+      "date": "2026-05-11",
+      "month_name": "May 2026",
+      "day_number": 62,
+      "card_number": 11,
       "weekday": 0,
       "transport": null,
       "categories": [
@@ -2000,13 +2576,7 @@
         "surf"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Gnaoua Festival Warm-Up Concerts, Essaouira Port",
-          "description": "The iconic Gnaoua festival begins. Free outdoor stages on the port. World-class m\u00e2alems (gnaoua masters) perform spiritual trance music. Goes until 3am.",
-          "link": "https://festival-gnaoua.net/en/"
-        }
-      ],
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2030,14 +2600,14 @@
           "Essaouira Beach (Kitesurfers and longboarders)"
         ],
         "golden_hour_spot": "Plage Essaouira coastline",
-        "golden_hour_time": "19:21 - 20:06"
+        "golden_hour_time": "19:32 - 20:17"
       }
     },
     {
-      "date": "2026-04-28",
-      "month_name": "April 2026",
-      "day_number": 49,
-      "card_number": 28,
+      "date": "2026-05-12",
+      "month_name": "May 2026",
+      "day_number": 63,
+      "card_number": 12,
       "weekday": 1,
       "transport": null,
       "categories": [
@@ -2045,13 +2615,7 @@
         "surf"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Gnaoua World Music Festival \u2014 Main Weekend",
-          "description": "The biggest night of the Gnaoua Festival. Multiple stages, fusion collaborations with international jazz and blues artists. The entire medina is a concert venue.",
-          "link": "https://festival-gnaoua.net/en/"
-        }
-      ],
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2075,14 +2639,14 @@
           "Essaouira Port (fishermen)"
         ],
         "golden_hour_spot": "Skala de la Ville ramparts, Essaouira",
-        "golden_hour_time": "19:22 - 20:07"
+        "golden_hour_time": "19:33 - 20:18"
       }
     },
     {
-      "date": "2026-04-29",
-      "month_name": "April 2026",
-      "day_number": 50,
-      "card_number": 29,
+      "date": "2026-05-13",
+      "month_name": "May 2026",
+      "day_number": 64,
+      "card_number": 13,
       "weekday": 2,
       "transport": null,
       "categories": [
@@ -2090,7 +2654,13 @@
         "surf"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Gnaoua Festival Warm-Up Concerts, Essaouira Port",
+          "description": "The iconic Gnaoua festival begins. Free outdoor stages on the port. World-class m\u00e2alems (gnaoua masters) perform spiritual trance music. Goes until 3am.",
+          "link": "https://festival-gnaoua.net/en/"
+        }
+      ],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2114,14 +2684,14 @@
           "Essaouira Medina (Gnawa musicians)"
         ],
         "golden_hour_spot": "Essaouira Port fortifications",
-        "golden_hour_time": "19:23 - 20:08"
+        "golden_hour_time": "19:34 - 20:19"
       }
     },
     {
-      "date": "2026-04-30",
-      "month_name": "April 2026",
-      "day_number": 51,
-      "card_number": 30,
+      "date": "2026-05-14",
+      "month_name": "May 2026",
+      "day_number": 65,
+      "card_number": 14,
       "weekday": 3,
       "transport": null,
       "categories": [
@@ -2129,7 +2699,13 @@
         "surf"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Gnaoua World Music Festival \u2014 Main Weekend",
+          "description": "The biggest night of the Gnaoua Festival. Multiple stages, fusion collaborations with international jazz and blues artists. The entire medina is a concert venue.",
+          "link": "https://festival-gnaoua.net/en/"
+        }
+      ],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2153,14 +2729,14 @@
           "Local woodcarvers, Essaouira"
         ],
         "golden_hour_spot": "Plage Essaouira coastline",
-        "golden_hour_time": "19:24 - 20:09"
+        "golden_hour_time": "19:34 - 20:19"
       }
     },
     {
-      "date": "2026-05-01",
+      "date": "2026-05-15",
       "month_name": "May 2026",
-      "day_number": 52,
-      "card_number": 1,
+      "day_number": 66,
+      "card_number": 15,
       "weekday": 4,
       "transport": null,
       "categories": [
@@ -2168,13 +2744,7 @@
         "surf"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Essaouira Wednesday Artisan Market",
-          "description": "The souk outside Bab Doukkala has the best thuya wood craftsmen in Morocco. Photographers report golden-hour light at 6pm through the argan oil stalls.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2198,14 +2768,14 @@
           "Hippie market vendors, Essaouira"
         ],
         "golden_hour_spot": "Skala de la Ville ramparts, Essaouira",
-        "golden_hour_time": "19:24 - 20:09"
+        "golden_hour_time": "19:35 - 20:20"
       }
     },
     {
-      "date": "2026-05-02",
+      "date": "2026-05-16",
       "month_name": "May 2026",
-      "day_number": 53,
-      "card_number": 2,
+      "day_number": 67,
+      "card_number": 16,
       "weekday": 5,
       "transport": {
         "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
@@ -2242,14 +2812,14 @@
           "Local board shapers, Imsouane"
         ],
         "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:25 - 20:10"
+        "golden_hour_time": "19:36 - 20:21"
       }
     },
     {
-      "date": "2026-05-03",
+      "date": "2026-05-17",
       "month_name": "May 2026",
-      "day_number": 54,
-      "card_number": 3,
+      "day_number": 68,
+      "card_number": 17,
       "weekday": 6,
       "transport": {
         "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
@@ -2261,7 +2831,13 @@
         "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
-      "events": [],
+      "events": [
+        {
+          "title": "Essaouira Wednesday Artisan Market",
+          "description": "The souk outside Bab Doukkala has the best thuya wood craftsmen in Morocco. Photographers report golden-hour light at 6pm through the argan oil stalls.",
+          "link": null
+        }
+      ],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2286,14 +2862,14 @@
           "Local board shapers, Imsouane"
         ],
         "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:26 - 20:11"
+        "golden_hour_time": "19:37 - 20:22"
       }
     },
     {
-      "date": "2026-05-04",
+      "date": "2026-05-18",
       "month_name": "May 2026",
-      "day_number": 55,
-      "card_number": 4,
+      "day_number": 69,
+      "card_number": 18,
       "weekday": 0,
       "transport": null,
       "categories": [
@@ -2325,582 +2901,6 @@
           "Essaouira Beach (Kitesurfers and longboarders)"
         ],
         "golden_hour_spot": "Essaouira Port fortifications",
-        "golden_hour_time": "19:27 - 20:12"
-      }
-    },
-    {
-      "date": "2026-05-05",
-      "month_name": "May 2026",
-      "day_number": 56,
-      "card_number": 5,
-      "weekday": 1,
-      "transport": {
-        "route": "Essaouira \u2192 Casablanca (Supratours bus)",
-        "duration": "5-6h",
-        "cost": "\u20ac12-15"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Biggest city in Morocco. Focus on urban subcultures and street photography.",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Arrival in the Metropolis",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Corniche Ain Diab, Casablanca",
-          "Derb Ghallef electronics market, Casablanca"
-        ],
-        "subcultures": [
-          "L'Abattoir (Fabrique Culturelle), Casablanca"
-        ],
-        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
-        "golden_hour_time": "19:27 - 20:12"
-      }
-    },
-    {
-      "date": "2026-05-06",
-      "month_name": "May 2026",
-      "day_number": 57,
-      "card_number": 6,
-      "weekday": 2,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 2",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Derb Ghallef electronics market, Casablanca",
-          "Habous Quarter, Casablanca"
-        ],
-        "subcultures": [
-          "Nevada Skatepark, Casablanca"
-        ],
-        "golden_hour_spot": "Twin Center top floor, Casablanca",
-        "golden_hour_time": "19:28 - 20:13"
-      }
-    },
-    {
-      "date": "2026-05-07",
-      "month_name": "May 2026",
-      "day_number": 58,
-      "card_number": 7,
-      "weekday": 3,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 3",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Habous Quarter, Casablanca",
-          "Villa des Arts, Casablanca"
-        ],
-        "subcultures": [
-          "Underground hip-hop venues, Casablanca"
-        ],
-        "golden_hour_spot": "La Corniche sunset point, Casablanca",
-        "golden_hour_time": "19:29 - 20:14"
-      }
-    },
-    {
-      "date": "2026-05-08",
-      "month_name": "May 2026",
-      "day_number": 59,
-      "card_number": 8,
-      "weekday": 4,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 4",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Villa des Arts, Casablanca",
-          "Parc de la Ligue Arabe, Casablanca"
-        ],
-        "subcultures": [
-          "Surfers at Ain Diab, Casablanca"
-        ],
-        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
-        "golden_hour_time": "19:30 - 20:15"
-      }
-    },
-    {
-      "date": "2026-05-09",
-      "month_name": "May 2026",
-      "day_number": 60,
-      "card_number": 9,
-      "weekday": 5,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 5",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Parc de la Ligue Arabe, Casablanca",
-          "Anfa residential streets, Casablanca"
-        ],
-        "subcultures": [
-          "Street artists in Mers Sultan, Casablanca"
-        ],
-        "golden_hour_spot": "Twin Center top floor, Casablanca",
-        "golden_hour_time": "19:31 - 20:16"
-      }
-    },
-    {
-      "date": "2026-05-10",
-      "month_name": "May 2026",
-      "day_number": 61,
-      "card_number": 10,
-      "weekday": 6,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [
-        {
-          "title": "L'Boulevard Festival \u2014 Urban Music",
-          "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Discover Morocco's best new urban artists.",
-          "link": "https://www.blvd.ma/"
-        }
-      ],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 6",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Anfa residential streets, Casablanca",
-          "Corniche Ain Diab, Casablanca"
-        ],
-        "subcultures": [
-          "L'Abattoir (Fabrique Culturelle), Casablanca"
-        ],
-        "golden_hour_spot": "La Corniche sunset point, Casablanca",
-        "golden_hour_time": "19:31 - 20:16"
-      }
-    },
-    {
-      "date": "2026-05-11",
-      "month_name": "May 2026",
-      "day_number": 62,
-      "card_number": 11,
-      "weekday": 0,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 7",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Corniche Ain Diab, Casablanca",
-          "Derb Ghallef electronics market, Casablanca"
-        ],
-        "subcultures": [
-          "Nevada Skatepark, Casablanca"
-        ],
-        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
-        "golden_hour_time": "19:32 - 20:17"
-      }
-    },
-    {
-      "date": "2026-05-12",
-      "month_name": "May 2026",
-      "day_number": 63,
-      "card_number": 12,
-      "weekday": 1,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 8",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Derb Ghallef electronics market, Casablanca",
-          "Habous Quarter, Casablanca"
-        ],
-        "subcultures": [
-          "Underground hip-hop venues, Casablanca"
-        ],
-        "golden_hour_spot": "Twin Center top floor, Casablanca",
-        "golden_hour_time": "19:33 - 20:18"
-      }
-    },
-    {
-      "date": "2026-05-13",
-      "month_name": "May 2026",
-      "day_number": 64,
-      "card_number": 13,
-      "weekday": 2,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 9",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Habous Quarter, Casablanca",
-          "Villa des Arts, Casablanca"
-        ],
-        "subcultures": [
-          "Surfers at Ain Diab, Casablanca"
-        ],
-        "golden_hour_spot": "La Corniche sunset point, Casablanca",
-        "golden_hour_time": "19:34 - 20:19"
-      }
-    },
-    {
-      "date": "2026-05-14",
-      "month_name": "May 2026",
-      "day_number": 65,
-      "card_number": 14,
-      "weekday": 3,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 10",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Villa des Arts, Casablanca",
-          "Parc de la Ligue Arabe, Casablanca"
-        ],
-        "subcultures": [
-          "Street artists in Mers Sultan, Casablanca"
-        ],
-        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
-        "golden_hour_time": "19:34 - 20:19"
-      }
-    },
-    {
-      "date": "2026-05-15",
-      "month_name": "May 2026",
-      "day_number": 66,
-      "card_number": 15,
-      "weekday": 4,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 11",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Parc de la Ligue Arabe, Casablanca",
-          "Anfa residential streets, Casablanca"
-        ],
-        "subcultures": [
-          "L'Abattoir (Fabrique Culturelle), Casablanca"
-        ],
-        "golden_hour_spot": "Twin Center top floor, Casablanca",
-        "golden_hour_time": "19:35 - 20:20"
-      }
-    },
-    {
-      "date": "2026-05-16",
-      "month_name": "May 2026",
-      "day_number": 67,
-      "card_number": 16,
-      "weekday": 5,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 12",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Anfa residential streets, Casablanca",
-          "Corniche Ain Diab, Casablanca"
-        ],
-        "subcultures": [
-          "Nevada Skatepark, Casablanca"
-        ],
-        "golden_hour_spot": "La Corniche sunset point, Casablanca",
-        "golden_hour_time": "19:36 - 20:21"
-      }
-    },
-    {
-      "date": "2026-05-17",
-      "month_name": "May 2026",
-      "day_number": 68,
-      "card_number": 17,
-      "weekday": 6,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [
-        {
-          "title": "Casablanca Street Art Tour",
-          "description": "Organized weekend walk through the murals of Mers Sultan and L'Abattoir. Incredible urban photography.",
-          "link": null
-        }
-      ],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 13",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Corniche Ain Diab, Casablanca",
-          "Derb Ghallef electronics market, Casablanca"
-        ],
-        "subcultures": [
-          "Underground hip-hop venues, Casablanca"
-        ],
-        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
-        "golden_hour_time": "19:37 - 20:22"
-      }
-    },
-    {
-      "date": "2026-05-18",
-      "month_name": "May 2026",
-      "day_number": 69,
-      "card_number": 18,
-      "weekday": 0,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Casablanca",
-      "city_emoji": "\ud83c\udfe2",
-      "hostel": {
-        "name": "Medina Hostel Casablanca",
-        "price": "\u20ac12-15/night",
-        "neighborhood": "Old Medina",
-        "notes": "Close to train station and Hassan II Mosque"
-      },
-      "content_plan": {
-        "theme": "Urban Jungle - Day 14",
-        "tiktok": "Street art & hustle",
-        "instagram": "Hassan II scale",
-        "youtube": "Casablanca urban doc"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Derb Ghallef electronics market, Casablanca",
-          "Habous Quarter, Casablanca"
-        ],
-        "subcultures": [
-          "Surfers at Ain Diab, Casablanca"
-        ],
-        "golden_hour_spot": "Twin Center top floor, Casablanca",
         "golden_hour_time": "19:38 - 20:23"
       }
     },
@@ -2911,9 +2911,9 @@
       "card_number": 19,
       "weekday": 1,
       "transport": {
-        "route": "Casablanca \u2192 Taghazout (Train to Agadir, Taxi/Bus to Taghazout)",
-        "duration": "5-6h",
-        "cost": "\u20ac20-25"
+        "route": "Essaouira \u2192 Taghazout (Grand Taxi via Agadir)",
+        "duration": "3-4h",
+        "cost": "\u20ac10-15"
       },
       "categories": [
         "photo",
