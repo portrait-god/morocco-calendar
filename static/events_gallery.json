@@ -6,7 +6,7 @@
       "date": "2026-03-11",
       "city": "",
       "description": "Weekly Tuesday jazz night at Caf\u00e9 de Paris, frequented by local painters, writers, and musicians. Free entry.",
-      "image": "/static/icons/icon-512.png",
+      "image": "/static/images/events/tap_in_soiree.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -50,7 +50,7 @@
       "date": "2026-03-17",
       "city": "",
       "description": "Annual international street photography festival with outdoor gallery along the harbour promenade. Workshops with Moroccan photographers.",
-      "image": "/static/icons/icon-512.png",
+      "image": "/static/images/events/tangier.jpg",
       "link": "https://www.visitmorocco.com/",
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -61,7 +61,7 @@
       "date": "2026-03-21",
       "city": "",
       "description": "The annual Moussem cultural festival of Asilah opens with new mural installations along the ramparts. Perfect for your Asilah day trip this weekend.",
-      "image": "/static/images/events/jazz.jpg",
+      "image": "/static/images/events/tangier.jpg",
       "link": "https://www.moussemasilah.ma/",
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -138,7 +138,7 @@
       "date": "2026-03-31",
       "city": "",
       "description": "Religious festival honouring Morocco's founding saint. Fantasia (horseback charge) around the shrine, Sufi music processions through the medina. Very local.",
-      "image": "/static/icons/icon-512.png",
+      "image": "/static/images/events/moussem.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -149,7 +149,7 @@
       "date": "2026-04-03",
       "city": "",
       "description": "Day trip to Sefrou for the pre-festival cherry blossom season. The orchards around the old medina turn pink. A quiet version before the main June festival.",
-      "image": "/static/images/events/jazz.jpg",
+      "image": "/static/images/events/cherry.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -259,7 +259,7 @@
       "date": "2026-04-30",
       "city": "",
       "description": "Organized weekend walk through the murals of Mers Sultan and L'Abattoir. Incredible urban photography.",
-      "image": "/static/images/events/biennale.jpg",
+      "image": "/static/images/events/tangier.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -391,7 +391,7 @@
       "date": "2026-05-29",
       "city": "",
       "description": "Thursday is the best night for the traditional halqa (storytelling circle) in the main square. Storytellers, snake charmers, and fire performers all compete for the crowd.",
-      "image": "/static/icons/icon-512.png",
+      "image": "/static/images/events/tangier.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -402,7 +402,7 @@
       "date": "2026-05-31",
       "city": "",
       "description": "A traditional Moroccan fantasia rehearsal at the hippodrome near Menara Gardens. Spectacular military horsemanship. Usually open to spectators. Free.",
-      "image": "/static/icons/icon-512.png",
+      "image": "/static/images/events/tangier.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"
@@ -435,7 +435,7 @@
       "date": "2026-06-06",
       "city": "",
       "description": "The annual marathon brings influx of international runners and the city puts on street performers, musicians, and food stalls along the route for 2 days.",
-      "image": "/static/images/events/jazz.jpg",
+      "image": "/static/images/events/tangier.jpg",
       "link": null,
       "source_account": null,
       "timestamp_added": "2026-02-25T17:00:00Z"

@@ -36,7 +36,7 @@ def generate_data():
         "meta": {
             "trip_name": "Morocco 2026",
             "start_date": "2026-03-11",
-            "end_date": "2026-06-10",
+            "end_date": "2026-06-08",
             "budget_per_night": "9-13€",
             "schengen_reset": "June 10",
             "last_updated": datetime.now().strftime("%Y-%m-%d")
@@ -414,7 +414,7 @@ def generate_data():
                 }
                 day_entry["photography"] = None # Clear photography for travel days
             
-            if day_num == 92:
+            if day_num == 90:
                 day_entry["content_plan"]["theme"] = "Departure Day"
 
         data["days"].append(day_entry)
