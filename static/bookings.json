@@ -1,0 +1,117 @@
+{
+    "bookings": [
+        {
+            "id": "tangier-bayt-alice",
+            "city": "Tangier",
+            "status": "confirmed",
+            "hostel_name": "Bayt Alice",
+            "address": "26 Rue Khatib, Tanger, Morocco",
+            "phone": "+212 770 747 806",
+            "email": "baytalicehostel@gmail.com",
+            "booking_ref": "94491-575651766",
+            "room_type": "Deluxe 6 Bed Mixed Dorm Ensuite",
+            "check_in": "2026-03-11",
+            "check_out": "2026-03-25",
+            "nights": 14,
+            "price_per_night_eur": 11.24,
+            "total_eur": 157.36,
+            "paid_eur": 26.66,
+            "payable_at_property_mad": 1831.20,
+            "local_taxes_mad": 420.00,
+            "cancellation_policy": "1 day — cancel before March 10 to avoid a 1-night charge",
+            "free_cancellation": true,
+            "hostelworld_link": "https://www.hostelworld.com/pwa/confirmation/pcfnKW20260225202844",
+            "checklist": [
+                {
+                    "item": "Booking confirmed ✅",
+                    "done": true
+                },
+                {
+                    "item": "€26.66 deposit paid ✅",
+                    "done": true
+                },
+                {
+                    "item": "Remaining MAD 1,831.20 payable at property",
+                    "done": false
+                },
+                {
+                    "item": "Local taxes MAD 420.00 payable at property",
+                    "done": false
+                },
+                {
+                    "item": "Airport transfer — contact Driss (150 MAD flat rate)",
+                    "done": false
+                },
+                {
+                    "item": "Pack / prep departure from Lisbon",
+                    "done": false
+                }
+            ],
+            "arrival_notes": "From Tangier-Ville ferry: 15-min walk. Take Av. Mohammed VI → Rue du Portugal → Bab Dar Dbagh → stairs → Rue des Postes → Rue Skiredj → Rue Khatib. Or: 10-min taxi from Tangier-Ville train station — ask for 'Drouje Mirikan', then follow red Bayt Alice arrows in the medina.",
+            "airport_transfer": "Airport taxi: 150 MAD flat. Text the hostel ahead — Driss will wait at arrivals with a Bayt Alice sign."
+        },
+        {
+            "id": "chefchaouen-tbd",
+            "city": "Chefchaouen",
+            "status": "not_booked",
+            "check_in": "2026-03-25",
+            "check_out": "2026-03-28",
+            "nights": 3,
+            "notes": "Book closer to date — small city, hostel dorms usually available last minute"
+        },
+        {
+            "id": "fez-tbd",
+            "city": "Fez",
+            "status": "not_booked",
+            "check_in": "2026-03-28",
+            "check_out": "2026-04-06",
+            "nights": 9,
+            "notes": "Target: Funky Fes Hostel — book 2-3 weeks out"
+        },
+        {
+            "id": "rabat-tbd",
+            "city": "Rabat",
+            "status": "not_booked",
+            "check_in": "2026-04-06",
+            "check_out": "2026-04-20",
+            "nights": 14,
+            "notes": "Target: Dar El Kebira or Airbnb — book by mid-March"
+        },
+        {
+            "id": "casablanca-tbd",
+            "city": "Casablanca",
+            "status": "not_booked",
+            "check_in": "2026-04-20",
+            "check_out": "2026-05-04",
+            "nights": 14,
+            "notes": "Target: Medina Hostel Casablanca — book by April"
+        },
+        {
+            "id": "essaouira-tbd",
+            "city": "Essaouira",
+            "status": "not_booked",
+            "check_in": "2026-05-04",
+            "check_out": "2026-05-19",
+            "nights": 15,
+            "notes": "Target: Moga Hostel — popular with surfers, book early for May"
+        },
+        {
+            "id": "taghazout-tbd",
+            "city": "Taghazout",
+            "status": "not_booked",
+            "check_in": "2026-05-19",
+            "check_out": "2026-05-26",
+            "nights": 7,
+            "notes": "Target: Amouage by Surf Maroc — surf hostel, book by late April"
+        },
+        {
+            "id": "marrakech-tbd",
+            "city": "Marrakech",
+            "status": "not_booked",
+            "check_in": "2026-05-26",
+            "check_out": "2026-06-09",
+            "nights": 14,
+            "notes": "Target: Equity Point Marrakech — pool, great social vibe, book early"
+        }
+    ]
+}

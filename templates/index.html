@@ -48,6 +48,17 @@
         <button class="filter-btn map-tab-btn" onclick="toggleMapTab(this)"><span class="emoji">🗺️</span>Map</button>
         <button class="filter-btn events-tab-btn" onclick="toggleEventsTab(this)"><span
                 class="emoji">🎟️</span>Events</button>
+        <button class="filter-btn booked-tab-btn" onclick="toggleBookedTab(this)"><span
+                class="emoji">🏨</span>Booked</button>
+    </div>
+
+    <!-- Booked Tab (Hidden by default) -->
+    <div id="tab-booked" style="display:none; padding:16px; max-width:700px; margin:0 auto;">
+        <h2 style="font-family:'Outfit',sans-serif; color:var(--text-primary); font-size:22px; margin-bottom:4px;">🏨
+            Accommodation Checklist</h2>
+        <p style="color:var(--text-muted); font-size:13px; margin-bottom:20px;">Track your hostel bookings across the
+            90-day trip.</p>
+        <div id="bookings-list"></div>
     </div>
 
     <!-- Map View (Hidden by default) -->
@@ -533,9 +544,98 @@
             }
         }
 
+        function toggleBookedTab(btn) {
+            const calTab = document.getElementById('tab-calendar');
+            const mapTab = document.getElementById('tab-map');
+            const locTab = document.getElementById('tab-locations');
+            const evTab = document.getElementById('tab-events');
+            const bkTab = document.getElementById('tab-booked');
+
+            if (bkTab.style.display === 'none') {
+                calTab.style.display = 'none';
+                mapTab.style.display = 'none';
+                locTab.style.display = 'none';
+                evTab.style.display = 'none';
+                bkTab.style.display = 'block';
+                btn.classList.add('active');
+                document.querySelector('.map-tab-btn').classList.remove('active');
+                document.querySelector('.loc-tab-btn').classList.remove('active');
+                document.querySelector('.events-tab-btn').classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.booked-tab-btn):not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+                loadBookings();
+            } else {
+                bkTab.style.display = 'none';
+                calTab.style.display = 'flex';
+                btn.classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.booked-tab-btn):not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
+            }
+        }
+
+        async function loadBookings() {
+            const list = document.getElementById('bookings-list');
+            list.innerHTML = '<p style="color:var(--text-muted); padding:10px;">Loading...</p>';
+            let bookings = [];
+            try {
+                const res = await fetch('/static/bookings.json');
+                const data = await res.json();
+                bookings = data.bookings || [];
+            } catch (e) {
+                list.innerHTML = '<p style="color:var(--text-muted); padding:10px;">Could not load bookings.</p>';
+                return;
+            }
+            const confirmed = bookings.filter(b => b.status === 'confirmed').length;
+            const total = bookings.length;
+            list.innerHTML = `
+                <div style="background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.3); border-radius:12px; padding:12px 16px; margin-bottom:20px; display:flex; align-items:center; gap:12px;">
+                    <div style="font-size:28px;">🏨</div>
+                    <div>
+                        <div style="font-family:'Outfit',sans-serif; font-weight:700; color:var(--text-primary); font-size:16px;">${confirmed} of ${total} cities booked</div>
+                        <div style="color:var(--text-muted); font-size:12px;">${total - confirmed} remaining • Tap a city to see details</div>
+                    </div>
+                </div>
+                ${bookings.map(b => {
+                const isConfirmed = b.status === 'confirmed';
+                const borderColor = isConfirmed ? 'rgba(34,197,94,0.5)' : 'var(--border)';
+                const badge = isConfirmed
+                    ? '<span style="background:rgba(34,197,94,0.15); color:#22c55e; font-size:11px; font-weight:700; padding:3px 8px; border-radius:20px; letter-spacing:0.5px;">✅ CONFIRMED</span>'
+                    : '<span style="background:rgba(255,255,255,0.05); color:var(--text-muted); font-size:11px; font-weight:700; padding:3px 8px; border-radius:20px; letter-spacing:0.5px;">🔲 NOT BOOKED</span>';
+                const nights = b.nights ? `${b.nights} nights` : '';
+                const dateRange = b.check_in && b.check_out ? `${b.check_in} → ${b.check_out}` : '';
+                const details = isConfirmed ? `
+                        <div style="margin-top:12px; padding-top:12px; border-top:1px solid var(--border);">
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px;">
+                                <div><div style="font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Room</div><div style="font-size:12px; color:var(--text-primary);">${b.room_type || '—'}</div></div>
+                                <div><div style="font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Ref</div><div style="font-size:12px; color:var(--text-primary); font-family:monospace;">${b.booking_ref || '—'}</div></div>
+                                <div><div style="font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Total</div><div style="font-size:12px; color:var(--text-primary);">€${b.total_eur} (€${b.paid_eur} paid)</div></div>
+                                <div><div style="font-size:10px; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">At property</div><div style="font-size:12px; color:var(--gold);">MAD ${b.payable_at_property_mad} + MAD ${b.local_taxes_mad} tax</div></div>
+                            </div>
+                            ${b.checklist ? `<div style="margin-bottom:10px;">${b.checklist.map(c => `<div style="font-size:12px; color:${c.done ? '#22c55e' : 'var(--text-secondary)'}; padding:4px 0;">${c.done ? '✅' : '⬜'} ${c.item}</div>`).join('')}</div>` : ''}
+                            ${b.arrival_notes ? `<div style="font-size:11px; color:var(--text-muted); line-height:1.5; background:rgba(255,255,255,0.03); border-radius:8px; padding:10px; margin-bottom:10px;">📍 ${b.arrival_notes}</div>` : ''}
+                            ${b.hostelworld_link ? `<a href="${b.hostelworld_link}" target="_blank" style="font-size:12px; font-weight:600; color:var(--terracotta); font-family:'Outfit',sans-serif;">View Hostelworld Booking →</a>` : ''}
+                        </div>` : b.notes ? `<div style="margin-top:8px; font-size:11px; color:var(--text-muted);">💡 ${b.notes}</div>` : '';
+                return `
+                    <details style="background:var(--surface); border:1px solid ${borderColor}; border-radius:14px; padding:14px 16px; margin-bottom:12px; cursor:pointer; ${isConfirmed ? 'box-shadow: 0 0 14px rgba(34,197,94,0.12);' : ''}">
+                        <summary style="display:flex; align-items:center; gap:12px; list-style:none; outline:none;">
+                            <div style="flex:1;">
+                                <div style="display:flex; align-items:center; gap:8px; margin-bottom:4px;">
+                                    <span style="font-family:'Outfit',sans-serif; font-weight:700; font-size:16px; color:var(--text-primary);">${b.city}</span>
+                                    ${badge}
+                                </div>
+                                <div style="font-size:12px; color:var(--text-muted);">${dateRange} · ${nights}${b.hostel_name ? ' · ' + b.hostel_name : ''}</div>
+                            </div>
+                            <span style="color:var(--text-muted); font-size:18px; flex-shrink:0;">›</span>
+                        </summary>
+                        ${details}
+                    </details>`;
+            }).join('')}`;
+        }
+
+
+
         let currentEventFilter = 'upcoming';
         function switchEventSub(filter, btn) {
             currentEventFilter = filter;
+
             document.querySelectorAll('.events-sub-btn').forEach(b => {
                 b.style.background = 'rgba(255,255,255,0.05)';
                 b.style.color = 'var(--text-secondary)';
