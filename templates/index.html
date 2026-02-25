@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morocco Content Calendar — 90 Days</title>
+    <meta name="description" content="90-day content calendar for Morocco photography trip">
+
+    <!-- PWA & iOS Home Screen Settings -->
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Morocco">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
+    <meta name="theme-color" content="#0f172a">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <h1>🇲🇦 Morocco Content Calendar</h1>
+            <div class="subtitle">90-Day Plan — {{ data.meta.start_date }} → {{ data.meta.end_date }}</div>
+        </div>
+        <div class="header-right">
+            <span class="meta-badge" style="border-color:var(--terracotta); color:var(--text-primary)">🛂 Schengen
+                Reset: {{ data.meta.schengen_reset }}</span>
+            <span class="meta-badge">💰 Budget: {{ data.meta.budget_per_night }}</span>
+            <span class="meta-badge">📅 Updated: {{ data.meta.last_updated }}</span>
+        </div>
+    </header>
+
+    <!-- City Timeline -->
+    <div class="timeline" id="timeline">
+        {% for day in data.days %}
+        <div class="timeline-block {{ day.city|lower|replace(' ', '') }}{% if day.transport %} transport{% endif %}"
+            title="Day {{ day.day_number }}: {{ day.city }}" onclick="scrollToDay({{ day.day_number }})"></div>
+        {% endfor %}
+    </div>
+    </div>
+    <div class="timeline-labels">
+        <span class="timeline-label"><span class="dot" style="background:var(--tangier)"></span>Tangier</span>
+        <span class="timeline-label"><span class="dot" style="background:var(--chefchaouen)"></span>Chefchaouen</span>
+        <span class="timeline-label"><span class="dot" style="background:var(--fez)"></span>Fez</span>
+        <span class="timeline-label"><span class="dot" style="background:var(--cat-transport)"></span>Travel Day</span>
+    </div>
+
+    <!-- Filters & Tabs -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all" onclick="filterCards('all', this)">All Days</button>
+        <button class="filter-btn" data-filter="skate" onclick="filterCards('skate', this)"><span
+                class="emoji">🛹</span>Skate</button>
+        <button class="filter-btn" data-filter="surf" onclick="filterCards('surf', this)"><span
+                class="emoji">🏄</span>Surf</button>
+        <button class="filter-btn" data-filter="music" onclick="filterCards('music', this)"><span
+                class="emoji">🎵</span>Music</button>
+        <button class="filter-btn" data-filter="photo" onclick="filterCards('photo', this)"><span
+                class="emoji">📸</span>Photo</button>
+        <button class="filter-btn" data-filter="transport" onclick="filterCards('transport', this)"><span
+                class="emoji">🚌</span>Transport</button>
+        <div style="flex-grow: 1;"></div>
+        <button class="filter-btn loc-tab-btn" onclick="toggleLocTab(this)"><span
+                class="emoji">📍</span>Locations</button>
+        <button class="filter-btn map-tab-btn" onclick="toggleMapTab(this)"><span class="emoji">🗺️</span>Map
+            Route</button>
+    </div>
+
+    <!-- Map View (Hidden by default) -->
+    <div id="tab-map" style="display:none; width: 100%; height: 75vh;"></div>
+
+    <!-- Locations Checklist View (Hidden by default) -->
+    <div id="tab-locations" style="display:none; padding: 20px 40px;">
+        <h2 style="font-family:'Outfit',sans-serif; color:var(--text-primary); margin-bottom:6px; font-size:24px;">
+            Photography Targets Checklist</h2>
+        <p style="color:var(--text-muted); font-size:14px; margin-bottom:24px;">Click the locations to view in Google
+            Maps. Checkboxes sync to your browser.</p>
+        <div class="loc-grid" id="loc-container"
+            style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:24px;">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Calendar View -->
+    <div id="tab-calendar">
+        {% set ns = namespace(current_month="") %}
+        {% for day in data.days %}
+
+        {% if day.month_name != ns.current_month %}
+        {% if not loop.first %}
+    </div> <!-- close calendar-grid for previous month -->
+    {% endif %}
+    {% set ns.current_month = day.month_name %}
+    <div class="month-header" style="margin: 30px 0 20px;">
+        <h2
+            style="font-family:'Outfit',sans-serif; font-size: 28px; color: var(--gold); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">
+            {{ ns.current_month }}</h2>
+        <div class="weekdays-header"
+            style="display:grid; grid-template-columns:repeat(7, 1fr); gap:16px; text-align:center; color:var(--text-secondary); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+        </div>
+    </div>
+    <div class="calendar-grid">
+        {% for i in range(day.weekday) %}
+        <div class="empty-day-pad"
+            style="border: 1px dashed rgba(255,255,255,0.05); border-radius: 12px; min-height: 100px;"></div>
+        {% endfor %}
+        {% endif %}
+
+        <div class="day-card {{ day.city|lower|replace(' ', '') }}{% if day.transport %} transport-day{% endif %}"
+            id="day-{{ day.day_number }}" data-categories="{{ day.categories|join(',') }}" onclick="toggleCard(this)">
+
+            <div class="card-header">
+                <div class="card-day-num {{ day.city|lower|replace(' ', '') }}">{{ day.card_number }}</div>
+                <div class="card-meta">
+                    <div class="card-date">{{ day.date }}</div>
+                    <div class="card-city {{ day.city|lower|replace(' ', '') }}">{{ day.city_emoji }} {{ day.city }}
+                    </div>
+                </div>
+            </div>
+
+            {% if day.transport %}
+            <div class="transport-banner">
+                <div>
+                    <div class="route">🚌 {{ day.transport.route }}</div>
+                    <div class="time-cost">{{ day.transport.duration }} · {{ day.transport.cost }}</div>
+                    {% if day.transport.details %}
+                    <ul style="margin-top:4px; padding-left:16px; font-size:11px; color:var(--text-secondary);">
+                        {% for detail in day.transport.details %}
+                        <li>{{ detail }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="card-body">
+                <div class="card-theme">{{ day.content_plan.theme }}</div>
+                <div class="card-tags">
+                    {% for cat in day.categories %}
+                    <span class="tag {{ cat }}">
+                        {% if cat == 'skate' %}🛹{% elif cat == 'surf' %}🏄{% elif cat == 'music' %}🎵{% elif cat ==
+                        'photo' %}📸{% elif cat == 'transport' %}🚌{% endif %}
+                        {{ cat }}
+                    </span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Expandable Details -->
+            <div class="card-details">
+                <!-- Content Plan -->
+                <div class="detail-section">
+                    <h4>Content Plan</h4>
+                    <div class="content-plan">
+                        {% if day.content_plan.tiktok %}
+                        <span class="platform">TikTok</span><span class="plan">{{ day.content_plan.tiktok }}</span>
+                        {% endif %}
+                        {% if day.content_plan.instagram %}
+                        <span class="platform">IG</span><span class="plan">{{ day.content_plan.instagram }}</span>
+                        {% endif %}
+                        {% if day.content_plan.youtube %}
+                        <span class="platform">YT</span><span class="plan">{{ day.content_plan.youtube }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Photography -->
+                {% if day.photography %}
+                <div class="detail-section">
+                    <h4>📸 Off the Beaten Path</h4>
+                    <ul>
+                        {% for spot in day.photography.off_beaten_path %}
+                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ spot|urlencode }}"
+                                target="_blank" class="gm-link">{{ spot }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% if day.photography.subcultures %}
+                <div class="detail-section">
+                    <h4>🎭 Subculture Targets</h4>
+                    <ul>
+                        {% for sub in day.photography.subcultures %}
+                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ sub|urlencode }}"
+                                target="_blank" class="gm-link">{{ sub }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                {% if day.photography.golden_hour_spot %}
+                <div class="detail-section">
+                    <h4>🌅 Golden Hour
+                        {% if day.photography.golden_hour_time %}
+                        <span
+                            style="float:right; color:var(--gold); font-weight:600; font-family:'Outfit'; text-transform:none; letter-spacing:0px;">{{
+                            day.photography.golden_hour_time }}</span>
+                        {% endif %}
+                    </h4>
+                    <ul>
+                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ day.photography.golden_hour_spot|urlencode }}"
+                                target="_blank" class="gm-link">{{ day.photography.golden_hour_spot }}</a></li>
+                    </ul>
+                </div>
+                {% endif %}
+                {% endif %}
+
+                <!-- Hostel -->
+                {% if day.hostel %}
+                <div class="detail-section">
+                    <h4>🏨 Hostel</h4>
+                    <div class="detail-hostel">
+                        <div>
+                            <div class="hostel-name">{{ day.hostel.name }}</div>
+                            <div class="hostel-detail">{{ day.hostel.neighborhood }}</div>
+                        </div>
+                        <div class="hostel-price">{{ day.hostel.price }}</div>
+                    </div>
+                    {% if day.hostel.notes %}
+                    <div class="hostel-detail" style="margin-top:6px;padding-left:4px;">{{ day.hostel.notes }}</div>
+                    {% endif %}
+                </div>
+                {% endif %}
+
+                {% if day.notes %}
+                <div class="card-notes">💡 {{ day.notes }}</div>
+                {% endif %}
+            </div>
+        </div>
+
+        {% if loop.last %}
+    </div> <!-- close final calendar-grid -->
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <script>
+        function toggleCard(card) {
+            card.classList.toggle('expanded');
+        }
+
+        function scrollToDay(num) {
+            const el = document.getElementById('day-' + num);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                el.classList.add('expanded');
+            }
+        }
+
+        function filterCards(filter, btn) {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.day-card').forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = '';
+                } else {
+                    const cats = card.dataset.categories || '';
+                    card.style.display = cats.includes(filter) ? '' : 'none';
+                }
+            });
+        }
+
+        // Map Logic
+        let mapInstance = null;
+        function toggleMapTab(btn) {
+            const calTab = document.getElementById('tab-calendar');
+            const mapTab = document.getElementById('tab-map');
+            const locTab = document.getElementById('tab-locations');
+            const timeline = document.getElementById('timeline');
+
+            if (mapTab.style.display === 'none') {
+                calTab.style.display = 'none';
+                locTab.style.display = 'none';
+                timeline.style.display = 'none';
+                mapTab.style.display = 'block';
+                btn.classList.add('active');
+                document.querySelector('.loc-tab-btn').classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+
+                if (!mapInstance) {
+                    initMap();
+                } else {
+                    mapInstance.invalidateSize();
+                }
+            } else {
+                mapTab.style.display = 'none';
+                calTab.style.display = 'block';
+                timeline.style.display = 'flex';
+                btn.classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
+            }
+        }
+
+        function toggleLocTab(btn) {
+            const calTab = document.getElementById('tab-calendar');
+            const mapTab = document.getElementById('tab-map');
+            const locTab = document.getElementById('tab-locations');
+            const timeline = document.getElementById('timeline');
+
+            if (locTab.style.display === 'none') {
+                calTab.style.display = 'none';
+                mapTab.style.display = 'none';
+                timeline.style.display = 'none';
+                locTab.style.display = 'block';
+                btn.classList.add('active');
+                document.querySelector('.map-tab-btn').classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+
+                if (document.getElementById('loc-container').children.length === 0) {
+                    initLocations();
+                }
+            } else {
+                locTab.style.display = 'none';
+                calTab.style.display = 'block';
+                timeline.style.display = 'flex';
+                btn.classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
+            }
+        }
+
+        function initLocations() {
+            const locContainer = document.getElementById('loc-container');
+            const cityData = {};
+
+            {% for day in data.days %}
+            {% if day.photography %}
+            if (!cityData["{{ day.city }}"]) cityData["{{ day.city }}"] = new Set();
+            {% for spot in day.photography.off_beaten_path %}
+            cityData["{{ day.city }}"].add(`{{ spot|replace("'", "\\'") }}`);
+            {% endfor %}
+            {% for sub in day.photography.subcultures %}
+            cityData["{{ day.city }}"].add(`{{ sub|replace("'", "\\'") }}`);
+            {% endfor %}
+            {% if day.photography.golden_hour_spot %}
+            cityData["{{ day.city }}"].add(`{{ day.photography.golden_hour_spot|replace("'", "\\'") }}`);
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+
+            for (const city in cityData) {
+                const cityDiv = document.createElement('div');
+                cityDiv.className = 'loc-city-group';
+                cityDiv.style.background = 'var(--bg-card)';
+                cityDiv.style.border = '1px solid var(--border)';
+                cityDiv.style.borderRadius = '12px';
+                cityDiv.style.padding = '16px';
+
+                cityDiv.innerHTML = `<h3 style="color:var(--gold); margin-bottom:12px; font-family:'Outfit',sans-serif; border-bottom:1px solid var(--border); padding-bottom:6px;">${city}</h3>`;
+
+                const list = document.createElement('div');
+                list.style.display = 'flex';
+                list.style.flexDirection = 'column';
+                list.style.gap = '10px';
+
+                cityData[city].forEach(loc => {
+                    const id = 'loc_' + btoa(unescape(encodeURIComponent(loc))).replace(/=/g, '');
+                    const row = document.createElement('label');
+                    row.style.display = 'flex';
+                    row.style.alignItems = 'flex-start';
+                    row.style.gap = '10px';
+                    row.style.cursor = 'pointer';
+                    row.style.fontSize = '14px';
+
+                    const checked = localStorage.getItem(id) === 'true' ? 'checked' : '';
+                    row.innerHTML = `
+                        <input type="checkbox" id="${id}" ${checked} onchange="localStorage.setItem('${id}', this.checked)" style="margin-top:4px;">
+                        <span style="flex:1;">
+                            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc)}" target="_blank" class="gm-link" onclick="event.stopPropagation()">${loc}</a>
+                        </span>`;
+                    list.appendChild(row);
+                });
+                cityDiv.appendChild(list);
+                locContainer.appendChild(cityDiv);
+            }
+        }
+
+        function initMap() {
+            // Initialize Leaflet Map focused on Morocco
+            mapInstance = L.map('tab-map', {
+                zoomControl: false // Move to bottom right later
+            }).setView([31.7917, -7.0926], 6);
+
+            L.control.zoom({ position: 'bottomright' }).addTo(mapInstance);
+
+            // Dark mode map tiles (CartoDB Dark Matter)
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+                subdomains: 'abcd',
+                maxZoom: 20
+            }).addTo(mapInstance);
+
+            // City coordinates
+            const route = [
+                { name: "Tangier", coords: [35.7595, -5.8340], color: "#3b82f6" },
+                { name: "Chefchaouen", coords: [35.1688, -5.2636], color: "#67b8f0" },
+                { name: "Fez", coords: [34.0181, -5.0078], color: "#f59e0b" },
+                { name: "Rabat", coords: [34.0209, -6.8416], color: "#10b981" },
+                { name: "Essaouira", coords: [31.5085, -9.7595], color: "#06b6d4" },
+                { name: "Marrakech", coords: [31.6295, -7.9811], color: "#ef4444" }
+            ];
+
+            const latlngs = route.map(p => p.coords);
+
+            // Draw connecting flow line
+            L.polyline(latlngs, {
+                color: '#d4a853',
+                weight: 3,
+                opacity: 0.7,
+                dashArray: '10, 10'
+            }).addTo(mapInstance);
+
+            // Add Markers
+            route.forEach((point, i) => {
+                const markerHtml = `<div style="background-color: ${point.color}; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #111827; box-shadow: 0 0 10px ${point.color};"></div>`;
+                const icon = L.divIcon({
+                    html: markerHtml,
+                    className: 'custom-map-marker',
+                    iconSize: [14, 14],
+                    iconAnchor: [7, 7]
+                });
+
+                L.marker(point.coords, { icon: icon })
+                    .addTo(mapInstance)
+                    .bindPopup(`<b style="color:#000">${point.name}</b><br>Stop ${i + 1} on the route.`);
+            });
+        }
+    </script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register("{{ url_for('static', filename='sw.js') }}")
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+</body>
+
+</html>

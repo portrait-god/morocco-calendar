@@ -1,0 +1,694 @@
+/* ============================================
+   Morocco Content Calendar — Design System
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0f1a;
+  --bg-secondary: #111827;
+  --bg-card: rgba(25, 33, 52, 0.75);
+  --bg-card-hover: rgba(35, 48, 75, 0.85);
+  --bg-glass: rgba(255, 255, 255, 0.04);
+  --text-primary: #f0f2f5;
+  --text-secondary: #8b95a8;
+  --text-muted: #5a6478;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  /* City colors */
+  --tangier: #3b82f6;
+  --tangier-bg: rgba(59, 130, 246, 0.12);
+  --chefchaouen: #67b8f0;
+  --chefchaouen-bg: rgba(103, 184, 240, 0.12);
+  --fez: #f59e0b;
+  --fez-bg: rgba(245, 158, 11, 0.12);
+  /* Category colors */
+  --cat-skate: #a855f7;
+  --cat-surf: #06b6d4;
+  --cat-music: #ec4899;
+  --cat-photo: #10b981;
+  --cat-transport: #f97316;
+  /* Accents */
+  --terracotta: #c2715c;
+  --gold: #d4a853;
+  --cobalt: #3b82f6;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  padding: 32px 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.06) 0%, transparent 100%);
+}
+
+.header-left h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--text-primary), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-left .subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* City timeline */
+.timeline {
+  display: flex;
+  padding: 16px 40px;
+  gap: 4px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-block {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  transition: var(--transition);
+  cursor: pointer;
+  position: relative;
+}
+
+.timeline-block:hover {
+  transform: scaleY(1.8);
+}
+
+.timeline-block.tangier {
+  background: var(--tangier);
+}
+
+.timeline-block.chefchaouen {
+  background: var(--chefchaouen);
+}
+
+.timeline-block.fez {
+  background: var(--fez);
+}
+
+.timeline-block.transport {
+  background: var(--cat-transport);
+}
+
+.timeline-labels {
+  display: flex;
+  padding: 0 40px 12px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: var(--bg-glass);
+  margin-right: 8px;
+}
+
+.timeline-label .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  padding: 16px 40px;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-glass);
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: 'Inter', sans-serif;
+}
+
+.filter-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.filter-btn.active {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.filter-btn .emoji {
+  margin-right: 4px;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 24px 40px 60px;
+  overflow-x: auto;
+}
+
+/* Day Card */
+.day-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+}
+
+.day-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.day-card.expanded {
+  grid-column: span 1;
+  box-shadow: var(--shadow-lg);
+}
+
+.day-card.transport-day {
+  border-left: 3px solid var(--cat-transport);
+}
+
+.day-card.tangier .card-header {
+  border-top: 3px solid var(--tangier);
+}
+
+.day-card.chefchaouen .card-header {
+  border-top: 3px solid var(--chefchaouen);
+}
+
+.day-card.fez .card-header {
+  border-top: 3px solid var(--fez);
+}
+
+.card-header {
+  padding: 14px 16px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-day-num {
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.15;
+}
+
+.card-day-num.tangier {
+  color: var(--tangier);
+  opacity: 0.3;
+}
+
+.card-day-num.chefchaouen {
+  color: var(--chefchaouen);
+  opacity: 0.3;
+}
+
+.card-day-num.fez {
+  color: var(--fez);
+  opacity: 0.3;
+}
+
+.card-meta {
+  text-align: right;
+}
+
+.card-date {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.card-city {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-city.tangier {
+  color: var(--tangier);
+}
+
+.card-city.chefchaouen {
+  color: var(--chefchaouen);
+}
+
+.card-city.fez {
+  color: var(--fez);
+}
+
+.card-body {
+  padding: 0 16px 14px;
+}
+
+.card-theme {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.tag.skate {
+  color: var(--cat-skate);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.tag.surf {
+  color: var(--cat-surf);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.tag.music {
+  color: var(--cat-music);
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.tag.photo {
+  color: var(--cat-photo);
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+.tag.transport {
+  color: var(--cat-transport);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+/* Expanded Details */
+.card-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.day-card.expanded .card-details {
+  max-height: 800px;
+  opacity: 1;
+}
+
+.detail-section {
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+}
+
+.detail-section h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-section li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 3px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.detail-section li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+}
+
+.detail-hostel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--bg-glass);
+  border-radius: var(--radius-sm);
+}
+
+.hostel-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hostel-price {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.hostel-detail {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.transport-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(249, 115, 22, 0.08);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  border-radius: var(--radius-sm);
+  margin: 0 16px 12px;
+}
+
+.transport-banner .route {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--cat-transport);
+}
+
+.transport-banner .time-cost {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Content plan */
+.content-plan {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 10px;
+  font-size: 13px;
+}
+
+.content-plan .platform {
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-top: 2px;
+}
+
+.content-plan .plan {
+  color: var(--text-secondary);
+}
+
+/* Notes */
+.card-notes {
+  font-size: 12px;
+  color: var(--terracotta);
+  padding: 8px 16px 12px;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .calendar-grid {
+    padding: 16px;
+  }
+
+  .timeline {
+    padding: 12px 20px;
+  }
+
+  .filters {
+    padding: 12px 20px;
+  }
+
+  .timeline-labels {
+    padding: 0 20px 8px;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
+}
+
+.map-tab-btn {
+  margin-left: auto;
+  border-color: var(--gold) !important;
+  background: rgba(212, 168, 83, 0.1);
+}
+
+.map-tab-btn.active {
+  background: var(--gold);
+  color: var(--text-primary);
+}
+
+.custom-map-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tab-map {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 40px;
+}
+
+.month-header {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.gm-link {
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.2s;
+}
+
+.gm-link:hover {
+    color: var(--text-primary);
+    text-decoration-color: var(--text-primary);
+}
+
+.loc-tab-btn {
+    border-color: var(--terracotta) !important;
+    background: rgba(194, 113, 92, 0.1);
+}
+
+.loc-tab-btn.active {
+    background: var(--terracotta);
+    color: var(--bg-primary);
+}
+
+/* ====== MOBILE OPTIMIZATION (iPhone & Portrait) ====== */
+@media (max-width: 768px) {
+  /* Header Stacking */
+  .header {
+    padding: 20px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .header-left h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .meta-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  /* Filter Buttons Horizontal Scroll */
+  .filters {
+    padding: 12px 16px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    gap: 8px;
+  }
+  
+  .filter-btn {
+    flex: 0 0 auto;
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+  
+  /* Timeline Adjustments */
+  .timeline {
+    padding: 12px 16px;
+  }
+  
+  .timeline-labels {
+    padding: 0 16px 12px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .timeline-label {
+    margin-right: 0;
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  /* Calendar Grid - Allow horizontal scrolling instead of squishing */
+  .calendar-grid {
+    padding: 16px;
+    grid-template-columns: repeat(7, minmax(180px, 1fr));
+    gap: 12px;
+    /* Ensure native momentum scrolling */
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 80px; 
+  }
+  
+  /* Cards */
+  .day-card {
+    min-width: 180px;
+  }
+  
+  .card-header {
+    padding: 12px;
+  }
+  
+  .card-day-num {
+    font-size: 28px;
+  }
+  
+  .card-body {
+    padding: 0 12px 12px;
+  }
+  
+  .card-theme {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  .tag {
+    font-size: 10px;
+  }
+  
+  /* Month Headers */
+  .month-header {
+    font-size: 16px;
+    padding: 16px 16px 8px !important;
+  }
+
+  /* Weekday headers */
+  .weekday-header {
+    min-width: 180px;
+  }
+
+  /* Locations Checklist Tab */
+  #tab-locations {
+    padding: 20px 16px !important;
+  }
+  
+  #tab-locations h2 {
+    font-size: 20px !important;
+  }
+  
+  .loc-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  .loc-city-group h3 {
+    font-size: 16px;
+  }
+  
+  .loc-city-group label {
+    font-size: 13px !important;
+  }
+}
