@@ -328,8 +328,14 @@
                 days.forEach(day => {
                     const dayNum = day.querySelector('.card-day-num').innerText;
                     const cityClass = day.classList[1];
+                    const hasEvents = day.querySelector('.detail-section h4') &&
+                        day.innerHTML.includes('Local Events');
+
                     const btn = document.createElement('button');
                     btn.className = `compact-day ${cityClass}`;
+                    if (hasEvents) {
+                        btn.className += ' has-event';
+                    }
                     btn.innerText = dayNum;
 
                     if (day.classList.contains('transport-day')) {
@@ -341,15 +347,10 @@
 
                         // Small delay to allow CSS expansion before calculating position
                         setTimeout(() => {
-                            const monthCol = day.closest('.month-column');
-                            if (window.innerWidth <= 768 && monthCol) {
-                                // On mobile, scroll the column container
-                                monthCol.scrollTo({ top: day.offsetTop - 180, behavior: 'smooth' });
-                            } else {
-                                // On desktop, scroll the main window
-                                const y = day.getBoundingClientRect().top + window.pageYOffset - 100;
-                                window.scrollTo({ top: y, behavior: 'smooth' });
-                            }
+                            const offsetSpacer = window.innerWidth <= 768 ? 200 : 100;
+                            const y = day.getBoundingClientRect().top + window.pageYOffset - offsetSpacer;
+                            window.scrollTo({ top: y, behavior: 'smooth' });
+
                             day.style.transition = 'box-shadow 0.3s';
                             day.style.boxShadow = '0 0 0 2px var(--gold)';
                             setTimeout(() => { day.style.boxShadow = 'none'; }, 1500);
