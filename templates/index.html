@@ -715,7 +715,10 @@
                 <div data-title="${ev.title}" style="background:var(--surface); border:1px solid var(--border); border-radius:16px; overflow:hidden; cursor:pointer;" onclick="${onClickAction}">
                     ${ev.image ? `<img src="${ev.image}" alt="${ev.title}" style="width:100%; aspect-ratio:1/1; object-fit:cover;">` : `<div style="width:100%; aspect-ratio:1/1; background:var(--bg-secondary); display:flex; align-items:center; justify-content:center; font-size:48px;">🎭</div>`}
                     <div style="padding:14px;">
-                        <div style="font-family:'Outfit',sans-serif; font-weight:700; font-size:15px; color:var(--text-primary); margin-bottom:4px;">${ev.title}</div>
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+                            <div style="font-family:'Outfit',sans-serif; font-weight:700; font-size:15px; color:var(--text-primary); padding-right:8px;">${ev.title}</div>
+                            <button onclick="event.stopPropagation(); navigator.clipboard.writeText('${ev.title.replace(/'/g, "\\'")}'); const old=this.innerHTML; this.innerHTML='✅'; setTimeout(()=>this.innerHTML=old, 1500);" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:16px; padding:0; flex-shrink:0;">📋</button>
+                        </div>
                         <div style="font-size:12px; color:var(--gold); margin-bottom:4px;">${ev.date} · ${ev.city || ''}</div>
                         <div style="font-size:11px; color:var(--text-secondary); line-height:1.4; margin-bottom:8px;">${ev.description || ''}</div>
                         ${ev.source_account ? `<div style="font-size:11px; font-weight:600; color:var(--text-muted); padding:4px 0; display:inline-block;" onclick="event.stopPropagation(); navigator.clipboard.writeText('@${ev.source_account}'); const old=this.innerHTML; this.innerHTML='✅ Copied!'; setTimeout(()=>this.innerHTML=old, 1500);">📋 via @${ev.source_account}</div>` : ''}
