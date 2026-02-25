@@ -53,14 +53,6 @@
     <!-- Filters & Tabs -->
     <div class="filters">
         <button class="filter-btn active" data-filter="all" onclick="filterCards('all', this)">All Days</button>
-        <button class="filter-btn" data-filter="skate" onclick="filterCards('skate', this)"><span
-                class="emoji">🛹</span>Skate</button>
-        <button class="filter-btn" data-filter="surf" onclick="filterCards('surf', this)"><span
-                class="emoji">🏄</span>Surf</button>
-        <button class="filter-btn" data-filter="music" onclick="filterCards('music', this)"><span
-                class="emoji">🎵</span>Music</button>
-        <button class="filter-btn" data-filter="photo" onclick="filterCards('photo', this)"><span
-                class="emoji">📸</span>Photo</button>
         <button class="filter-btn" data-filter="transport" onclick="filterCards('transport', this)"><span
                 class="emoji">🚌</span>Transport</button>
         <div style="flex-grow:1;"></div>
@@ -336,47 +328,35 @@
                 days.forEach(day => {
                     const dayNum = day.querySelector('.card-day-num').innerText;
                     const cityClass = day.classList[1];
-                    const hasEvents = day.querySelector('.detail-section h4') &&
-                        day.innerHTML.includes('Local Events');
-
-                    const btnWrapper = document.createElement('div');
-                    btnWrapper.style.position = 'relative';
-                    btnWrapper.style.display = 'flex';
-                    btnWrapper.style.flexDirection = 'column';
-                    btnWrapper.style.alignItems = 'center';
-
                     const btn = document.createElement('button');
                     btn.className = `compact-day ${cityClass}`;
                     btn.innerText = dayNum;
+
                     if (day.classList.contains('transport-day')) {
                         btn.style.boxShadow = 'inset 0 0 0 2px var(--cat-transport)';
                     }
+
                     btn.onclick = () => {
-                        const monthCol = day.closest('.month-column');
-                        if (window.innerWidth <= 768 && monthCol) {
-                            monthCol.scrollTo({ top: day.offsetTop - 200, behavior: 'smooth' });
-                        } else {
-                            const y = day.getBoundingClientRect().top + window.pageYOffset - 120;
-                            window.scrollTo({ top: y, behavior: 'smooth' });
-                        }
-                        // Expand the card
                         day.classList.add('expanded');
-                        day.style.transition = 'box-shadow 0.3s';
-                        day.style.boxShadow = '0 0 0 2px var(--gold)';
-                        setTimeout(() => { day.style.boxShadow = 'none'; }, 1500);
+
+                        // Small delay to allow CSS expansion before calculating position
+                        setTimeout(() => {
+                            const monthCol = day.closest('.month-column');
+                            if (window.innerWidth <= 768 && monthCol) {
+                                // On mobile, scroll the column container
+                                monthCol.scrollTo({ top: day.offsetTop - 180, behavior: 'smooth' });
+                            } else {
+                                // On desktop, scroll the main window
+                                const y = day.getBoundingClientRect().top + window.pageYOffset - 100;
+                                window.scrollTo({ top: y, behavior: 'smooth' });
+                            }
+                            day.style.transition = 'box-shadow 0.3s';
+                            day.style.boxShadow = '0 0 0 2px var(--gold)';
+                            setTimeout(() => { day.style.boxShadow = 'none'; }, 1500);
+                        }, 50);
                     };
 
-                    btnWrapper.appendChild(btn);
-
-                    // Add event dot indicator
-                    if (hasEvents) {
-                        const dot = document.createElement('div');
-                        dot.style.cssText = 'width:5px;height:5px;background:var(--gold);border-radius:50%;margin-top:2px;';
-                        dot.title = 'Has events';
-                        btnWrapper.appendChild(dot);
-                    }
-
-                    compactGrid.appendChild(btnWrapper);
+                    compactGrid.appendChild(btn);
                 });
 
 
