@@ -45,7 +45,7 @@ def generate_data():
     }
 
     hostels = {
-        "Tangier": {"name": "The Medina Hostel Tangier", "price": "€8-11/night", "neighborhood": "Kasbah / Petit Socco", "notes": "Rooftop ocean views, good wifi"},
+        "Tangier": {"name": "Bayt Alice", "price": "€11.24/night · ✅ Booked", "neighborhood": "26 Rue Khatib, Medina", "notes": "Ref: 94491-575651766 · Mar 11–25 · MAD 1,831 payable on arrival"},
         "Chefchaouen": {"name": "Pension Souika", "price": "€7-10/night", "neighborhood": "Medina", "notes": "Best wifi in town, rooftop terrace"},
         "Fez": {"name": "Funky Fes", "price": "€8-12/night", "neighborhood": "Fes el-Bali", "notes": "Wifi throughout, free breakfast + dinner"},
         "Marrakech": {"name": "Equity Point Marrakech", "price": "€9-13/night", "neighborhood": "Medina near Jemaa el-Fna", "notes": "Pool, good wifi, social"},

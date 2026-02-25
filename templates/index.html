@@ -36,11 +36,10 @@
 
 
 
+
     <!-- Filters & Tabs -->
     <div class="filters">
         <button class="filter-btn active" data-filter="all" onclick="filterCards('all', this)">All Days</button>
-        <button class="filter-btn" data-filter="transport" onclick="filterCards('transport', this)"><span
-                class="emoji">🚌</span>Transport</button>
         <div style="flex-grow:1;"></div>
         <button class="filter-btn loc-tab-btn" onclick="toggleLocTab(this)"><span
                 class="emoji">📍</span>Locations</button>
@@ -874,6 +873,50 @@
                 }
             }, { passive: true });
         })();
+
+        async function applyBookingsToDayTiles() {
+            try {
+                const res = await fetch('/static/bookings.json');
+                const data = await res.json();
+                const bookings = data.bookings || [];
+                bookings.forEach(b => {
+                    if (b.status === 'confirmed') {
+                        const citySlug = b.city.toLowerCase().replace(/\s+/g, '');
+                        // Target day-cards for this specific city
+                        const dayCards = document.querySelectorAll(`.day-card.${citySlug}`);
+                        dayCards.forEach(card => {
+                            const hostelNameEl = card.querySelector('.hostel-name');
+                            const hostelDetailEls = card.querySelectorAll('.hostel-detail');
+                            const hostelPriceEl = card.querySelector('.hostel-price');
+                            const hostelSection = card.querySelector('.detail-section');
+
+                            // 1. Update the name
+                            if (hostelNameEl) {
+                                hostelNameEl.textContent = b.hostel_name || b.hostel_name_short || b.city + ' Booking';
+                            }
+                            // 2. Clear out the old neighborhood and replace with green Confirmation text
+                            if (hostelDetailEls.length > 0) {
+                                hostelDetailEls[0].innerHTML = `<span style="color:#22c55e; font-weight:700;">✅ Confirmed</span> · ${b.room_type || 'Booking secured'}`;
+                            }
+                            // 3. Remove the old price (since it's already booked/paid)
+                            if (hostelPriceEl) {
+                                hostelPriceEl.style.display = 'none';
+                            }
+                            // 4. Subtle green border styling on the hostel block itself
+                            if (hostelSection) {
+                                hostelSection.style.borderLeft = '3px solid #22c55e';
+                                hostelSection.style.background = 'rgba(34,197,94,0.03)';
+                                hostelSection.style.borderRadius = '8px';
+                            }
+                        });
+                    }
+                });
+            } catch (e) {
+                console.error("Could not sync bookings to day tiles", e);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', applyBookingsToDayTiles);
 
     </script>
     <!-- Leaflet JS -->

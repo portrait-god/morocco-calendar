@@ -6,7 +6,7 @@
             "date": "2026-05-29",
             "city": "Essaouira",
             "description": "One of Morocco's most iconic events. Spiritual Gnaoua music and trance dances take over the entire medina and port. Free outdoor stages all weekend.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gnawa_Musician_%28Unsplash%29.jpg/640px-Gnawa_Musician_%28Unsplash%29.jpg",
+            "image": "/static/images/events/gnaoua.jpg",
             "link": "https://festival-gnaoua.net/en/",
             "source_account": "festival_gnaoua",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -17,7 +17,7 @@
             "date": "2026-04-25",
             "city": "Rabat",
             "description": "One of the world's biggest music festivals. Massive free outdoor stages along the Rabat coast. International headliners + Arab world stars. 2M+ attendees.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Mawazine_2013_-_P%C3%A1gina_5_%288757555318%29.jpg/640px-Mawazine_2013_-_P%C3%A1gina_5_%288757555318%29.jpg",
+            "image": "/static/images/events/mawazine.jpg",
             "link": "https://www.mawazine.ma/",
             "source_account": "mawazineofficiel",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -28,7 +28,7 @@
             "date": "2026-04-10",
             "city": "Casablanca",
             "description": "Morocco's premier jazz and world music festival held in Casablanca. International jazz acts and local talent across multiple stages.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/JazzFestivalWilisau2006.jpg/640px-JazzFestivalWilisau2006.jpg",
+            "image": "/static/images/events/jazz.jpg",
             "link": "https://www.jazzablanca.com/",
             "source_account": "jazzablanca",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -39,7 +39,7 @@
             "date": "2026-05-08",
             "city": "Marrakech region",
             "description": "The Damask rose harvest celebrated in the Dades Valley. Parades, traditional Berber music & dance, artisan markets, and rose-everything. Day trip from Marrakech.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Dades_Valley%2C_Morocco_%2844773313454%29.jpg/640px-Dades_Valley%2C_Morocco_%2844773313454%29.jpg",
+            "image": "/static/images/events/rose.jpg",
             "link": "https://www.morocco.com/events/rose-festival/",
             "source_account": "visitmorocco",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -50,7 +50,7 @@
             "date": "2026-03-30",
             "city": "All cities",
             "description": "Nationwide celebrations marking the end of Ramadan. Night markets, traditional music, communal prayers at dawn, and extraordinary street atmosphere particularly in Fez and Chefchaouen.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Marrakech_at_night%2C_Djemaa_el_Fna%2C_Morocco.jpg/640px-Marrakech_at_night%2C_Djemaa_el_Fna%2C_Morocco.jpg",
+            "image": "/static/images/events/eid.jpg",
             "link": "https://publicholidays.africa/morocco/eid-al-fitr/",
             "source_account": null,
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -61,7 +61,7 @@
             "date": "2026-03-15",
             "city": "Marrakech",
             "description": "Avant-garde contemporary art, literature and film across the Medina. Pop-up exhibitions, workshops, and debates. Free outdoor installations. Runs through May.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Marrakech_%2840070682223%29.jpg/640px-Marrakech_%2840070682223%29.jpg",
+            "image": "/static/images/events/biennale.jpg",
             "link": "https://www.marrakechbiennale.org/",
             "source_account": "marrakechbiennale",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -72,7 +72,7 @@
             "date": "2026-05-22",
             "city": "Fez",
             "description": "Gathering of musicians, scholars and artists from across the world in the UNESCO-listed Fez medina. Free outdoor concerts at Bab Makina. Runs 10 days.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Fes_medina%2C_Morocco_%2836403218175%29.jpg/640px-Fes_medina%2C_Morocco_%2836403218175%29.jpg",
+            "image": "/static/images/events/fes.jpg",
             "link": "https://fesfestival.com/",
             "source_account": "fesfestival",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -83,7 +83,7 @@
             "date": "2026-03-28",
             "city": "Chefchaouen",
             "description": "Regular Thursday souk in the blue city. Local artisans, Rif mountain weavers, and regional food producers fill the Plaza Uta el-Hammam.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chefchaouen%2C_Morocco_%2841669702834%29.jpg/640px-Chefchaouen%2C_Morocco_%2841669702834%29.jpg",
+            "image": "/static/images/events/chefchaouen.jpg",
             "link": null,
             "source_account": "chefchaouen_blueCity",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -94,7 +94,7 @@
             "date": "2026-04-18",
             "city": "Essaouira",
             "description": "Annual kitesurfing and windsurfing championship on the Essaouira beach. Spectator-friendly with food trucks and live music on the beach.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Kitesurfer_Essaouira_Morocco.jpg/640px-Kitesurfer_Essaouira_Morocco.jpg",
+            "image": "/static/images/events/surf.jpg",
             "link": "https://www.essaouira-mogador.com/",
             "source_account": "essaouira_surf",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -105,7 +105,7 @@
             "date": "2026-03-13",
             "city": "Tangier",
             "description": "The weekly market at Tangier's Grand Socco. Rif mountain villagers sell produce, herbs, and handicrafts. Best street photography moment in the city.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Grand_Socco_Tangier.jpg/640px-Grand_Socco_Tangier.jpg",
+            "image": "/static/images/events/tangier.jpg",
             "link": null,
             "source_account": "tangiermorocco",
             "timestamp_added": "2026-02-25T17:00:00Z"
@@ -116,7 +116,7 @@
             "date": "2026-05-15",
             "city": "Casablanca",
             "description": "Underground festival showcasing Morocco's hip-hop, rap, reggae and rock scenes. Massive platform for emerging Moroccan urban artists. Expect insane energy.",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Concert_crowd_at_O2_Arena.jpg/640px-Concert_crowd_at_O2_Arena.jpg",
+            "image": "/static/images/events/lblvd.jpg",
             "link": "https://www.blvd.ma/",
             "source_account": "lblvd_maroc",
             "timestamp_added": "2026-02-25T17:00:00Z"
