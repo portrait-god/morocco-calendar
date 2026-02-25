@@ -50,7 +50,9 @@ def generate_data():
         "Fez": {"name": "Funky Fes", "price": "€8-12/night", "neighborhood": "Fes el-Bali", "notes": "Wifi throughout, free breakfast + dinner"},
         "Marrakech": {"name": "Equity Point Marrakech", "price": "€9-13/night", "neighborhood": "Medina near Jemaa el-Fna", "notes": "Pool, good wifi, social"},
         "Essaouira": {"name": "Moga Hostel", "price": "€9-12/night", "neighborhood": "Heart of medina", "notes": "Popular with surfers + nomads"},
-        "Rabat": {"name": "Dar El Kebira (or Airbnb)", "price": "€10-18/night", "neighborhood": "Agdal", "notes": "Modern, fast wifi, government tech parks"}
+        "Rabat": {"name": "Dar El Kebira (or Airbnb)", "price": "€10-18/night", "neighborhood": "Agdal", "notes": "Modern, fast wifi, government tech parks"},
+        "Casablanca": {"name": "Medina Hostel Casablanca", "price": "€12-15/night", "neighborhood": "Old Medina", "notes": "Close to train station and Hassan II Mosque"},
+        "Taghazout": {"name": "Amouage by Surf Maroc", "price": "€15-20/night", "neighborhood": "Beachfront", "notes": "Incredible surf vibe, great community, skate bowl"}
     }
     
     city_locations = {
@@ -83,20 +85,32 @@ def generate_data():
             "off_beaten": ["Le Jardin Secret, Marrakech, Morocco", "Musée Dar El Bacha, Marrakech", "Bahia Palace, Marrakech", "Saadian Tombs, Marrakech", "Majorelle Garden, Marrakech", "Palmerais, Marrakech", "Mellah (Jewish Quarter), Marrakech", "Cyber Park, Marrakech", "Gueliz architecture, Marrakech"],
             "subcultures": ["Fiers et Forts Skatepark, Tameslouht, Morocco", "The Source Marrakesh underground electronic", "Tbourida Fantasia horsemen, Marrakech", "Jemaa el-Fnaa performers, Marrakech", "Local craftsmen in the souks, Marrakech", "Gueliz digital nomads, Marrakech"],
             "vantage": ["Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech", "Agafay Desert edge, Marrakech", "Koutoubia Mosque gardens, Marrakech"]
+        },
+        "Casablanca": {
+            "off_beaten": ["Corniche Ain Diab, Casablanca", "Derb Ghallef electronics market, Casablanca", "Habous Quarter, Casablanca", "Villa des Arts, Casablanca", "Parc de la Ligue Arabe, Casablanca", "Anfa residential streets, Casablanca"],
+            "subcultures": ["L'Abattoir (Fabrique Culturelle), Casablanca", "Nevada Skatepark, Casablanca", "Underground hip-hop venues, Casablanca", "Surfers at Ain Diab, Casablanca", "Street artists in Mers Sultan, Casablanca"],
+            "vantage": ["Hassan II Mosque plaza, Casablanca", "Twin Center top floor, Casablanca", "La Corniche sunset point, Casablanca"]
+        },
+        "Taghazout": {
+            "off_beaten": ["Anchor Point, Taghazout", "Paradise Valley rock pools, Taghazout", "Banana Village market, Taghazout", "Hash Point, Taghazout", "Tamraght hills, Taghazout"],
+            "subcultures": ["Local surfboard shapers, Taghazout", "Taghazout Skatepark locals", "Digital nomad cafes, Taghazout", "Vanlife community at Anchor Point, Taghazout"],
+            "vantage": ["Anchor Point cliffs, Taghazout", "Panorama Beach viewpoint, Taghazout", "Aourir mountain pass, Taghazout"]
         }
     }
     
     city_counters = {
-        "Tangier": 0, "Chefchaouen": 0, "Fez": 0, "Rabat": 0, "Essaouira": 0, "Marrakech": 0
+        "Tangier": 0, "Chefchaouen": 0, "Fez": 0, "Rabat": 0, "Essaouira": 0, "Casablanca": 0, "Taghazout": 0, "Marrakech": 0
     }
 
     # City durations
     # Tangier: Days 1-14 | Mar 11 - Mar 24
     # Chef: Days 15-17 | Mar 25 - Mar 27 (3 days)
     # Fez: Days 18-26 | Mar 28 - Apr 5 (9 days)
-    # Rabat/Casa: Days 27-40 | Apr 6 - Apr 19 (14 days)
+    # Rabat: Days 27-40 | Apr 6 - Apr 19 (14 days)
     # Essaouira: Days 41-55 | Apr 20 - May 4 (15 days)
-    # Marrakech: Days 56-90 | May 5 - Jun 8 (35 days)
+    # Casablanca: Days 56-69 | May 5 - May 18 (14 days)
+    # Taghazout: Days 70-76 | May 19 - May 25 (7 days)
+    # Marrakech: Days 77-90 | May 26 - Jun 8 (14 days)
 
     for day_num in range(1, 91):
         current_date = start_date + timedelta(days=day_num - 1)
@@ -272,18 +286,46 @@ def generate_data():
                      "golden_hour_time": get_golden_hour(current_date)
                  }
 
-        # Marrakech (Days 56-90)
+        # Casablanca (Days 56-69)
+        elif day_num <= 69:
+            city = "Casablanca"
+            day_entry["city"] = city
+            day_entry["city_emoji"] = "🏢"
+            day_entry["hostel"] = hostels["Casablanca"]
+            day_entry["categories"] = ["photo", "skate", "music"]
+            day_entry["content_plan"] = {"theme": f"Urban Jungle - Day {day_num - 55}", "tiktok": "Street art & hustle", "instagram": "Hassan II scale", "youtube": "Casablanca urban doc"}
+            
+            if day_num == 56:
+                day_entry["content_plan"]["theme"] = "Arrival in the Metropolis"
+                day_entry["transport"] = {"route": "Essaouira → Casablanca (Supratours bus)", "duration": "5-6h", "cost": "€12-15"}
+                day_entry["notes"] = "Biggest city in Morocco. Focus on urban subcultures and street photography."
+
+        # Taghazout (Days 70-76)
+        elif day_num <= 76:
+            city = "Taghazout"
+            day_entry["city"] = city
+            day_entry["city_emoji"] = "🏄‍♂️"
+            day_entry["hostel"] = hostels["Taghazout"]
+            day_entry["categories"] = ["photo", "surf", "skate"]
+            day_entry["content_plan"] = {"theme": f"Surf's Up - Day {day_num - 69}", "tiktok": "Surf checks & skate bowls", "instagram": "Golden hour sessions", "youtube": "Taghazout lifestyle vlog"}
+            
+            if day_num == 70:
+                day_entry["content_plan"]["theme"] = "South to the Surf"
+                day_entry["transport"] = {"route": "Casablanca → Taghazout (Train to Agadir, Taxi/Bus to Taghazout)", "duration": "5-6h", "cost": "€20-25"}
+                day_entry["notes"] = "Slower pace. Connect with surf and skate communities."
+
+        # Marrakech (Days 77-90)
         else:
             city = "Marrakech"
             day_entry["city"] = city
             day_entry["city_emoji"] = "🐪"
             day_entry["hostel"] = hostels["Marrakech"]
             day_entry["categories"] = ["photo", "skate", "music"]
-            day_entry["content_plan"] = {"theme": f"Red City Hustle - Day {day_num - 55}", "tiktok": "Souk chaos", "instagram": "Tbourida prep", "youtube": "Marrakech Nomad Doc & Wrap-up"}
+            day_entry["content_plan"] = {"theme": f"Red City Hustle - Day {day_num - 76}", "tiktok": "Souk chaos", "instagram": "Tbourida prep", "youtube": "Marrakech Nomad Doc & Wrap-up"}
             
-            if day_num == 56:
+            if day_num == 77:
                 day_entry["content_plan"]["theme"] = "Inland to the Hub"
-                day_entry["transport"] = {"route": "Essaouira → Marrakech (Supratours bus)", "duration": "2.5-3h", "cost": "€8-9"}
+                day_entry["transport"] = {"route": "Taghazout → Marrakech (Bus from Agadir)", "duration": "3-4h", "cost": "€10-15"}
                 day_entry["notes"] = "Best coworking ecosystem. Connect with digital nomads. End of trip hub for flights."
             if day_num == 90:
                 day_entry["content_plan"]["theme"] = "Departure Day"

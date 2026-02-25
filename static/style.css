@@ -33,6 +33,12 @@
   --marrakech: #e05c3a;
   /* Terracotta Red */
   --marrakech-bg: rgba(224, 92, 58, 0.12);
+  --casablanca: #a855f7;
+  /* Purple */
+  --casablanca-bg: rgba(168, 85, 247, 0.12);
+  --taghazout: #eab308;
+  /* Yellow */
+  --taghazout-bg: rgba(234, 179, 8, 0.12);
   /* Category colors */
   --cat-skate: #a855f7;
   --cat-surf: #06b6d4;
@@ -338,6 +344,24 @@ body {
   border-top: 3px solid var(--essaouira);
 }
 
+.card-day-num.casablanca {
+  color: var(--casablanca);
+  opacity: 0.3;
+}
+
+.card-city.casablanca {
+  color: var(--casablanca);
+}
+
+.card-day-num.taghazout {
+  color: var(--taghazout);
+  opacity: 0.3;
+}
+
+.card-city.taghazout {
+  color: var(--taghazout);
+}
+
 .card-day-num.marrakech {
   color: var(--marrakech);
   opacity: 0.3;
@@ -351,6 +375,14 @@ body {
   border-top: 3px solid var(--marrakech);
 }
 
+.day-card.casablanca .card-header {
+  border-top: 3px solid var(--casablanca);
+}
+
+.day-card.taghazout .card-header {
+  border-top: 3px solid var(--taghazout);
+}
+
 /* Timeline city blocks */
 .timeline-block.rabat {
   background: var(--rabat);
@@ -362,6 +394,14 @@ body {
 
 .timeline-block.marrakech {
   background: var(--marrakech);
+}
+
+.timeline-block.casablanca {
+  background: var(--casablanca);
+}
+
+.timeline-block.taghazout {
+  background: var(--taghazout);
 }
 
 
@@ -821,6 +861,14 @@ body {
 
   .compact-day.marrakech {
     background: var(--marrakech);
+  }
+
+  .compact-day.casablanca {
+    background: var(--casablanca);
+  }
+
+  .compact-day.taghazout {
+    background: var(--taghazout);
   }
 
   .card-header {

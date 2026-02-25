@@ -2335,9 +2335,893 @@
       "card_number": 5,
       "weekday": 1,
       "transport": {
-        "route": "Essaouira \u2192 Marrakech (Supratours bus)",
-        "duration": "2.5-3h",
-        "cost": "\u20ac8-9"
+        "route": "Essaouira \u2192 Casablanca (Supratours bus)",
+        "duration": "5-6h",
+        "cost": "\u20ac12-15"
+      },
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "Biggest city in Morocco. Focus on urban subcultures and street photography.",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Arrival in the Metropolis",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Corniche Ain Diab, Casablanca",
+          "Derb Ghallef electronics market, Casablanca"
+        ],
+        "subcultures": [
+          "L'Abattoir (Fabrique Culturelle), Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:27 - 20:12"
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "month_name": "May 2026",
+      "day_number": 57,
+      "card_number": 6,
+      "weekday": 2,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 2",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Derb Ghallef electronics market, Casablanca",
+          "Habous Quarter, Casablanca"
+        ],
+        "subcultures": [
+          "Nevada Skatepark, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:28 - 20:13"
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "month_name": "May 2026",
+      "day_number": 58,
+      "card_number": 7,
+      "weekday": 3,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "Rose Festival Day Trip \u2014 El Kelaa M'Gouna",
+          "description": "Annual Damask rose harvest festival in the Dades Valley. 4h from Marrakech. Parades, Berber music, rose water market. Extremely photographic. Highly recommended as a weekend trip.",
+          "link": "https://www.morocco.com/events/rose-festival/"
+        }
+      ],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 3",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Habous Quarter, Casablanca",
+          "Villa des Arts, Casablanca"
+        ],
+        "subcultures": [
+          "Underground hip-hop venues, Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:29 - 20:14"
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "month_name": "May 2026",
+      "day_number": 59,
+      "card_number": 8,
+      "weekday": 4,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 4",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Villa des Arts, Casablanca",
+          "Parc de la Ligue Arabe, Casablanca"
+        ],
+        "subcultures": [
+          "Surfers at Ain Diab, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:30 - 20:15"
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "month_name": "May 2026",
+      "day_number": 60,
+      "card_number": 9,
+      "weekday": 5,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 5",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Parc de la Ligue Arabe, Casablanca",
+          "Anfa residential streets, Casablanca"
+        ],
+        "subcultures": [
+          "Street artists in Mers Sultan, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:31 - 20:16"
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "month_name": "May 2026",
+      "day_number": 61,
+      "card_number": 10,
+      "weekday": 6,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "L'Boulevard Festival \u2014 Urban Music (Casablanca)",
+          "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Day trip or overnight. Discover Morocco's best new urban artists.",
+          "link": "https://www.blvd.ma/"
+        }
+      ],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 6",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Anfa residential streets, Casablanca",
+          "Corniche Ain Diab, Casablanca"
+        ],
+        "subcultures": [
+          "L'Abattoir (Fabrique Culturelle), Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:31 - 20:16"
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "month_name": "May 2026",
+      "day_number": 62,
+      "card_number": 11,
+      "weekday": 0,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 7",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Corniche Ain Diab, Casablanca",
+          "Derb Ghallef electronics market, Casablanca"
+        ],
+        "subcultures": [
+          "Nevada Skatepark, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:32 - 20:17"
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "month_name": "May 2026",
+      "day_number": 63,
+      "card_number": 12,
+      "weekday": 1,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "Jemaa el-Fnaa Storytellers \u2014 Halqa Night",
+          "description": "Thursday is the best night for the traditional halqa (storytelling circle) in the main square. Storytellers, snake charmers, and fire performers all compete for the crowd.",
+          "link": null
+        }
+      ],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 8",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Derb Ghallef electronics market, Casablanca",
+          "Habous Quarter, Casablanca"
+        ],
+        "subcultures": [
+          "Underground hip-hop venues, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:33 - 20:18"
+      }
+    },
+    {
+      "date": "2026-05-13",
+      "month_name": "May 2026",
+      "day_number": 64,
+      "card_number": 13,
+      "weekday": 2,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 9",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Habous Quarter, Casablanca",
+          "Villa des Arts, Casablanca"
+        ],
+        "subcultures": [
+          "Surfers at Ain Diab, Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:34 - 20:19"
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "month_name": "May 2026",
+      "day_number": 65,
+      "card_number": 14,
+      "weekday": 3,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "Tbourida Horses Show Rehearsal, Marrakech",
+          "description": "A traditional Moroccan fantasia rehearsal at the hippodrome near Menara Gardens. Spectacular military horsemanship. Usually open to spectators. Free.",
+          "link": null
+        }
+      ],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 10",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Villa des Arts, Casablanca",
+          "Parc de la Ligue Arabe, Casablanca"
+        ],
+        "subcultures": [
+          "Street artists in Mers Sultan, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:34 - 20:19"
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "month_name": "May 2026",
+      "day_number": 66,
+      "card_number": 15,
+      "weekday": 4,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 11",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Parc de la Ligue Arabe, Casablanca",
+          "Anfa residential streets, Casablanca"
+        ],
+        "subcultures": [
+          "L'Abattoir (Fabrique Culturelle), Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:35 - 20:20"
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "month_name": "May 2026",
+      "day_number": 67,
+      "card_number": 16,
+      "weekday": 5,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 12",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Anfa residential streets, Casablanca",
+          "Corniche Ain Diab, Casablanca"
+        ],
+        "subcultures": [
+          "Nevada Skatepark, Casablanca"
+        ],
+        "golden_hour_spot": "La Corniche sunset point, Casablanca",
+        "golden_hour_time": "19:36 - 20:21"
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "month_name": "May 2026",
+      "day_number": 68,
+      "card_number": 17,
+      "weekday": 6,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 13",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Corniche Ain Diab, Casablanca",
+          "Derb Ghallef electronics market, Casablanca"
+        ],
+        "subcultures": [
+          "Underground hip-hop venues, Casablanca"
+        ],
+        "golden_hour_spot": "Hassan II Mosque plaza, Casablanca",
+        "golden_hour_time": "19:37 - 20:22"
+      }
+    },
+    {
+      "date": "2026-05-18",
+      "month_name": "May 2026",
+      "day_number": 69,
+      "card_number": 18,
+      "weekday": 0,
+      "transport": null,
+      "categories": [
+        "photo",
+        "skate",
+        "music"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Casablanca",
+      "city_emoji": "\ud83c\udfe2",
+      "hostel": {
+        "name": "Medina Hostel Casablanca",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Old Medina",
+        "notes": "Close to train station and Hassan II Mosque"
+      },
+      "content_plan": {
+        "theme": "Urban Jungle - Day 14",
+        "tiktok": "Street art & hustle",
+        "instagram": "Hassan II scale",
+        "youtube": "Casablanca urban doc"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Derb Ghallef electronics market, Casablanca",
+          "Habous Quarter, Casablanca"
+        ],
+        "subcultures": [
+          "Surfers at Ain Diab, Casablanca"
+        ],
+        "golden_hour_spot": "Twin Center top floor, Casablanca",
+        "golden_hour_time": "19:38 - 20:23"
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "month_name": "May 2026",
+      "day_number": 70,
+      "card_number": 19,
+      "weekday": 1,
+      "transport": {
+        "route": "Casablanca \u2192 Taghazout (Train to Agadir, Taxi/Bus to Taghazout)",
+        "duration": "5-6h",
+        "cost": "\u20ac20-25"
+      },
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "Slower pace. Connect with surf and skate communities.",
+      "events": [
+        {
+          "title": "Marrakech Biennale \u2014 Medina Installations",
+          "description": "Avant-garde contemporary art installations throughout the historic medina. Pop-up exhibitions in riads, museums, and courtyards. Running since March \u2014 pick the best ones.",
+          "link": "https://www.marrakechbiennale.org/"
+        }
+      ],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "South to the Surf",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Anchor Point, Taghazout",
+          "Paradise Valley rock pools, Taghazout"
+        ],
+        "subcultures": [
+          "Local surfboard shapers, Taghazout"
+        ],
+        "golden_hour_spot": "Anchor Point cliffs, Taghazout",
+        "golden_hour_time": "19:38 - 20:23"
+      }
+    },
+    {
+      "date": "2026-05-20",
+      "month_name": "May 2026",
+      "day_number": 71,
+      "card_number": 20,
+      "weekday": 2,
+      "transport": null,
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "Surf's Up - Day 2",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Paradise Valley rock pools, Taghazout",
+          "Banana Village market, Taghazout"
+        ],
+        "subcultures": [
+          "Taghazout Skatepark locals"
+        ],
+        "golden_hour_spot": "Panorama Beach viewpoint, Taghazout",
+        "golden_hour_time": "19:39 - 20:24"
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "month_name": "May 2026",
+      "day_number": 72,
+      "card_number": 21,
+      "weekday": 3,
+      "transport": null,
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "Surf's Up - Day 3",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Banana Village market, Taghazout",
+          "Hash Point, Taghazout"
+        ],
+        "subcultures": [
+          "Digital nomad cafes, Taghazout"
+        ],
+        "golden_hour_spot": "Aourir mountain pass, Taghazout",
+        "golden_hour_time": "19:40 - 20:25"
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "month_name": "May 2026",
+      "day_number": 73,
+      "card_number": 22,
+      "weekday": 4,
+      "transport": null,
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "Surf's Up - Day 4",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Hash Point, Taghazout",
+          "Tamraght hills, Taghazout"
+        ],
+        "subcultures": [
+          "Vanlife community at Anchor Point, Taghazout"
+        ],
+        "golden_hour_spot": "Anchor Point cliffs, Taghazout",
+        "golden_hour_time": "19:41 - 20:26"
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "month_name": "May 2026",
+      "day_number": 74,
+      "card_number": 23,
+      "weekday": 5,
+      "transport": null,
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "Surf's Up - Day 5",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Tamraght hills, Taghazout",
+          "Anchor Point, Taghazout"
+        ],
+        "subcultures": [
+          "Local surfboard shapers, Taghazout"
+        ],
+        "golden_hour_spot": "Panorama Beach viewpoint, Taghazout",
+        "golden_hour_time": "19:41 - 20:26"
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "month_name": "May 2026",
+      "day_number": 75,
+      "card_number": 24,
+      "weekday": 6,
+      "transport": null,
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "",
+      "events": [
+        {
+          "title": "Ourika Valley Berber Festival (Weekend)",
+          "description": "In the Atlas foothills, the Ourika Valley hosts a smaller moussem (pilgrimage festival) in late May. Traditional Amazigh music and communal celebrations. Day trip from Marrakech.",
+          "link": null
+        }
+      ],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "Surf's Up - Day 6",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Anchor Point, Taghazout",
+          "Paradise Valley rock pools, Taghazout"
+        ],
+        "subcultures": [
+          "Taghazout Skatepark locals"
+        ],
+        "golden_hour_spot": "Aourir mountain pass, Taghazout",
+        "golden_hour_time": "19:42 - 20:27"
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "month_name": "May 2026",
+      "day_number": 76,
+      "card_number": 25,
+      "weekday": 0,
+      "transport": null,
+      "categories": [
+        "photo",
+        "surf",
+        "skate"
+      ],
+      "notes": "",
+      "events": [],
+      "city": "Taghazout",
+      "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
+      "hostel": {
+        "name": "Amouage by Surf Maroc",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Beachfront",
+        "notes": "Incredible surf vibe, great community, skate bowl"
+      },
+      "content_plan": {
+        "theme": "Surf's Up - Day 7",
+        "tiktok": "Surf checks & skate bowls",
+        "instagram": "Golden hour sessions",
+        "youtube": "Taghazout lifestyle vlog"
+      },
+      "photography": {
+        "off_beaten_path": [
+          "Paradise Valley rock pools, Taghazout",
+          "Banana Village market, Taghazout"
+        ],
+        "subcultures": [
+          "Digital nomad cafes, Taghazout"
+        ],
+        "golden_hour_spot": "Anchor Point cliffs, Taghazout",
+        "golden_hour_time": "19:43 - 20:28"
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "month_name": "May 2026",
+      "day_number": 77,
+      "card_number": 26,
+      "weekday": 1,
+      "transport": {
+        "route": "Taghazout \u2192 Marrakech (Bus from Agadir)",
+        "duration": "3-4h",
+        "cost": "\u20ac10-15"
       },
       "categories": [
         "photo",
@@ -2367,906 +3251,6 @@
         ],
         "subcultures": [
           "Fiers et Forts Skatepark, Tameslouht, Morocco"
-        ],
-        "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
-        "golden_hour_time": "19:27 - 20:12"
-      }
-    },
-    {
-      "date": "2026-05-06",
-      "month_name": "May 2026",
-      "day_number": 57,
-      "card_number": 6,
-      "weekday": 2,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 2",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Mus\u00e9e Dar El Bacha, Marrakech",
-          "Bahia Palace, Marrakech"
-        ],
-        "subcultures": [
-          "The Source Marrakesh underground electronic"
-        ],
-        "golden_hour_spot": "Agafay Desert edge, Marrakech",
-        "golden_hour_time": "19:28 - 20:13"
-      }
-    },
-    {
-      "date": "2026-05-07",
-      "month_name": "May 2026",
-      "day_number": 58,
-      "card_number": 7,
-      "weekday": 3,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [
-        {
-          "title": "Rose Festival Day Trip \u2014 El Kelaa M'Gouna",
-          "description": "Annual Damask rose harvest festival in the Dades Valley. 4h from Marrakech. Parades, Berber music, rose water market. Extremely photographic. Highly recommended as a weekend trip.",
-          "link": "https://www.morocco.com/events/rose-festival/"
-        }
-      ],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 3",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Bahia Palace, Marrakech",
-          "Saadian Tombs, Marrakech"
-        ],
-        "subcultures": [
-          "Tbourida Fantasia horsemen, Marrakech"
-        ],
-        "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
-        "golden_hour_time": "19:29 - 20:14"
-      }
-    },
-    {
-      "date": "2026-05-08",
-      "month_name": "May 2026",
-      "day_number": 59,
-      "card_number": 8,
-      "weekday": 4,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 4",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Saadian Tombs, Marrakech",
-          "Majorelle Garden, Marrakech"
-        ],
-        "subcultures": [
-          "Jemaa el-Fnaa performers, Marrakech"
-        ],
-        "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
-        "golden_hour_time": "19:30 - 20:15"
-      }
-    },
-    {
-      "date": "2026-05-09",
-      "month_name": "May 2026",
-      "day_number": 60,
-      "card_number": 9,
-      "weekday": 5,
-      "transport": {
-        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
-        "duration": "1h",
-        "cost": "40-60 MAD"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Ourika Mountain Guesthouse (Optional)",
-        "price": "\u20ac15-25/night",
-        "neighborhood": "Setti Fatma area",
-        "notes": "Riverside retreat in the mountains"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 5",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:31 - 20:16"
-      }
-    },
-    {
-      "date": "2026-05-10",
-      "month_name": "May 2026",
-      "day_number": 61,
-      "card_number": 10,
-      "weekday": 6,
-      "transport": {
-        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
-        "duration": "1h",
-        "cost": "40-60 MAD"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [
-        {
-          "title": "L'Boulevard Festival \u2014 Urban Music (Casablanca)",
-          "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Day trip or overnight. Discover Morocco's best new urban artists.",
-          "link": "https://www.blvd.ma/"
-        }
-      ],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Ourika Mountain Guesthouse (Optional)",
-        "price": "\u20ac15-25/night",
-        "neighborhood": "Setti Fatma area",
-        "notes": "Riverside retreat in the mountains"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 6",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:31 - 20:16"
-      }
-    },
-    {
-      "date": "2026-05-11",
-      "month_name": "May 2026",
-      "day_number": 62,
-      "card_number": 11,
-      "weekday": 0,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 7",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Mellah (Jewish Quarter), Marrakech",
-          "Cyber Park, Marrakech"
-        ],
-        "subcultures": [
-          "Fiers et Forts Skatepark, Tameslouht, Morocco"
-        ],
-        "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
-        "golden_hour_time": "19:32 - 20:17"
-      }
-    },
-    {
-      "date": "2026-05-12",
-      "month_name": "May 2026",
-      "day_number": 63,
-      "card_number": 12,
-      "weekday": 1,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [
-        {
-          "title": "Jemaa el-Fnaa Storytellers \u2014 Halqa Night",
-          "description": "Thursday is the best night for the traditional halqa (storytelling circle) in the main square. Storytellers, snake charmers, and fire performers all compete for the crowd.",
-          "link": null
-        }
-      ],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 8",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Cyber Park, Marrakech",
-          "Gueliz architecture, Marrakech"
-        ],
-        "subcultures": [
-          "The Source Marrakesh underground electronic"
-        ],
-        "golden_hour_spot": "Agafay Desert edge, Marrakech",
-        "golden_hour_time": "19:33 - 20:18"
-      }
-    },
-    {
-      "date": "2026-05-13",
-      "month_name": "May 2026",
-      "day_number": 64,
-      "card_number": 13,
-      "weekday": 2,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 9",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Gueliz architecture, Marrakech",
-          "Le Jardin Secret, Marrakech, Morocco"
-        ],
-        "subcultures": [
-          "Tbourida Fantasia horsemen, Marrakech"
-        ],
-        "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
-        "golden_hour_time": "19:34 - 20:19"
-      }
-    },
-    {
-      "date": "2026-05-14",
-      "month_name": "May 2026",
-      "day_number": 65,
-      "card_number": 14,
-      "weekday": 3,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [
-        {
-          "title": "Tbourida Horses Show Rehearsal, Marrakech",
-          "description": "A traditional Moroccan fantasia rehearsal at the hippodrome near Menara Gardens. Spectacular military horsemanship. Usually open to spectators. Free.",
-          "link": null
-        }
-      ],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 10",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Le Jardin Secret, Marrakech, Morocco",
-          "Mus\u00e9e Dar El Bacha, Marrakech"
-        ],
-        "subcultures": [
-          "Jemaa el-Fnaa performers, Marrakech"
-        ],
-        "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
-        "golden_hour_time": "19:34 - 20:19"
-      }
-    },
-    {
-      "date": "2026-05-15",
-      "month_name": "May 2026",
-      "day_number": 66,
-      "card_number": 15,
-      "weekday": 4,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 11",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Mus\u00e9e Dar El Bacha, Marrakech",
-          "Bahia Palace, Marrakech"
-        ],
-        "subcultures": [
-          "Local craftsmen in the souks, Marrakech"
-        ],
-        "golden_hour_spot": "Agafay Desert edge, Marrakech",
-        "golden_hour_time": "19:35 - 20:20"
-      }
-    },
-    {
-      "date": "2026-05-16",
-      "month_name": "May 2026",
-      "day_number": 67,
-      "card_number": 16,
-      "weekday": 5,
-      "transport": {
-        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
-        "duration": "1h",
-        "cost": "40-60 MAD"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Ourika Mountain Guesthouse (Optional)",
-        "price": "\u20ac15-25/night",
-        "neighborhood": "Setti Fatma area",
-        "notes": "Riverside retreat in the mountains"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 12",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:36 - 20:21"
-      }
-    },
-    {
-      "date": "2026-05-17",
-      "month_name": "May 2026",
-      "day_number": 68,
-      "card_number": 17,
-      "weekday": 6,
-      "transport": {
-        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
-        "duration": "1h",
-        "cost": "40-60 MAD"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Ourika Mountain Guesthouse (Optional)",
-        "price": "\u20ac15-25/night",
-        "neighborhood": "Setti Fatma area",
-        "notes": "Riverside retreat in the mountains"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 13",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:37 - 20:22"
-      }
-    },
-    {
-      "date": "2026-05-18",
-      "month_name": "May 2026",
-      "day_number": 69,
-      "card_number": 18,
-      "weekday": 0,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 14",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Majorelle Garden, Marrakech",
-          "Palmerais, Marrakech"
-        ],
-        "subcultures": [
-          "The Source Marrakesh underground electronic"
-        ],
-        "golden_hour_spot": "Agafay Desert edge, Marrakech",
-        "golden_hour_time": "19:38 - 20:23"
-      }
-    },
-    {
-      "date": "2026-05-19",
-      "month_name": "May 2026",
-      "day_number": 70,
-      "card_number": 19,
-      "weekday": 1,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [
-        {
-          "title": "Marrakech Biennale \u2014 Medina Installations",
-          "description": "Avant-garde contemporary art installations throughout the historic medina. Pop-up exhibitions in riads, museums, and courtyards. Running since March \u2014 pick the best ones.",
-          "link": "https://www.marrakechbiennale.org/"
-        }
-      ],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 15",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Palmerais, Marrakech",
-          "Mellah (Jewish Quarter), Marrakech"
-        ],
-        "subcultures": [
-          "Tbourida Fantasia horsemen, Marrakech"
-        ],
-        "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
-        "golden_hour_time": "19:38 - 20:23"
-      }
-    },
-    {
-      "date": "2026-05-20",
-      "month_name": "May 2026",
-      "day_number": 71,
-      "card_number": 20,
-      "weekday": 2,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 16",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Mellah (Jewish Quarter), Marrakech",
-          "Cyber Park, Marrakech"
-        ],
-        "subcultures": [
-          "Jemaa el-Fnaa performers, Marrakech"
-        ],
-        "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
-        "golden_hour_time": "19:39 - 20:24"
-      }
-    },
-    {
-      "date": "2026-05-21",
-      "month_name": "May 2026",
-      "day_number": 72,
-      "card_number": 21,
-      "weekday": 3,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 17",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Cyber Park, Marrakech",
-          "Gueliz architecture, Marrakech"
-        ],
-        "subcultures": [
-          "Local craftsmen in the souks, Marrakech"
-        ],
-        "golden_hour_spot": "Agafay Desert edge, Marrakech",
-        "golden_hour_time": "19:40 - 20:25"
-      }
-    },
-    {
-      "date": "2026-05-22",
-      "month_name": "May 2026",
-      "day_number": 73,
-      "card_number": 22,
-      "weekday": 4,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 18",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Gueliz architecture, Marrakech",
-          "Le Jardin Secret, Marrakech, Morocco"
-        ],
-        "subcultures": [
-          "Gueliz digital nomads, Marrakech"
-        ],
-        "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
-        "golden_hour_time": "19:41 - 20:26"
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "month_name": "May 2026",
-      "day_number": 74,
-      "card_number": 23,
-      "weekday": 5,
-      "transport": {
-        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
-        "duration": "1h",
-        "cost": "40-60 MAD"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Ourika Mountain Guesthouse (Optional)",
-        "price": "\u20ac15-25/night",
-        "neighborhood": "Setti Fatma area",
-        "notes": "Riverside retreat in the mountains"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 19",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:41 - 20:26"
-      }
-    },
-    {
-      "date": "2026-05-24",
-      "month_name": "May 2026",
-      "day_number": 75,
-      "card_number": 24,
-      "weekday": 6,
-      "transport": {
-        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
-        "duration": "1h",
-        "cost": "40-60 MAD"
-      },
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [
-        {
-          "title": "Ourika Valley Berber Festival (Weekend)",
-          "description": "In the Atlas foothills, the Ourika Valley hosts a smaller moussem (pilgrimage festival) in late May. Traditional Amazigh music and communal celebrations. Day trip from Marrakech.",
-          "link": null
-        }
-      ],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Ourika Mountain Guesthouse (Optional)",
-        "price": "\u20ac15-25/night",
-        "neighborhood": "Setti Fatma area",
-        "notes": "Riverside retreat in the mountains"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 20",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:42 - 20:27"
-      }
-    },
-    {
-      "date": "2026-05-25",
-      "month_name": "May 2026",
-      "day_number": 76,
-      "card_number": 25,
-      "weekday": 0,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 21",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Bahia Palace, Marrakech",
-          "Saadian Tombs, Marrakech"
-        ],
-        "subcultures": [
-          "Tbourida Fantasia horsemen, Marrakech"
-        ],
-        "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
-        "golden_hour_time": "19:43 - 20:28"
-      }
-    },
-    {
-      "date": "2026-05-26",
-      "month_name": "May 2026",
-      "day_number": 77,
-      "card_number": 26,
-      "weekday": 1,
-      "transport": null,
-      "categories": [
-        "photo",
-        "skate",
-        "music"
-      ],
-      "notes": "",
-      "events": [],
-      "city": "Marrakech",
-      "city_emoji": "\ud83d\udc2a",
-      "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
-      },
-      "content_plan": {
-        "theme": "Red City Hustle - Day 22",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
-      },
-      "photography": {
-        "off_beaten_path": [
-          "Saadian Tombs, Marrakech",
-          "Majorelle Garden, Marrakech"
-        ],
-        "subcultures": [
-          "Jemaa el-Fnaa performers, Marrakech"
         ],
         "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
         "golden_hour_time": "19:44 - 20:29"
@@ -3301,18 +3285,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 23",
+        "theme": "Red City Hustle - Day 2",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Majorelle Garden, Marrakech",
-          "Palmerais, Marrakech"
+          "Mus\u00e9e Dar El Bacha, Marrakech",
+          "Bahia Palace, Marrakech"
         ],
         "subcultures": [
-          "Local craftsmen in the souks, Marrakech"
+          "The Source Marrakesh underground electronic"
         ],
         "golden_hour_spot": "Agafay Desert edge, Marrakech",
         "golden_hour_time": "19:45 - 20:30"
@@ -3341,18 +3325,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 24",
+        "theme": "Red City Hustle - Day 3",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Palmerais, Marrakech",
-          "Mellah (Jewish Quarter), Marrakech"
+          "Bahia Palace, Marrakech",
+          "Saadian Tombs, Marrakech"
         ],
         "subcultures": [
-          "Gueliz digital nomads, Marrakech"
+          "Tbourida Fantasia horsemen, Marrakech"
         ],
         "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
         "golden_hour_time": "19:45 - 20:30"
@@ -3381,18 +3365,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 25",
+        "theme": "Red City Hustle - Day 4",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Mellah (Jewish Quarter), Marrakech",
-          "Cyber Park, Marrakech"
+          "Saadian Tombs, Marrakech",
+          "Majorelle Garden, Marrakech"
         ],
         "subcultures": [
-          "Fiers et Forts Skatepark, Tameslouht, Morocco"
+          "Jemaa el-Fnaa performers, Marrakech"
         ],
         "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
         "golden_hour_time": "19:46 - 20:31"
@@ -3425,7 +3409,7 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 26",
+        "theme": "Red City Hustle - Day 5",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
@@ -3469,7 +3453,7 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 27",
+        "theme": "Red City Hustle - Day 6",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
@@ -3515,18 +3499,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 28",
+        "theme": "Red City Hustle - Day 7",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Le Jardin Secret, Marrakech, Morocco",
-          "Mus\u00e9e Dar El Bacha, Marrakech"
+          "Mellah (Jewish Quarter), Marrakech",
+          "Cyber Park, Marrakech"
         ],
         "subcultures": [
-          "Jemaa el-Fnaa performers, Marrakech"
+          "Fiers et Forts Skatepark, Tameslouht, Morocco"
         ],
         "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
         "golden_hour_time": "19:48 - 20:33"
@@ -3555,18 +3539,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 29",
+        "theme": "Red City Hustle - Day 8",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Mus\u00e9e Dar El Bacha, Marrakech",
-          "Bahia Palace, Marrakech"
+          "Cyber Park, Marrakech",
+          "Gueliz architecture, Marrakech"
         ],
         "subcultures": [
-          "Local craftsmen in the souks, Marrakech"
+          "The Source Marrakesh underground electronic"
         ],
         "golden_hour_spot": "Agafay Desert edge, Marrakech",
         "golden_hour_time": "19:49 - 20:34"
@@ -3595,18 +3579,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 30",
+        "theme": "Red City Hustle - Day 9",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Bahia Palace, Marrakech",
-          "Saadian Tombs, Marrakech"
+          "Gueliz architecture, Marrakech",
+          "Le Jardin Secret, Marrakech, Morocco"
         ],
         "subcultures": [
-          "Gueliz digital nomads, Marrakech"
+          "Tbourida Fantasia horsemen, Marrakech"
         ],
         "golden_hour_spot": "Koutoubia Mosque gardens, Marrakech",
         "golden_hour_time": "19:50 - 20:35"
@@ -3635,18 +3619,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 31",
+        "theme": "Red City Hustle - Day 10",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Saadian Tombs, Marrakech",
-          "Majorelle Garden, Marrakech"
+          "Le Jardin Secret, Marrakech, Morocco",
+          "Mus\u00e9e Dar El Bacha, Marrakech"
         ],
         "subcultures": [
-          "Fiers et Forts Skatepark, Tameslouht, Morocco"
+          "Jemaa el-Fnaa performers, Marrakech"
         ],
         "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
         "golden_hour_time": "19:51 - 20:36"
@@ -3681,18 +3665,18 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 32",
+        "theme": "Red City Hustle - Day 11",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
       "photography": {
         "off_beaten_path": [
-          "Majorelle Garden, Marrakech",
-          "Palmerais, Marrakech"
+          "Mus\u00e9e Dar El Bacha, Marrakech",
+          "Bahia Palace, Marrakech"
         ],
         "subcultures": [
-          "The Source Marrakesh underground electronic"
+          "Local craftsmen in the souks, Marrakech"
         ],
         "golden_hour_spot": "Agafay Desert edge, Marrakech",
         "golden_hour_time": "19:52 - 20:37"
@@ -3725,7 +3709,7 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 33",
+        "theme": "Red City Hustle - Day 12",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
@@ -3769,7 +3753,7 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 34",
+        "theme": "Red City Hustle - Day 13",
         "tiktok": "Souk chaos",
         "instagram": "Tbourida prep",
         "youtube": "Marrakech Nomad Doc & Wrap-up"
