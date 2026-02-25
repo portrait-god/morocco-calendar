@@ -30,7 +30,6 @@
         <div class="header-right">
             <span class="meta-badge" style="border-color:var(--terracotta); color:var(--text-primary)">🛂 Schengen
                 Reset: {{ data.meta.schengen_reset }}</span>
-            <span class="meta-badge">💰 Budget: {{ data.meta.budget_per_night }}</span>
             <span class="meta-badge">📅 Updated: {{ data.meta.last_updated }}</span>
         </div>
     </header>
@@ -267,14 +266,16 @@
 
                     <!-- Hostel -->
                     {% if day.hostel %}
-                    <div class="detail-section">
-                        <h4>🏨 Hostel</h4>
+                    <div class="detail-section" onclick="openBookedTabForCity('{{ day.city }}')"
+                        style="cursor:pointer;">
+                        <h4>🏨 Hostel <span
+                                style="font-size:10px; color:var(--terracotta); font-weight:400; margin-left:6px;">tap
+                                to view booking →</span></h4>
                         <div class="detail-hostel">
                             <div>
                                 <div class="hostel-name">{{ day.hostel.name }}</div>
                                 <div class="hostel-detail">{{ day.hostel.neighborhood }}</div>
                             </div>
-                            <div class="hostel-price">{{ day.hostel.price }}</div>
                         </div>
                         {% if day.hostel.notes %}
                         <div class="hostel-detail" style="margin-top:6px;padding-left:4px;">{{ day.hostel.notes }}</div>
@@ -421,6 +422,35 @@
                 el.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 el.classList.add('expanded');
             }
+        }
+
+        function openBookedTabForCity(city) {
+            const calTab = document.getElementById('tab-calendar');
+            const mapTab = document.getElementById('tab-map');
+            const locTab = document.getElementById('tab-locations');
+            const evTab = document.getElementById('tab-events');
+            const bkTab = document.getElementById('tab-booked');
+            calTab.style.display = 'none';
+            mapTab.style.display = 'none';
+            locTab.style.display = 'none';
+            evTab.style.display = 'none';
+            bkTab.style.display = 'block';
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            const bkBtn = document.querySelector('.booked-tab-btn');
+            if (bkBtn) bkBtn.classList.add('active');
+            document.querySelectorAll('.filter-btn:not(.booked-tab-btn):not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+            loadBookings().then(() => {
+                setTimeout(() => {
+                    const details = Array.from(document.querySelectorAll('#bookings-list details'));
+                    const target = details.find(d => d.querySelector('span') && d.querySelector('span').textContent.trim() === city);
+                    if (target) {
+                        target.setAttribute('open', '');
+                        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        target.style.outline = '2px solid var(--gold)';
+                        setTimeout(() => { target.style.outline = 'none'; }, 2000);
+                    }
+                }, 150);
+            });
         }
 
         function openEventsTabFromDay(eventTitle) {
@@ -720,13 +750,13 @@
             {% if day.photography %}
             if (!cityData["{{ day.city }}"]) cityData["{{ day.city }}"] = new Set();
             {% for spot in day.photography.off_beaten_path %}
-            cityData["{{ day.city }}"].add(`{ { spot | replace("'", "\\'") } } `);
+            cityData["{{ day.city }}"].add(`{{ spot | replace("'", "\\'") }}`);
             {% endfor %}
             {% for sub in day.photography.subcultures %}
-            cityData["{{ day.city }}"].add(`{ { sub | replace("'", "\\'") } } `);
+            cityData["{{ day.city }}"].add(`{{ sub | replace("'", "\\'") }}`);
             {% endfor %}
             {% if day.photography.golden_hour_spot %}
-            cityData["{{ day.city }}"].add(`{ { day.photography.golden_hour_spot | replace("'", "\\'") } } `);
+            cityData["{{ day.city }}"].add(`{{ day.photography.golden_hour_spot | replace("'", "\\'") }}`);
             {% endif %}
             {% endif %}
             {% endfor %}
@@ -739,7 +769,7 @@
                 cityDiv.style.borderRadius = '12px';
                 cityDiv.style.padding = '16px';
 
-                cityDiv.innerHTML = `< h3 style = "color:var(--gold); margin-bottom:12px; font-family:'Outfit',sans-serif; border-bottom:1px solid var(--border); padding-bottom:6px;" > ${city}</h3 > `;
+                cityDiv.innerHTML = `<h3 style="color:var(--gold); margin-bottom:12px; font-family:'Outfit',sans-serif; border-bottom:1px solid var(--border); padding-bottom:6px;">${city}</h3>`;
 
                 const list = document.createElement('div');
                 list.style.display = 'flex';
@@ -754,10 +784,10 @@
                     row.style.gap = '10px';
                     row.style.cursor = 'pointer';
                     row.style.fontSize = '14px';
-
                     const checked = localStorage.getItem(id) === 'true' ? 'checked' : '';
+
                     row.innerHTML = `
-                    < input type = "checkbox" id = "${id}" ${checked} onchange = "localStorage.setItem('${id}', this.checked)" style = "margin-top:4px;" >
+                    <input type="checkbox" id="${id}" ${checked} onchange="localStorage.setItem('${id}', this.checked)" style="margin-top:4px;">
                         <span style="flex:1;">
                             <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc)}" target="_blank" class="gm-link" onclick="event.stopPropagation()">${loc}</a>
                         </span>`;
@@ -820,6 +850,31 @@
                     .bindPopup(`<b style="color:#000;font-family:Outfit,sans-serif;">Stop ${point.stop}: ${point.name}</b><br><span style="color:#555;font-size:12px;">${point.days}</span>`);
             });
         }
+
+        // Swipe-right to go back from the Booked tab
+        (function () {
+            let touchStartX = 0;
+            document.getElementById('tab-booked').addEventListener('touchstart', e => {
+                touchStartX = e.touches[0].clientX;
+            }, { passive: true });
+            document.getElementById('tab-booked').addEventListener('touchend', e => {
+                const dx = e.changedTouches[0].clientX - touchStartX;
+                if (dx > 60 && touchStartX < 60) {
+                    const bkTab = document.getElementById('tab-booked');
+                    const calTab = document.getElementById('tab-calendar');
+                    bkTab.style.display = 'none';
+                    calTab.style.display = 'flex';
+                    document.querySelectorAll('.filter-btn').forEach(b => {
+                        b.classList.remove('active');
+                        b.style.opacity = '1';
+                        b.style.pointerEvents = 'auto';
+                    });
+                    const allBtn = document.querySelector('[data-filter="all"]');
+                    if (allBtn) allBtn.classList.add('active');
+                }
+            }, { passive: true });
+        })();
+
     </script>
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
