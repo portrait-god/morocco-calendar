@@ -2425,13 +2425,7 @@
         "music"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Rose Festival Day Trip \u2014 El Kelaa M'Gouna",
-          "description": "Annual Damask rose harvest festival in the Dades Valley. 4h from Marrakech. Parades, Berber music, rose water market. Extremely photographic. Highly recommended as a weekend trip.",
-          "link": "https://www.morocco.com/events/rose-festival/"
-        }
-      ],
+      "events": [],
       "city": "Casablanca",
       "city_emoji": "\ud83c\udfe2",
       "hostel": {
@@ -2553,8 +2547,8 @@
       "notes": "",
       "events": [
         {
-          "title": "L'Boulevard Festival \u2014 Urban Music (Casablanca)",
-          "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Day trip or overnight. Discover Morocco's best new urban artists.",
+          "title": "L'Boulevard Festival \u2014 Urban Music",
+          "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Discover Morocco's best new urban artists.",
           "link": "https://www.blvd.ma/"
         }
       ],
@@ -2637,13 +2631,7 @@
         "music"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Jemaa el-Fnaa Storytellers \u2014 Halqa Night",
-          "description": "Thursday is the best night for the traditional halqa (storytelling circle) in the main square. Storytellers, snake charmers, and fire performers all compete for the crowd.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Casablanca",
       "city_emoji": "\ud83c\udfe2",
       "hostel": {
@@ -2723,13 +2711,7 @@
         "music"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Tbourida Horses Show Rehearsal, Marrakech",
-          "description": "A traditional Moroccan fantasia rehearsal at the hippodrome near Menara Gardens. Spectacular military horsemanship. Usually open to spectators. Free.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Casablanca",
       "city_emoji": "\ud83c\udfe2",
       "hostel": {
@@ -2849,7 +2831,13 @@
         "music"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Casablanca Street Art Tour",
+          "description": "Organized weekend walk through the murals of Mers Sultan and L'Abattoir. Incredible urban photography.",
+          "link": null
+        }
+      ],
       "city": "Casablanca",
       "city_emoji": "\ud83c\udfe2",
       "hostel": {
@@ -2933,13 +2921,7 @@
         "skate"
       ],
       "notes": "Slower pace. Connect with surf and skate communities.",
-      "events": [
-        {
-          "title": "Marrakech Biennale \u2014 Medina Installations",
-          "description": "Avant-garde contemporary art installations throughout the historic medina. Pop-up exhibitions in riads, museums, and courtyards. Running since March \u2014 pick the best ones.",
-          "link": "https://www.marrakechbiennale.org/"
-        }
-      ],
+      "events": [],
       "city": "Taghazout",
       "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
       "hostel": {
@@ -3019,7 +3001,13 @@
         "skate"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Anchor Point Surf Jam",
+          "description": "Local surf competition at the famous Anchor Point break. Great energetic vibe and community meetup.",
+          "link": null
+        }
+      ],
       "city": "Taghazout",
       "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
       "hostel": {
@@ -3139,13 +3127,7 @@
         "skate"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Ourika Valley Berber Festival (Weekend)",
-          "description": "In the Atlas foothills, the Ourika Valley hosts a smaller moussem (pilgrimage festival) in late May. Traditional Amazigh music and communal celebrations. Day trip from Marrakech.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Taghazout",
       "city_emoji": "\ud83c\udfc4\u200d\u2642\ufe0f",
       "hostel": {
@@ -3269,13 +3251,7 @@
         "music"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "F\u00e8s Festival of World Sacred Music (Fez)",
-          "description": "UNESCO-recognized gathering of spiritual music from 40+ countries. Free outdoor concerts at the Bab Makina stage. Incredible photography. Day trip from Marrakech if you missed it.",
-          "link": "https://fesfestival.com/"
-        }
-      ],
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3315,7 +3291,13 @@
         "music"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Rose Festival Day Trip \u2014 El Kelaa M'Gouna",
+          "description": "Annual Damask rose harvest festival in the Dades Valley. 4h from Marrakech. Parades, Berber music, rose water market. Extremely photographic. Highly recommended as a weekend trip.",
+          "link": "https://www.morocco.com/events/rose-festival/"
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3355,7 +3337,13 @@
         "music"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Jemaa el-Fnaa Storytellers \u2014 Halqa Night",
+          "description": "Thursday is the best night for the traditional halqa (storytelling circle) in the main square. Storytellers, snake charmers, and fire performers all compete for the crowd.",
+          "link": null
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3443,7 +3431,13 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
+      "events": [
+        {
+          "title": "Tbourida Horses Show Rehearsal, Marrakech",
+          "description": "A traditional Moroccan fantasia rehearsal at the hippodrome near Menara Gardens. Spectacular military horsemanship. Usually open to spectators. Free.",
+          "link": null
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3483,13 +3477,7 @@
         "music"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Marrakech Marathon Weekend Street Festival",
-          "description": "The annual marathon brings influx of international runners and the city puts on street performers, musicians, and food stalls along the route for 2 days.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3529,7 +3517,13 @@
         "music"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Marrakech Biennale \u2014 Medina Installations",
+          "description": "Avant-garde contemporary art installations throughout the historic medina. Pop-up exhibitions in riads, museums, and courtyards. Running since March \u2014 pick the best ones.",
+          "link": "https://www.marrakechbiennale.org/"
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3609,7 +3603,13 @@
         "music"
       ],
       "notes": "",
-      "events": [],
+      "events": [
+        {
+          "title": "Ourika Valley Berber Festival (Weekend)",
+          "description": "In the Atlas foothills, the Ourika Valley hosts a smaller moussem (pilgrimage festival) in late May. Traditional Amazigh music and communal celebrations. Day trip from Marrakech.",
+          "link": null
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3649,13 +3649,7 @@
         "music"
       ],
       "notes": "",
-      "events": [
-        {
-          "title": "Night Markets \u2014 End of Season Souk",
-          "description": "Late-May night markets around Djemaa el-Fna extend until midnight with outdoor dining, musicians, and traditional artisans. The last big push before summer heat.",
-          "link": null
-        }
-      ],
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3699,7 +3693,13 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
+      "events": [
+        {
+          "title": "Marrakech Marathon Weekend Street Festival",
+          "description": "The annual marathon brings influx of international runners and the city puts on street performers, musicians, and food stalls along the route for 2 days.",
+          "link": null
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3743,7 +3743,13 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
-      "events": [],
+      "events": [
+        {
+          "title": "Night Markets \u2014 End of Season Souk",
+          "description": "Late-May night markets around Djemaa el-Fna extend until midnight with outdoor dining, musicians, and traditional artisans. The last big push before summer heat.",
+          "link": null
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {

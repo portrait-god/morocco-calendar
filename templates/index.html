@@ -35,20 +35,7 @@
         </div>
     </header>
 
-    <!-- City Timeline -->
-    <div class="timeline" id="timeline">
-        {% for day in data.days %}
-        <div class="timeline-block {{ day.city|lower|replace(' ', '') }}{% if day.transport %} transport{% endif %}"
-            title="Day {{ day.day_number }}: {{ day.city }}" onclick="scrollToDay({{ day.day_number }})"></div>
-        {% endfor %}
-    </div>
-    </div>
-    <div class="timeline-labels">
-        <span class="timeline-label"><span class="dot" style="background:var(--tangier)"></span>Tangier</span>
-        <span class="timeline-label"><span class="dot" style="background:var(--chefchaouen)"></span>Chefchaouen</span>
-        <span class="timeline-label"><span class="dot" style="background:var(--fez)"></span>Fez</span>
-        <span class="timeline-label"><span class="dot" style="background:var(--cat-transport)"></span>Travel Day</span>
-    </div>
+
 
     <!-- Filters & Tabs -->
     <div class="filters">
@@ -392,6 +379,25 @@
                     }
                 }
             });
+
+            // Native swipe-back on Events tab
+            const evTabContainer = document.getElementById('tab-events');
+            let evTouchstartX = 0;
+            let evTouchendX = 0;
+
+            evTabContainer.addEventListener('touchstart', e => {
+                evTouchstartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            evTabContainer.addEventListener('touchend', e => {
+                evTouchendX = e.changedTouches[0].screenX;
+                if (evTouchendX - evTouchstartX > 100) { // Swipe right
+                    const btn = document.querySelector('.events-tab-btn');
+                    if (btn && btn.classList.contains('active')) {
+                        toggleEventsTab(btn);
+                    }
+                }
+            });
         });
 
         function toggleCard(card) {
@@ -406,20 +412,17 @@
             }
         }
 
-        // Navigate to Events gallery tab and highlight a matching event by title
         function openEventsTabFromDay(eventTitle) {
             // Switch to Events tab
             const evTab = document.getElementById('tab-events');
             const calTab = document.getElementById('tab-calendar');
             const mapTab = document.getElementById('tab-map');
             const locTab = document.getElementById('tab-locations');
-            const timeline = document.getElementById('timeline');
 
             calTab.style.display = 'none';
             mapTab.style.display = 'none';
             locTab.style.display = 'none';
             evTab.style.display = 'block';
-            timeline.style.display = 'none';
 
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             const evBtn = document.querySelector('.events-tab-btn');
@@ -462,12 +465,10 @@
             const calTab = document.getElementById('tab-calendar');
             const mapTab = document.getElementById('tab-map');
             const locTab = document.getElementById('tab-locations');
-            const timeline = document.getElementById('timeline');
 
             if (mapTab.style.display === 'none') {
                 calTab.style.display = 'none';
                 locTab.style.display = 'none';
-                timeline.style.display = 'none';
                 mapTab.style.display = 'block';
                 btn.classList.add('active');
                 document.querySelector('.loc-tab-btn').classList.remove('active');
@@ -481,7 +482,6 @@
             } else {
                 mapTab.style.display = 'none';
                 calTab.style.display = 'flex';
-                timeline.style.display = 'flex';
                 btn.classList.remove('active');
                 document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
             }
@@ -492,13 +492,11 @@
             const mapTab = document.getElementById('tab-map');
             const locTab = document.getElementById('tab-locations');
             const evTab = document.getElementById('tab-events');
-            const timeline = document.getElementById('timeline');
 
             if (locTab.style.display === 'none') {
                 calTab.style.display = 'none';
                 mapTab.style.display = 'none';
                 evTab.style.display = 'none';
-                timeline.style.display = 'none';
                 locTab.style.display = 'block';
                 btn.classList.add('active');
                 document.querySelector('.map-tab-btn').classList.remove('active');
@@ -511,7 +509,6 @@
             } else {
                 locTab.style.display = 'none';
                 calTab.style.display = 'flex';
-                timeline.style.display = 'flex';
                 btn.classList.remove('active');
                 document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
             }
@@ -522,13 +519,11 @@
             const mapTab = document.getElementById('tab-map');
             const locTab = document.getElementById('tab-locations');
             const evTab = document.getElementById('tab-events');
-            const timeline = document.getElementById('timeline');
 
             if (evTab.style.display === 'none') {
                 calTab.style.display = 'none';
                 mapTab.style.display = 'none';
                 locTab.style.display = 'none';
-                timeline.style.display = 'none';
                 evTab.style.display = 'block';
                 btn.classList.add('active');
                 document.querySelector('.map-tab-btn').classList.remove('active');
@@ -537,7 +532,6 @@
             } else {
                 evTab.style.display = 'none';
                 calTab.style.display = 'flex';
-                timeline.style.display = 'flex';
                 btn.classList.remove('active');
                 document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
             }
@@ -588,18 +582,24 @@
             }
 
             empty.style.display = 'none';
-            gallery.innerHTML = events.map(ev => `
-                <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; overflow:hidden; cursor:pointer;" onclick="${ev.link ? `window.open('${ev.link}','_blank')` : ''}">
+            gallery.innerHTML = events.map(ev => {
+                const searchLink = ev.link || `https://www.google.com/search?q=${encodeURIComponent(ev.title + ' ' + ev.city)}`;
+                const onClickAction = ev.link ? `window.open('${searchLink}', '_blank')` : `window.open('${searchLink}', '_blank')`;
+
+                return `
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; overflow:hidden; cursor:pointer;" onclick="${onClickAction}">
                     ${ev.image ? `<img src="${ev.image}" alt="${ev.title}" style="width:100%; aspect-ratio:1/1; object-fit:cover;">` : `<div style="width:100%; aspect-ratio:1/1; background:var(--bg-secondary); display:flex; align-items:center; justify-content:center; font-size:48px;">🎭</div>`}
                     <div style="padding:14px;">
                         <div style="font-family:'Outfit',sans-serif; font-weight:700; font-size:15px; color:var(--text-primary); margin-bottom:4px;">${ev.title}</div>
                         <div style="font-size:12px; color:var(--gold); margin-bottom:4px;">${ev.date} · ${ev.city || ''}</div>
                         <div style="font-size:11px; color:var(--text-secondary); line-height:1.4; margin-bottom:8px;">${ev.description || ''}</div>
-                        ${ev.source_account ? `<div style="font-size:10px; color:var(--text-muted);">via @${ev.source_account}</div>` : ''}
-                        ${ev.link ? `<a href="${ev.link}" target="_blank" style="font-size:11px; font-weight:600; color:var(--terracotta); font-family:'Outfit',sans-serif;">Visit Website →</a>` : ''}
+                        ${ev.source_account ? `<div style="font-size:11px; font-weight:600; color:var(--text-muted); padding:4px 0; display:inline-block;" onclick="event.stopPropagation(); navigator.clipboard.writeText('@${ev.source_account}'); const old=this.innerHTML; this.innerHTML='✅ Copied!'; setTimeout(()=>this.innerHTML=old, 1500);">📋 via @${ev.source_account}</div>` : ''}
+                        <div style="margin-top:4px;">
+                            <a href="${searchLink}" target="_blank" onclick="event.stopPropagation()" style="font-size:11px; font-weight:600; color:var(--terracotta); font-family:'Outfit',sans-serif;">${ev.link ? 'Visit Website →' : 'Search Google →'}</a>
+                        </div>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function initLocations() {
@@ -610,13 +610,13 @@
             {% if day.photography %}
             if (!cityData["{{ day.city }}"]) cityData["{{ day.city }}"] = new Set();
             {% for spot in day.photography.off_beaten_path %}
-            cityData["{{ day.city }}"].add(`{{ spot|replace("'", "\\'") }}`);
+            cityData["{{ day.city }}"].add(`{ { spot | replace("'", "\\'") } } `);
             {% endfor %}
             {% for sub in day.photography.subcultures %}
-            cityData["{{ day.city }}"].add(`{{ sub|replace("'", "\\'") }}`);
+            cityData["{{ day.city }}"].add(`{ { sub | replace("'", "\\'") } } `);
             {% endfor %}
             {% if day.photography.golden_hour_spot %}
-            cityData["{{ day.city }}"].add(`{{ day.photography.golden_hour_spot|replace("'", "\\'") }}`);
+            cityData["{{ day.city }}"].add(`{ { day.photography.golden_hour_spot | replace("'", "\\'") } } `);
             {% endif %}
             {% endif %}
             {% endfor %}
@@ -629,7 +629,7 @@
                 cityDiv.style.borderRadius = '12px';
                 cityDiv.style.padding = '16px';
 
-                cityDiv.innerHTML = `<h3 style="color:var(--gold); margin-bottom:12px; font-family:'Outfit',sans-serif; border-bottom:1px solid var(--border); padding-bottom:6px;">${city}</h3>`;
+                cityDiv.innerHTML = `< h3 style = "color:var(--gold); margin-bottom:12px; font-family:'Outfit',sans-serif; border-bottom:1px solid var(--border); padding-bottom:6px;" > ${city}</h3 > `;
 
                 const list = document.createElement('div');
                 list.style.display = 'flex';
@@ -647,7 +647,7 @@
 
                     const checked = localStorage.getItem(id) === 'true' ? 'checked' : '';
                     row.innerHTML = `
-                        <input type="checkbox" id="${id}" ${checked} onchange="localStorage.setItem('${id}', this.checked)" style="margin-top:4px;">
+                    < input type = "checkbox" id = "${id}" ${checked} onchange = "localStorage.setItem('${id}', this.checked)" style = "margin-top:4px;" >
                         <span style="flex:1;">
                             <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(loc)}" target="_blank" class="gm-link" onclick="event.stopPropagation()">${loc}</a>
                         </span>`;
@@ -678,9 +678,11 @@
                 { name: "Tangier", coords: [35.7595, -5.8340], color: "#3b82f6" },
                 { name: "Chefchaouen", coords: [35.1688, -5.2636], color: "#67b8f0" },
                 { name: "Fez", coords: [34.0181, -5.0078], color: "#f59e0b" },
-                { name: "Rabat", coords: [34.0209, -6.8416], color: "#10b981" },
+                { name: "Rabat", coords: [34.0209, -6.8416], color: "#22c55e" },
                 { name: "Essaouira", coords: [31.5085, -9.7595], color: "#06b6d4" },
-                { name: "Marrakech", coords: [31.6295, -7.9811], color: "#ef4444" }
+                { name: "Casablanca", coords: [33.5731, -7.5898], color: "#a855f7" },
+                { name: "Taghazout", coords: [30.545, -9.713], color: "#eab308" },
+                { name: "Marrakech", coords: [31.6295, -7.9811], color: "#e05c3a" }
             ];
 
             const latlngs = route.map(p => p.coords);
@@ -695,7 +697,7 @@
 
             // Add Markers
             route.forEach((point, i) => {
-                const markerHtml = `<div style="background-color: ${point.color}; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #111827; box-shadow: 0 0 10px ${point.color};"></div>`;
+                const markerHtml = `< div style = "background-color: ${point.color}; width: 14px; height: 14px; border-radius: 50%; border: 3px solid #111827; box-shadow: 0 0 10px ${point.color};" ></div > `;
                 const icon = L.divIcon({
                     html: markerHtml,
                     className: 'custom-map-marker',
@@ -705,7 +707,7 @@
 
                 L.marker(point.coords, { icon: icon })
                     .addTo(mapInstance)
-                    .bindPopup(`<b style="color:#000">${point.name}</b><br>Stop ${i + 1} on the route.`);
+                    .bindPopup(`< b style = "color:#000" > ${point.name}</b > <br>Stop ${i + 1} on the route.`);
             });
         }
     </script>
