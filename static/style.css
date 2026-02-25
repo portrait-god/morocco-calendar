@@ -625,9 +625,34 @@ body {
     padding: 4px 10px;
   }
 
+  /* Month Carousel Swiping */
+  .month-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100vw;
+    margin-left: -16px;
+    /* Negate the body container padding */
+    scrollbar-width: none;
+  }
+
+  .month-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .month-column {
+    flex: 0 0 100vw;
+    width: 100vw;
+    scroll-snap-align: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
   /* Calendar Grid - native vertical feed instead of squishing */
   .calendar-grid {
-    padding: 16px;
+    padding: 16px 0;
+    /* Remove horizontal padding since column has it */
     grid-template-columns: 1fr;
     gap: 16px;
     padding-bottom: 80px;

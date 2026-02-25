@@ -31,6 +31,7 @@
         "transport"
       ],
       "notes": "Get Inwi or Maroc Telecom SIM on arrival.",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -60,6 +61,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -99,6 +101,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -142,6 +145,7 @@
         "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -185,6 +189,7 @@
         "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -224,6 +229,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -263,6 +269,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -302,6 +309,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -341,6 +349,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -380,6 +389,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -423,6 +433,7 @@
         "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -466,6 +477,7 @@
         "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -505,6 +517,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -544,6 +557,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
@@ -585,6 +599,7 @@
         "photo"
       ],
       "notes": "",
+      "events": [],
       "city": "Chefchaouen",
       "city_emoji": "\ud83d\uddfb",
       "hostel": {
@@ -622,6 +637,7 @@
         "photo"
       ],
       "notes": "",
+      "events": [],
       "city": "Chefchaouen",
       "city_emoji": "\ud83d\uddfb",
       "hostel": {
@@ -659,6 +675,7 @@
         "photo"
       ],
       "notes": "",
+      "events": [],
       "city": "Chefchaouen",
       "city_emoji": "\ud83d\uddfb",
       "hostel": {
@@ -702,6 +719,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -744,6 +762,7 @@
         "music"
       ],
       "notes": "Day Trip: Sefrou (Cherry Capital).",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -780,6 +799,13 @@
         "music"
       ],
       "notes": "",
+      "events": [
+        {
+          "title": "Eid al-Fitr Celebrations",
+          "description": "End of Ramadan festivities across Chefchaouen. Expect lively night markets and special neighborhood feasts.",
+          "link": "https://publicholidays.africa/morocco/eid-al-fitr/"
+        }
+      ],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -818,6 +844,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -856,6 +883,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -894,6 +922,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -932,6 +961,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -974,6 +1004,7 @@
         "music"
       ],
       "notes": "Day Trip: Sefrou (Cherry Capital).",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -1014,6 +1045,7 @@
         "music"
       ],
       "notes": "Day Trip: Sefrou (Cherry Capital).",
+      "events": [],
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
@@ -1053,6 +1085,7 @@
         "skate"
       ],
       "notes": "Most reliable internet. Perfect for deep backlog work.",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1090,6 +1123,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1127,6 +1161,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1164,6 +1199,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1201,6 +1237,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1238,6 +1275,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1275,6 +1313,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1312,6 +1351,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1349,6 +1389,13 @@
         "skate"
       ],
       "notes": "",
+      "events": [
+        {
+          "title": "Rabat Spring Festival",
+          "description": "Local music acts playing along the Rabat coast and Kasbah. Keep an eye out for popup street art.",
+          "link": "https://www.visitmorocco.com/"
+        }
+      ],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1386,6 +1433,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1423,6 +1471,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1460,6 +1509,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1497,6 +1547,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1534,6 +1585,7 @@
         "skate"
       ],
       "notes": "",
+      "events": [],
       "city": "Rabat",
       "city_emoji": "\ud83c\udfdb\ufe0f",
       "hostel": {
@@ -1575,6 +1627,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1613,6 +1666,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1651,6 +1705,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1689,6 +1744,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1727,6 +1783,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1769,6 +1826,7 @@
         "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1812,6 +1870,7 @@
         "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1851,6 +1910,13 @@
         "surf"
       ],
       "notes": "",
+      "events": [
+        {
+          "title": "Essaouira Coast Sessions",
+          "description": "Underground surf meetups and beach bonfires at Sidi Kaouki.",
+          "link": "https://www.instagram.com/explore/tags/essaouirasurf/"
+        }
+      ],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1889,6 +1955,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1927,6 +1994,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -1965,6 +2033,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2003,6 +2072,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2045,6 +2115,7 @@
         "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2088,6 +2159,7 @@
         "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2127,6 +2199,7 @@
         "surf"
       ],
       "notes": "",
+      "events": [],
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
@@ -2170,6 +2243,7 @@
         "music"
       ],
       "notes": "Best coworking ecosystem. Connect with digital nomads. End of trip hub for flights.",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2209,6 +2283,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2248,6 +2323,13 @@
         "music"
       ],
       "notes": "",
+      "events": [
+        {
+          "title": "Rose Festival (El Kelaa M'Gouna)",
+          "description": "Annual harvest festival of the Damask rose in the Dades Valley. High recommendation for a weekend trip from Marrakech.",
+          "link": "https://www.morocco.com/events/rose-festival/"
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2287,6 +2369,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2330,6 +2413,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2373,6 +2457,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2412,6 +2497,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2451,6 +2537,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2490,6 +2577,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2529,6 +2617,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2568,6 +2657,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2611,6 +2701,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2654,6 +2745,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2693,6 +2785,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2732,6 +2825,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2771,6 +2865,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2810,6 +2905,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2849,6 +2945,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2892,6 +2989,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2935,6 +3033,13 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [
+        {
+          "title": "Marrakech Biennale Exhibitions",
+          "description": "Pop-up contemporary art and film exhibitions located around the Medina.",
+          "link": "https://www.marrakechbiennale.org/"
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -2974,6 +3079,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3013,6 +3119,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3052,6 +3159,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3091,6 +3199,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3130,6 +3239,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3173,6 +3283,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3216,6 +3327,13 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [
+        {
+          "title": "Gnaoua World Music Sessions",
+          "description": "Warm-up gigs for the famous Gnaoua festival. Unbelievable spiritual music and trance dances.",
+          "link": "https://festival-gnaoua.net/en/"
+        }
+      ],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3255,6 +3373,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3294,6 +3413,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3333,6 +3453,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3372,6 +3493,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3411,6 +3533,7 @@
         "music"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3454,6 +3577,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3497,6 +3621,7 @@
         "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
@@ -3539,6 +3664,7 @@
         "transport"
       ],
       "notes": "",
+      "events": [],
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {

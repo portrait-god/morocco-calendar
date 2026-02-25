@@ -86,169 +86,178 @@
     </div>
 
     <!-- Calendar View -->
-    <div id="tab-calendar">
+    <div id="tab-calendar" class="month-carousel">
         {% set ns = namespace(current_month="") %}
         {% for day in data.days %}
 
         {% if day.month_name != ns.current_month %}
         {% if not loop.first %}
     </div> <!-- close calendar-grid for previous month -->
+    </div> <!-- close month-column for previous month -->
     {% endif %}
     {% set ns.current_month = day.month_name %}
-    <div class="month-header" style="margin: 30px 0 20px;">
-        <h2
-            style="font-family:'Outfit',sans-serif; font-size: 28px; color: var(--gold); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">
-            {{ ns.current_month }}</h2>
-        <div class="weekdays-header"
-            style="display:grid; grid-template-columns:repeat(7, 1fr); gap:16px; text-align:center; color:var(--text-secondary); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
-            <div>Sun</div>
+    <div class="month-column">
+        <div class="month-header" style="margin: 30px 0 20px;">
+            <h2
+                style="font-family:'Outfit',sans-serif; font-size: 28px; color: var(--gold); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px;">
+                {{ ns.current_month }}</h2>
+            <div class="weekdays-header"
+                style="display:grid; grid-template-columns:repeat(7, 1fr); gap:16px; text-align:center; color:var(--text-secondary); font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
         </div>
-    </div>
-    <div class="calendar-grid">
-        {% for i in range(day.weekday) %}
-        <div class="empty-day-pad"
-            style="border: 1px dashed rgba(255,255,255,0.05); border-radius: 12px; min-height: 100px;"></div>
-        {% endfor %}
-        {% endif %}
-
-        <div class="day-card {{ day.city|lower|replace(' ', '') }}{% if day.transport %} transport-day{% endif %}"
-            id="day-{{ day.day_number }}" data-categories="{{ day.categories|join(',') }}" onclick="toggleCard(this)">
-
-            <div class="card-header">
-                <div class="card-day-num {{ day.city|lower|replace(' ', '') }}">{{ day.card_number }}</div>
-                <div class="card-meta">
-                    <div class="card-date">{{ day.date }}</div>
-                    <div class="card-city {{ day.city|lower|replace(' ', '') }}">{{ day.city_emoji }} {{ day.city }}
-                    </div>
-                </div>
-            </div>
-
-            {% if day.transport %}
-            <div class="transport-banner">
-                <div>
-                    <div class="route">🚌 {{ day.transport.route }}</div>
-                    <div class="time-cost">{{ day.transport.duration }} · {{ day.transport.cost }}</div>
-                    {% if day.transport.details %}
-                    <ul style="margin-top:4px; padding-left:16px; font-size:11px; color:var(--text-secondary);">
-                        {% for detail in day.transport.details %}
-                        <li>{{ detail }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-            </div>
+        <div class="calendar-grid">
+            {% for i in range(day.weekday) %}
+            <div class="empty-day-pad"
+                style="border: 1px dashed rgba(255,255,255,0.05); border-radius: 12px; min-height: 100px;"></div>
+            {% endfor %}
             {% endif %}
 
-            <div class="card-body">
-                <div class="card-theme">{{ day.content_plan.theme }}</div>
-                <div class="card-tags">
-                    {% for cat in day.categories %}
-                    <span class="tag {{ cat }}">
-                        {% if cat == 'skate' %}🛹{% elif cat == 'surf' %}🏄{% elif cat == 'music' %}🎵{% elif cat ==
-                        'photo' %}📸{% elif cat == 'transport' %}🚌{% endif %}
-                        {{ cat }}
-                    </span>
-                    {% endfor %}
-                </div>
-            </div>
+            <div class="day-card {{ day.city|lower|replace(' ', '') }}{% if day.transport %} transport-day{% endif %}"
+                id="day-{{ day.day_number }}" data-categories="{{ day.categories|join(',') }}"
+                onclick="toggleCard(this)">
 
-            <!-- Expandable Details -->
-            <div class="card-details">
-                <!-- Content Plan -->
-                <div class="detail-section">
-                    <h4>Content Plan</h4>
-                    <div class="content-plan">
-                        {% if day.content_plan.tiktok %}
-                        <span class="platform">TikTok</span><span class="plan">{{ day.content_plan.tiktok }}</span>
-                        {% endif %}
-                        {% if day.content_plan.instagram %}
-                        <span class="platform">IG</span><span class="plan">{{ day.content_plan.instagram }}</span>
-                        {% endif %}
-                        {% if day.content_plan.youtube %}
-                        <span class="platform">YT</span><span class="plan">{{ day.content_plan.youtube }}</span>
-                        {% endif %}
-                    </div>
-                </div>
-
-                <!-- Photography -->
-                {% if day.photography %}
-                <div class="detail-section">
-                    <h4>📸 Off the Beaten Path</h4>
-                    <ul>
-                        {% for spot in day.photography.off_beaten_path %}
-                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ spot|urlencode }}"
-                                target="_blank" class="gm-link">{{ spot }}</a></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% if day.photography.subcultures %}
-                <div class="detail-section">
-                    <h4>🎭 Subculture Targets</h4>
-                    <ul>
-                        {% for sub in day.photography.subcultures %}
-                        <li style="margin-bottom: 12px;">
-                            <span style="display:block; margin-bottom: 4px; font-weight: 500;">{{ sub }}</span>
-                            <div style="display: flex; gap: 8px; font-size: 11px;">
-                                <a href="https://www.facebook.com/events/search/?q={{ sub|urlencode }}" target="_blank"
-                                    class="gm-link fb-link" style="color: #1877F2;">FB Events</a>
-                                <a href="https://www.instagram.com/explore/search/keyword/?q={{ sub|urlencode }}"
-                                    target="_blank" class="gm-link ig-link" style="color: #E1306C;">Instagram</a>
-                                <a href="https://www.tiktok.com/search?q={{ sub|urlencode }}" target="_blank"
-                                    class="gm-link tt-link" style="color: #2F2F2F;">TikTok</a>
-                            </div>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% endif %}
-                {% if day.photography.golden_hour_spot %}
-                <div class="detail-section">
-                    <h4>🌅 Golden Hour
-                        {% if day.photography.golden_hour_time %}
-                        <span
-                            style="float:right; color:var(--gold); font-weight:600; font-family:'Outfit'; text-transform:none; letter-spacing:0px;">{{
-                            day.photography.golden_hour_time }}</span>
-                        {% endif %}
-                    </h4>
-                    <ul>
-                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ day.photography.golden_hour_spot|urlencode }}"
-                                target="_blank" class="gm-link">{{ day.photography.golden_hour_spot }}</a></li>
-                    </ul>
-                </div>
-                {% endif %}
-                {% endif %}
-
-                <!-- Hostel -->
-                {% if day.hostel %}
-                <div class="detail-section">
-                    <h4>🏨 Hostel</h4>
-                    <div class="detail-hostel">
-                        <div>
-                            <div class="hostel-name">{{ day.hostel.name }}</div>
-                            <div class="hostel-detail">{{ day.hostel.neighborhood }}</div>
+                <div class="card-header">
+                    <div class="card-day-num {{ day.city|lower|replace(' ', '') }}">{{ day.card_number }}</div>
+                    <div class="card-meta">
+                        <div class="card-date">{{ day.date }}</div>
+                        <div class="card-city {{ day.city|lower|replace(' ', '') }}">{{ day.city_emoji }} {{ day.city }}
                         </div>
-                        <div class="hostel-price">{{ day.hostel.price }}</div>
                     </div>
-                    {% if day.hostel.notes %}
-                    <div class="hostel-detail" style="margin-top:6px;padding-left:4px;">{{ day.hostel.notes }}</div>
+                </div>
+
+                {% if day.transport %}
+                <div class="transport-banner">
+                    <div>
+                        <div class="route">🚌 {{ day.transport.route }}</div>
+                        <div class="time-cost">{{ day.transport.duration }} · {{ day.transport.cost }}</div>
+                        {% if day.transport.details %}
+                        <ul style="margin-top:4px; padding-left:16px; font-size:11px; color:var(--text-secondary);">
+                            {% for detail in day.transport.details %}
+                            <li>{{ detail }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="card-body">
+                    <div class="card-theme">{{ day.content_plan.theme }}</div>
+                    <div class="card-tags">
+                        {% for cat in day.categories %}
+                        <span class="tag {{ cat }}">
+                            {% if cat == 'skate' %}🛹{% elif cat == 'surf' %}🏄{% elif cat == 'music' %}🎵{% elif cat ==
+                            'photo' %}📸{% elif cat == 'transport' %}🚌{% endif %}
+                            {{ cat }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Expandable Details -->
+                <div class="card-details">
+                    <!-- Content Plan -->
+                    <div class="detail-section">
+                        <h4>Content Plan</h4>
+                        <div class="content-plan">
+                            {% if day.content_plan.tiktok %}
+                            <span class="platform">TikTok</span><span class="plan">{{ day.content_plan.tiktok }}</span>
+                            {% endif %}
+                            {% if day.content_plan.instagram %}
+                            <span class="platform">IG</span><span class="plan">{{ day.content_plan.instagram }}</span>
+                            {% endif %}
+                            {% if day.content_plan.youtube %}
+                            <span class="platform">YT</span><span class="plan">{{ day.content_plan.youtube }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Photography -->
+                    {% if day.photography %}
+                    <div class="detail-section">
+                        <h4>📸 Off the Beaten Path</h4>
+                        <ul>
+                            {% for spot in day.photography.off_beaten_path %}
+                            <li><a href="https://www.google.com/maps/search/?api=1&query={{ spot|urlencode }}"
+                                    target="_blank" class="gm-link">{{ spot }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% if day.events %}
+                    <div class="detail-section">
+                        <h4 onclick="const content = this.nextElementSibling; content.style.display = content.style.display === 'none' ? 'block' : 'none';"
+                            style="cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
+                            <span>🎭 Local Events & Festivals</span>
+                            <span style="font-size:10px;">▼</span>
+                        </h4>
+                        <div style="display:none; padding-top: 8px;">
+                            <ul style="margin:0; padding-left: 14px;">
+                                {% for event in day.events %}
+                                <li style="margin-bottom: 12px; font-size: 12px; line-height: 1.4;">
+                                    <strong style="color: var(--gold); display:block;">{{ event.title }}</strong>
+                                    <span style="display:block; margin: 4px 0; color: var(--text-secondary);">{{
+                                        event.description }}</span>
+                                    {% if event.link %}
+                                    <a href="{{ event.link }}" target="_blank" class="gm-link"
+                                        style="font-size: 11px; font-weight: 600; font-family: 'Outfit', sans-serif;">More
+                                        Info →</a>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if day.photography.golden_hour_spot %}
+                    <div class="detail-section">
+                        <h4>🌅 Golden Hour
+                            {% if day.photography.golden_hour_time %}
+                            <span
+                                style="float:right; color:var(--gold); font-weight:600; font-family:'Outfit'; text-transform:none; letter-spacing:0px;">{{
+                                day.photography.golden_hour_time }}</span>
+                            {% endif %}
+                        </h4>
+                        <ul>
+                            <li><a href="https://www.google.com/maps/search/?api=1&query={{ day.photography.golden_hour_spot|urlencode }}"
+                                    target="_blank" class="gm-link">{{ day.photography.golden_hour_spot }}</a></li>
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% endif %}
+
+                    <!-- Hostel -->
+                    {% if day.hostel %}
+                    <div class="detail-section">
+                        <h4>🏨 Hostel</h4>
+                        <div class="detail-hostel">
+                            <div>
+                                <div class="hostel-name">{{ day.hostel.name }}</div>
+                                <div class="hostel-detail">{{ day.hostel.neighborhood }}</div>
+                            </div>
+                            <div class="hostel-price">{{ day.hostel.price }}</div>
+                        </div>
+                        {% if day.hostel.notes %}
+                        <div class="hostel-detail" style="margin-top:6px;padding-left:4px;">{{ day.hostel.notes }}</div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    {% if day.notes %}
+                    <div class="card-notes">💡 {{ day.notes }}</div>
                     {% endif %}
                 </div>
-                {% endif %}
-
-                {% if day.notes %}
-                <div class="card-notes">💡 {{ day.notes }}</div>
-                {% endif %}
             </div>
-        </div>
 
-        {% if loop.last %}
-    </div> <!-- close final calendar-grid -->
+            {% if loop.last %}
+        </div> <!-- close final calendar-grid -->
+    </div> <!-- close final month-column -->
     {% endif %}
     {% endfor %}
     </div>

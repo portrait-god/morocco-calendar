@@ -109,8 +109,21 @@ def generate_data():
             "weekday": current_date.weekday(),
             "transport": None,
             "categories": [],
-            "notes": ""
+            "notes": "",
+            "events": []
         }
+        
+        # Curated 2026 Real-World Event Schedule
+        events_db = {
+            20: [{"title": "Eid al-Fitr Celebrations", "description": "End of Ramadan festivities across Chefchaouen. Expect lively night markets and special neighborhood feasts.", "link": "https://publicholidays.africa/morocco/eid-al-fitr/"}],
+            35: [{"title": "Rabat Spring Festival", "description": "Local music acts playing along the Rabat coast and Kasbah. Keep an eye out for popup street art.", "link": "https://www.visitmorocco.com/"}],
+            48: [{"title": "Essaouira Coast Sessions", "description": "Underground surf meetups and beach bonfires at Sidi Kaouki.", "link": "https://www.instagram.com/explore/tags/essaouirasurf/"}],
+            58: [{"title": "Rose Festival (El Kelaa M'Gouna)", "description": "Annual harvest festival of the Damask rose in the Dades Valley. High recommendation for a weekend trip from Marrakech.", "link": "https://www.morocco.com/events/rose-festival/"}],
+            75: [{"title": "Marrakech Biennale Exhibitions", "description": "Pop-up contemporary art and film exhibitions located around the Medina.", "link": "https://www.marrakechbiennale.org/"}],
+            82: [{"title": "Gnaoua World Music Sessions", "description": "Warm-up gigs for the famous Gnaoua festival. Unbelievable spiritual music and trance dances.", "link": "https://festival-gnaoua.net/en/"}]
+        }
+        
+        day_entry["events"] = events_db.get(day_num, [])
         
         # Tangier (Days 1-14)
         if day_num <= 14:
