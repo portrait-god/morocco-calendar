@@ -63,6 +63,7 @@
                 class="emoji">📸</span>Photo</button>
         <button class="filter-btn" data-filter="transport" onclick="filterCards('transport', this)"><span
                 class="emoji">🚌</span>Transport</button>
+        <div style="flex-grow:1;"></div>
         <button class="filter-btn loc-tab-btn" onclick="toggleLocTab(this)"><span
                 class="emoji">📍</span>Locations</button>
         <button class="filter-btn map-tab-btn" onclick="toggleMapTab(this)"><span class="emoji">🗺️</span>Map</button>
@@ -218,27 +219,28 @@
                     </div>
                     {% if day.events %}
                     <div class="detail-section">
-                        <h4 onclick="const content = this.nextElementSibling; content.style.display = content.style.display === 'none' ? 'block' : 'none';"
-                            style="cursor:pointer; display:flex; justify-content:space-between; align-items:center;">
-                            <span>🎭 Local Events & Festivals</span>
-                            <span style="font-size:10px;">▼</span>
-                        </h4>
-                        <div style="display:none; padding-top: 8px;">
-                            <ul style="margin:0; padding-left: 14px;">
-                                {% for event in day.events %}
-                                <li style="margin-bottom: 12px; font-size: 12px; line-height: 1.4;">
-                                    <strong style="color: var(--gold); display:block;">{{ event.title }}</strong>
-                                    <span style="display:block; margin: 4px 0; color: var(--text-secondary);">{{
-                                        event.description }}</span>
-                                    {% if event.link %}
-                                    <a href="{{ event.link }}" target="_blank" class="gm-link"
-                                        style="font-size: 11px; font-weight: 600; font-family: 'Outfit', sans-serif;">More
-                                        Info →</a>
-                                    {% endif %}
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+                        <h4>🎭 Local Events &amp; Festivals</h4>
+                        <ul style="margin:0; padding-left:14px;">
+                            {% for event in day.events %}
+                            <li style="margin-bottom: 12px; font-size: 12px; line-height: 1.4;">
+                                <button onclick="openEventsTabFromDay('{{ event.title | replace("'", "\\'") }}')"
+                                    style="background:none; border:none; padding:0; cursor:pointer; text-align:left; width:100%;">
+                                    <strong
+                                        style="color: var(--gold); display:block; font-size:12px; margin-bottom:3px;">{{
+                                        event.title }} <span style="font-size:10px; color:var(--terracotta);">→ Events
+                                            tab ↗</span></strong>
+                                </button>
+                                <span
+                                    style="display:block; margin: 2px 0 4px; color: var(--text-secondary); font-size: 11px;">{{
+                                    event.description }}</span>
+                                {% if event.link %}
+                                <a href="{{ event.link }}" target="_blank" class="gm-link"
+                                    style="font-size: 11px; font-weight: 600; font-family: 'Outfit', sans-serif;"
+                                    onclick="event.stopPropagation()">Website →</a>
+                                {% endif %}
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                     {% endif %}
                     {% if day.photography and day.photography.subcultures %}
@@ -334,6 +336,15 @@
                 days.forEach(day => {
                     const dayNum = day.querySelector('.card-day-num').innerText;
                     const cityClass = day.classList[1];
+                    const hasEvents = day.querySelector('.detail-section h4') &&
+                        day.innerHTML.includes('Local Events');
+
+                    const btnWrapper = document.createElement('div');
+                    btnWrapper.style.position = 'relative';
+                    btnWrapper.style.display = 'flex';
+                    btnWrapper.style.flexDirection = 'column';
+                    btnWrapper.style.alignItems = 'center';
+
                     const btn = document.createElement('button');
                     btn.className = `compact-day ${cityClass}`;
                     btn.innerText = dayNum;
@@ -348,12 +359,26 @@
                             const y = day.getBoundingClientRect().top + window.pageYOffset - 120;
                             window.scrollTo({ top: y, behavior: 'smooth' });
                         }
+                        // Expand the card
+                        day.classList.add('expanded');
                         day.style.transition = 'box-shadow 0.3s';
                         day.style.boxShadow = '0 0 0 2px var(--gold)';
                         setTimeout(() => { day.style.boxShadow = 'none'; }, 1500);
                     };
-                    compactGrid.appendChild(btn);
+
+                    btnWrapper.appendChild(btn);
+
+                    // Add event dot indicator
+                    if (hasEvents) {
+                        const dot = document.createElement('div');
+                        dot.style.cssText = 'width:5px;height:5px;background:var(--gold);border-radius:50%;margin-top:2px;';
+                        dot.title = 'Has events';
+                        btnWrapper.appendChild(dot);
+                    }
+
+                    compactGrid.appendChild(btnWrapper);
                 });
+
 
                 compactDiv.appendChild(weekdaysRow);
                 compactDiv.appendChild(compactGrid);
@@ -375,6 +400,43 @@
                 el.classList.add('expanded');
             }
         }
+
+        // Navigate to Events gallery tab and highlight a matching event by title
+        function openEventsTabFromDay(eventTitle) {
+            // Switch to Events tab
+            const evTab = document.getElementById('tab-events');
+            const calTab = document.getElementById('tab-calendar');
+            const mapTab = document.getElementById('tab-map');
+            const locTab = document.getElementById('tab-locations');
+            const timeline = document.getElementById('timeline');
+
+            calTab.style.display = 'none';
+            mapTab.style.display = 'none';
+            locTab.style.display = 'none';
+            evTab.style.display = 'block';
+            timeline.style.display = 'none';
+
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            const evBtn = document.querySelector('.events-tab-btn');
+            if (evBtn) evBtn.classList.add('active');
+            document.querySelectorAll('.filter-btn:not(.events-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+
+            // Switch to All sub-tab and load, then scroll to the matching card
+            switchEventSub('all', document.querySelectorAll('.events-sub-btn')[1]);
+            setTimeout(() => {
+                const cards = document.querySelectorAll('#events-gallery > div');
+                const target = Array.from(cards).find(c => {
+                    const titleEl = c.querySelector('div[style*="font-weight:700"]');
+                    return titleEl && titleEl.textContent.includes(eventTitle.slice(0, 20));
+                });
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    target.style.outline = '2px solid var(--gold)';
+                    setTimeout(() => { target.style.outline = 'none'; }, 2000);
+                }
+            }, 600);
+        }
+
 
         function filterCards(filter, btn) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
