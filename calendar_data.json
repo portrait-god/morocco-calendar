@@ -138,7 +138,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
@@ -150,12 +151,22 @@
         "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Tangier Deep Dive - Day 4",
+        "tiktok": "Daily observation",
+        "instagram": "Photo carousel",
+        "youtube": "B-roll collection"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Asilah Medina, Morocco",
+          "Asilah ramparts over the ocean"
+        ],
+        "subcultures": [
+          "Local mural painters, Asilah"
+        ],
+        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
+        "golden_hour_time": "18:47 - 19:32"
+      }
     },
     {
       "date": "2026-03-15",
@@ -170,7 +181,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
@@ -182,12 +194,22 @@
         "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Tangier Deep Dive - Day 5",
+        "tiktok": "Daily observation",
+        "instagram": "Photo carousel",
+        "youtube": "B-roll collection"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Asilah Medina, Morocco",
+          "Asilah ramparts over the ocean"
+        ],
+        "subcultures": [
+          "Local mural painters, Asilah"
+        ],
+        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
+        "golden_hour_time": "18:48 - 19:33"
+      }
     },
     {
       "date": "2026-03-16",
@@ -397,7 +419,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
@@ -409,12 +432,22 @@
         "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Tangier Deep Dive - Day 11",
+        "tiktok": "Daily observation",
+        "instagram": "Photo carousel",
+        "youtube": "B-roll collection"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Asilah Medina, Morocco",
+          "Asilah ramparts over the ocean"
+        ],
+        "subcultures": [
+          "Local mural painters, Asilah"
+        ],
+        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
+        "golden_hour_time": "18:52 - 19:37"
+      }
     },
     {
       "date": "2026-03-22",
@@ -429,7 +462,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
@@ -441,12 +475,22 @@
         "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Tangier Deep Dive - Day 12",
+        "tiktok": "Daily observation",
+        "instagram": "Photo carousel",
+        "youtube": "B-roll collection"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Asilah Medina, Morocco",
+          "Asilah ramparts over the ocean"
+        ],
+        "subcultures": [
+          "Local mural painters, Asilah"
+        ],
+        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
+        "golden_hour_time": "18:53 - 19:38"
+      }
     },
     {
       "date": "2026-03-23",
@@ -538,8 +582,7 @@
         "cost": "\u20ac7"
       },
       "categories": [
-        "photo",
-        "transport"
+        "photo"
       ],
       "notes": "",
       "city": "Chefchaouen",
@@ -551,12 +594,22 @@
         "notes": "Best wifi in town, rooftop terrace"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Into the Blue City",
+        "tiktok": "Blue streets",
+        "instagram": "Symmetry reel",
+        "youtube": "Time-lapses"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Place El Haouta, Chefchaouen, Morocco",
+          "Empty alleys at 5am, Chefchaouen"
+        ],
+        "subcultures": [
+          "Local artisans, Chefchaouen"
+        ],
+        "golden_hour_spot": "Spanish Mosque, Chefchaouen",
+        "golden_hour_time": "18:55 - 19:40"
+      }
     },
     {
       "date": "2026-03-26",
@@ -645,7 +698,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "",
       "city": "Fez",
@@ -657,12 +711,21 @@
         "notes": "Wifi throughout, free breakfast + dinner"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Labyrinth Arrival",
+        "tiktok": "Labyrinth medina POV",
+        "youtube": "Fez mini-doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Rcif Mosque, Fez, Morocco",
+          "Bou Inania Madrasa, Fez"
+        ],
+        "subcultures": [
+          "Mohammed V Sq, Fez (skaters)"
+        ],
+        "golden_hour_spot": "Borj Nord, Fez",
+        "golden_hour_time": "18:58 - 19:43"
+      }
     },
     {
       "date": "2026-03-29",
@@ -677,7 +740,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Sefrou (Cherry Capital).",
       "city": "Fez",
@@ -689,12 +753,19 @@
         "notes": "Quiet escape from Fez if you stay late"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Ancient Fez - Day 2",
+        "tiktok": "Labyrinth medina POV",
+        "youtube": "Fez mini-doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Sefrou Medina waterfalls, Morocco",
+          "Jewish Mellah, Sefrou"
+        ],
+        "subcultures": [],
+        "golden_hour_spot": "Sefrou hills overlooking town",
+        "golden_hour_time": "18:59 - 19:44"
+      }
     },
     {
       "date": "2026-03-30",
@@ -899,7 +970,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Sefrou (Cherry Capital).",
       "city": "Fez",
@@ -911,12 +983,19 @@
         "notes": "Quiet escape from Fez if you stay late"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Ancient Fez - Day 8",
+        "tiktok": "Labyrinth medina POV",
+        "youtube": "Fez mini-doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Sefrou Medina waterfalls, Morocco",
+          "Jewish Mellah, Sefrou"
+        ],
+        "subcultures": [],
+        "golden_hour_spot": "Sefrou hills overlooking town",
+        "golden_hour_time": "19:03 - 19:48"
+      }
     },
     {
       "date": "2026-04-05",
@@ -931,7 +1010,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Sefrou (Cherry Capital).",
       "city": "Fez",
@@ -943,12 +1023,19 @@
         "notes": "Quiet escape from Fez if you stay late"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Ancient Fez - Day 9",
+        "tiktok": "Labyrinth medina POV",
+        "youtube": "Fez mini-doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Sefrou Medina waterfalls, Morocco",
+          "Jewish Mellah, Sefrou"
+        ],
+        "subcultures": [],
+        "golden_hour_spot": "Sefrou hills overlooking town",
+        "golden_hour_time": "19:04 - 19:49"
+      }
     },
     {
       "date": "2026-04-06",
@@ -963,7 +1050,7 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate"
       ],
       "notes": "Most reliable internet. Perfect for deep backlog work.",
       "city": "Rabat",
@@ -975,12 +1062,21 @@
         "notes": "Modern, fast wifi, government tech parks"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Train to the Coast",
+        "tiktok": "Coworking life / Casa Hassan II",
+        "youtube": "Coastal urban scenes"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Agdal university area, Rabat, Morocco",
+          "Hassan Tower gardens, Rabat"
+        ],
+        "subcultures": [
+          "Technopark events, Rabat"
+        ],
+        "golden_hour_spot": "Kasbah of the Udayas viewpoint, Rabat",
+        "golden_hour_time": "19:05 - 19:50"
+      }
     },
     {
       "date": "2026-04-07",
@@ -1476,7 +1572,7 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "surf"
       ],
       "notes": "",
       "city": "Essaouira",
@@ -1488,12 +1584,22 @@
         "notes": "Popular with surfers + nomads"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Coastal Escape South",
+        "tiktok": "Ocean breeze vibes",
+        "instagram": "Surf action shots",
+        "youtube": "Sidi Kaouki surf doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Historic ramparts, Essaouira, Morocco",
+          "Bohemian Sidi Kaouki, Morocco"
+        ],
+        "subcultures": [
+          "Essaouira Beach (Kitesurfers and longboarders)"
+        ],
+        "golden_hour_spot": "Skala de la Ville ramparts, Essaouira",
+        "golden_hour_time": "19:16 - 20:01"
+      }
     },
     {
       "date": "2026-04-21",
@@ -1660,7 +1766,7 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
@@ -1672,12 +1778,23 @@
         "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Windy City - Day 6",
+        "tiktok": "Ocean breeze vibes",
+        "instagram": "Surf action shots",
+        "youtube": "Sidi Kaouki surf doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Imsouane Bay, Morocco",
+          "Local surf shacks, Imsouane"
+        ],
+        "subcultures": [
+          "Vanlife surfers, Imsouane",
+          "Local board shapers, Imsouane"
+        ],
+        "golden_hour_spot": "Imsouane cliffs sunset",
+        "golden_hour_time": "19:20 - 20:05"
+      }
     },
     {
       "date": "2026-04-26",
@@ -1692,7 +1809,7 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
@@ -1704,12 +1821,23 @@
         "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Windy City - Day 7",
+        "tiktok": "Ocean breeze vibes",
+        "instagram": "Surf action shots",
+        "youtube": "Sidi Kaouki surf doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Imsouane Bay, Morocco",
+          "Local surf shacks, Imsouane"
+        ],
+        "subcultures": [
+          "Vanlife surfers, Imsouane",
+          "Local board shapers, Imsouane"
+        ],
+        "golden_hour_spot": "Imsouane cliffs sunset",
+        "golden_hour_time": "19:20 - 20:05"
+      }
     },
     {
       "date": "2026-04-27",
@@ -1914,7 +2042,7 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
@@ -1926,12 +2054,23 @@
         "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Windy City - Day 13",
+        "tiktok": "Ocean breeze vibes",
+        "instagram": "Surf action shots",
+        "youtube": "Sidi Kaouki surf doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Imsouane Bay, Morocco",
+          "Local surf shacks, Imsouane"
+        ],
+        "subcultures": [
+          "Vanlife surfers, Imsouane",
+          "Local board shapers, Imsouane"
+        ],
+        "golden_hour_spot": "Imsouane cliffs sunset",
+        "golden_hour_time": "19:25 - 20:10"
+      }
     },
     {
       "date": "2026-05-03",
@@ -1946,7 +2085,7 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "surf"
       ],
       "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
@@ -1958,12 +2097,23 @@
         "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Windy City - Day 14",
+        "tiktok": "Ocean breeze vibes",
+        "instagram": "Surf action shots",
+        "youtube": "Sidi Kaouki surf doc"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Imsouane Bay, Morocco",
+          "Local surf shacks, Imsouane"
+        ],
+        "subcultures": [
+          "Vanlife surfers, Imsouane",
+          "Local board shapers, Imsouane"
+        ],
+        "golden_hour_spot": "Imsouane cliffs sunset",
+        "golden_hour_time": "19:26 - 20:11"
+      }
     },
     {
       "date": "2026-05-04",
@@ -2016,7 +2166,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Best coworking ecosystem. Connect with digital nomads. End of trip hub for flights.",
       "city": "Marrakech",
@@ -2028,12 +2179,22 @@
         "notes": "Pool, good wifi, social"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Inland to the Hub",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Le Jardin Secret, Marrakech, Morocco",
+          "Mus\u00e9e Dar El Bacha, Marrakech"
+        ],
+        "subcultures": [
+          "Fiers et Forts Skatepark, Tameslouht, Morocco"
+        ],
+        "golden_hour_spot": "Rooftop cafes overlooking Jemaa el-Fnaa, Marrakech",
+        "golden_hour_time": "19:27 - 20:12"
+      }
     },
     {
       "date": "2026-05-06",
@@ -2165,7 +2326,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2177,12 +2339,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 5",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:31 - 20:16"
+      }
     },
     {
       "date": "2026-05-10",
@@ -2197,7 +2369,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2209,12 +2382,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 6",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:31 - 20:16"
+      }
     },
     {
       "date": "2026-05-11",
@@ -2424,7 +2607,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2436,12 +2620,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 12",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:36 - 20:21"
+      }
     },
     {
       "date": "2026-05-17",
@@ -2456,7 +2650,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2468,12 +2663,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 13",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:37 - 20:22"
+      }
     },
     {
       "date": "2026-05-18",
@@ -2683,7 +2888,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2695,12 +2901,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 19",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:41 - 20:26"
+      }
     },
     {
       "date": "2026-05-24",
@@ -2715,7 +2931,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2727,12 +2944,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 20",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:42 - 20:27"
+      }
     },
     {
       "date": "2026-05-25",
@@ -2942,7 +3169,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2954,12 +3182,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 26",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:47 - 20:32"
+      }
     },
     {
       "date": "2026-05-31",
@@ -2974,7 +3212,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -2986,12 +3225,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 27",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:48 - 20:33"
+      }
     },
     {
       "date": "2026-06-01",
@@ -3201,7 +3450,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -3213,12 +3463,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 33",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:52 - 20:37"
+      }
     },
     {
       "date": "2026-06-07",
@@ -3233,7 +3493,8 @@
       },
       "categories": [
         "photo",
-        "transport"
+        "skate",
+        "music"
       ],
       "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
@@ -3245,12 +3506,22 @@
         "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Travel & Editing Day",
-        "tiktok": "Transit aesthetic & vlog",
-        "instagram": "Photo culling & lightroom sessions",
-        "youtube": "File backup / Organizing footage"
+        "theme": "Red City Hustle - Day 34",
+        "tiktok": "Souk chaos",
+        "instagram": "Tbourida prep",
+        "youtube": "Marrakech Nomad Doc & Wrap-up"
       },
-      "photography": null
+      "photography": {
+        "off_beaten_path": [
+          "Ourika Valley waterfalls, Morocco",
+          "Berber mountain villages, Ourika"
+        ],
+        "subcultures": [
+          "Atlas Mountain artisans, Ourika"
+        ],
+        "golden_hour_spot": "Setti Fatma, Ourika Valley",
+        "golden_hour_time": "19:53 - 20:38"
+      }
     },
     {
       "date": "2026-06-08",

@@ -278,23 +278,53 @@ def generate_data():
                  }
             
         # Handle Travel Days: Overwrite content plan to editing, wipe shoot locations
-        if day_entry["transport"] is not None:
-            # Add transport category if not already there
-            if "transport" not in day_entry["categories"]:
-                day_entry["categories"].append("transport")
-                
-            # Filter out heavy field categories
-            day_entry["categories"] = [c for c in day_entry["categories"] if c not in ["skate", "surf", "music", "photo"]]
-            day_entry["categories"].insert(0, "photo") # re-add photo for editing context
+        # ONLY do this for major inter-city travel (where the route has "→"), NOT day trips
+        if day_entry["transport"] is not None and "→" in day_entry["transport"]["route"]:
+            # Check if the destination of the route is the current city (meaning it's a return from a day trip)
+            # or if it's a departure from the country.
+            # This logic needs to be refined to only trigger for actual city changes.
+            # For now, we'll assume any route with '→' that doesn't end in the current city
+            # is an inter-city travel day.
+            route_parts = day_entry["transport"]["route"].split("→")
+            destination_city_code = route_parts[-1].strip().split(" ")[0] # e.g., "TNG", "Chefchaouen", "Fez"
             
-            day_entry["content_plan"] = {
-                "theme": "Travel & Editing Day",
-                "tiktok": "Transit aesthetic & vlog",
-                "instagram": "Photo culling & lightroom sessions",
-                "youtube": "File backup / Organizing footage"
-            }
-            day_entry["photography"] = None
+            # Simple heuristic: if the destination city code is not the current city, it's a major travel day.
+            # This is a simplification and might need more robust mapping for city names vs codes.
+            is_inter_city_travel = False
+            if city == "Tangier" and destination_city_code not in ["TNG", "Tangier", "Asilah"]:
+                is_inter_city_travel = True
+            elif city == "Chefchaouen" and destination_city_code not in ["Chefchaouen"]:
+                is_inter_city_travel = True
+            elif city == "Fez" and destination_city_code not in ["Fez", "Sefrou"]:
+                is_inter_city_travel = True
+            elif city == "Rabat" and destination_city_code not in ["Rabat", "Casa"]: # Casa is often a transit point for Rabat
+                is_inter_city_travel = True
+            elif city == "Essaouira" and destination_city_code not in ["Essaouira", "Imsouane"]:
+                is_inter_city_travel = True
+            elif city == "Marrakech" and destination_city_code not in ["Marrakech", "Ourika", "LIS"]: # LIS is departure
+                is_inter_city_travel = True
+            
+            # Special handling for departure day (LIS)
+            if "LIS" in day_entry["transport"]["route"]:
+                is_inter_city_travel = True
 
+            if is_inter_city_travel:
+                # Add transport category if not already there
+                if "transport" not in day_entry["categories"]:
+                    day_entry["categories"].append("transport")
+                    
+                # Filter out heavy field categories
+                day_entry["categories"] = [c for c in day_entry["categories"] if c not in ["skate", "surf", "music", "photo"]]
+                day_entry["categories"].insert(0, "photo") # re-add photo for editing context
+                
+                day_entry["content_plan"] = {
+                    "theme": "Travel & Editing Day",
+                    "tiktok": "Transit aesthetic & vlog",
+                    "instagram": "Photo culling & lightroom sessions",
+                    "youtube": "File backup / Organizing footage"
+                }
+                day_entry["photography"] = None # Clear photography for travel days
+            
             if day_num == 90:
                 day_entry["content_plan"]["theme"] = "Departure Day"
 

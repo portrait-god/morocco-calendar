@@ -192,8 +192,17 @@
                     <h4>🎭 Subculture Targets</h4>
                     <ul>
                         {% for sub in day.photography.subcultures %}
-                        <li><a href="https://www.google.com/maps/search/?api=1&query={{ sub|urlencode }}"
-                                target="_blank" class="gm-link">{{ sub }}</a></li>
+                        <li style="margin-bottom: 12px;">
+                            <span style="display:block; margin-bottom: 4px; font-weight: 500;">{{ sub }}</span>
+                            <div style="display: flex; gap: 8px; font-size: 11px;">
+                                <a href="https://www.facebook.com/events/search/?q={{ sub|urlencode }}" target="_blank"
+                                    class="gm-link fb-link" style="color: #1877F2;">FB Events</a>
+                                <a href="https://www.instagram.com/explore/search/keyword/?q={{ sub|urlencode }}"
+                                    target="_blank" class="gm-link ig-link" style="color: #E1306C;">Instagram</a>
+                                <a href="https://www.tiktok.com/search?q={{ sub|urlencode }}" target="_blank"
+                                    class="gm-link tt-link" style="color: #2F2F2F;">TikTok</a>
+                            </div>
+                        </li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -246,18 +255,36 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Build Compact Mobile Calendar Navigators
+            // Build Compact Mobile Calendar Navigators (Swipeable Carousel)
+            const tabCalendar = document.getElementById('tab-calendar');
             const months = document.querySelectorAll('.month-header');
+
+            // Create the main sticky carousel container
+            const carouselContainer = document.createElement('div');
+            carouselContainer.className = 'compact-carousel mobile-only';
+            carouselContainer.style.display = 'none'; // Overridden by media query
+
             months.forEach(header => {
                 const grid = header.nextElementSibling;
                 if (!grid || !grid.classList.contains('calendar-grid')) return;
 
                 const days = grid.querySelectorAll('.day-card');
                 const emptyPads = grid.querySelectorAll('.empty-day-pad');
+                const monthName = header.querySelector('h2').innerText;
 
                 const compactDiv = document.createElement('div');
-                compactDiv.className = 'compact-calendar mobile-only';
-                compactDiv.style.display = 'none'; // Overridden by media query
+                compactDiv.className = 'compact-calendar';
+
+                // Add Month title within the mini grid
+                const monthTitle = document.createElement('div');
+                monthTitle.style.textAlign = 'center';
+                monthTitle.style.color = 'var(--gold)';
+                monthTitle.style.fontSize = '12px';
+                monthTitle.style.fontWeight = '600';
+                monthTitle.style.marginBottom = '6px';
+                monthTitle.style.fontFamily = "'Outfit', sans-serif";
+                monthTitle.innerText = monthName;
+                compactDiv.appendChild(monthTitle);
 
                 const weekdaysRow = document.createElement('div');
                 weekdaysRow.className = 'compact-weekdays';
@@ -285,7 +312,7 @@
                         btn.style.boxShadow = 'inset 0 0 0 2px var(--cat-transport)';
                     }
                     btn.onclick = () => {
-                        const yOffset = -80; // offset for sticky headers
+                        const yOffset = -160; // larger offset because nav is taller and sticky
                         const y = day.getBoundingClientRect().top + window.pageYOffset + yOffset;
                         window.scrollTo({ top: y, behavior: 'smooth' });
 
@@ -303,8 +330,13 @@
 
                 compactDiv.appendChild(weekdaysRow);
                 compactDiv.appendChild(compactGrid);
-                header.appendChild(compactDiv);
+                carouselContainer.appendChild(compactDiv);
             });
+
+            // Insert the master carousel at the very top of the calendar view
+            if (months.length > 0) {
+                tabCalendar.insertBefore(carouselContainer, tabCalendar.firstChild);
+            }
         });
 
         function toggleCard(card) {
