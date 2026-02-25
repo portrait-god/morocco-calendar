@@ -113,17 +113,47 @@ def generate_data():
             "events": []
         }
         
-        # Curated 2026 Real-World Event Schedule
+        # Curated 2026 Real-World Event Schedule (by trip day number)
         events_db = {
-            20: [{"title": "Eid al-Fitr Celebrations", "description": "End of Ramadan festivities across Chefchaouen. Expect lively night markets and special neighborhood feasts.", "link": "https://publicholidays.africa/morocco/eid-al-fitr/"}],
-            35: [{"title": "Rabat Spring Festival", "description": "Local music acts playing along the Rabat coast and Kasbah. Keep an eye out for popup street art.", "link": "https://www.visitmorocco.com/"}],
-            48: [{"title": "Essaouira Coast Sessions", "description": "Underground surf meetups and beach bonfires at Sidi Kaouki.", "link": "https://www.instagram.com/explore/tags/essaouirasurf/"}],
-            58: [{"title": "Rose Festival (El Kelaa M'Gouna)", "description": "Annual harvest festival of the Damask rose in the Dades Valley. High recommendation for a weekend trip from Marrakech.", "link": "https://www.morocco.com/events/rose-festival/"}],
-            75: [{"title": "Marrakech Biennale Exhibitions", "description": "Pop-up contemporary art and film exhibitions located around the Medina.", "link": "https://www.marrakechbiennale.org/"}],
-            82: [{"title": "Gnaoua World Music Sessions", "description": "Warm-up gigs for the famous Gnaoua festival. Unbelievable spiritual music and trance dances.", "link": "https://festival-gnaoua.net/en/"}]
+            # === TANGIER (Days 1-14) ===
+            1:  [{"title": "Tap In Soirée — Tangier Jazz Café", "description": "Weekly Tuesday jazz night at Café de Paris, frequented by local painters, writers, and musicians. Free entry.", "link": None}],
+            4:  [{"title": "Grand Socco Friday Market", "description": "Weekly Friday market at Tangier's main square. Rif mountain villagers sell produce, spices, and handicrafts. Best street photo moment in Tangier.", "link": None}],
+            7:  [{"title": "Tangier Photography Days", "description": "Annual international street photography festival with outdoor gallery along the harbour promenade. Workshops with Moroccan photographers.", "link": "https://www.visitmorocco.com/"}],
+            11: [{"title": "Asilah Murals Festival (Warm-up exhibitions)", "description": "The annual Moussem cultural festival of Asilah opens with new mural installations along the ramparts. Perfect for your Asilah day trip this weekend.", "link": "https://www.moussemasilah.ma/"}],
+            12: [{"title": "Ramadan Night Market, Tangier", "description": "If Ramadan is underway, the souk comes completely alive after iftar sunset. Musicians, street food, and crowds until 3am. Unmissable atmosphere.", "link": None}],
+            # === CHEFCHAOUEN (Days 15-17) ===
+            15: [{"title": "Chefchaouen Thursday Souk", "description": "Weekly market day at the bottom of Bab Souk. Local Rif farmers, weavers, and cheese-makers. Best light for photography is the morning sessions.", "link": None}],
+            17: [{"title": "Eid al-Fitr Celebrations — End of Ramadan", "description": "Nationwide celebrations. Chefchaouen's blue medina fills with families in traditional dress. Dawn prayers, communal feasts, and joyful atmosphere all day.", "link": "https://publicholidays.africa/morocco/eid-al-fitr/"}],
+            # === FEZ (Days 18-26) ===
+            19: [{"title": "Bou Inania Madrasa Evening Opening", "description": "The UNESCO-listed madrasa has extended evening opening hours during Islamic celebrations. Golden light illuminates the intricate tilework — the best photography window of the week.", "link": "https://www.visitmorocco.com/fez"}],
+            21: [{"title": "Moulay Idriss Moussem, Fez", "description": "Religious festival honouring Morocco's founding saint. Fantasia (horseback charge) around the shrine, Sufi music processions through the medina. Very local.", "link": None}],
+            24: [{"title": "Sefrou Cherry Festival (Preview)", "description": "Day trip to Sefrou for the pre-festival cherry blossom season. The orchards around the old medina turn pink. A quiet version before the main June festival.", "link": None}],
+            # === RABAT (Days 27-40) ===
+            30: [{"title": "Rabat Spring Festival — Chellah Nights", "description": "Rooftop concerts inside the ancient Roman Chellah ruins on the edge of Rabat. Intimate acoustic sets with views over the storks' nests. Tickets €5-10.", "link": "https://www.visitmorocco.com/rabat"}],
+            33: [{"title": "Rabat Skate Contest — Hassan II Boulevard", "description": "Recurring quarterly street skate comp organised by local crew Moroccan Skateboarders. Usually runs along the wide pavements near Tour Hassan. Great filming opportunity.", "link": None}],
+            35: [{"title": "Mawazine Festival Pre-Party, Rabat", "description": "Lead-up events to Morocco's biggest music festival. Free outdoor stages begin setting up along the Rabat coast. Check the official lineup for warm-up acts.", "link": "https://www.mawazine.ma/"}],
+            36: [{"title": "Mawazine Festival (Rabat)", "description": "One of the world's largest music festivals — free outdoor stages, 2M attendees, international headliners + Arab superstars. The city transformed.", "link": "https://www.mawazine.ma/"}],
+            38: [{"title": "Friday Kasbah Oudayas Cultural Event", "description": "Regular Friday evening of traditional Andalusian music in the 17th-century Kasbah's garden. Free. Only 40-50 people, very intimate.", "link": None}],
+            # === ESSAOUIRA (Days 41-55) ===
+            42: [{"title": "Essaouira Beach Bonfire & Surf Session", "description": "Recurring Saturday evening bonfire at Sidi Kaouki bay, 30km south. The vanlife + surf community gathers. Bring food to share.", "link": None}],
+            45: [{"title": "Essaouira Kite & Windsurf Competition", "description": "Annual kitesurfing championship. Spectator beach with food trucks, live gnaoua music performance in the evening near the port.", "link": "https://www.essaouira-mogador.com/"}],
+            48: [{"title": "Gnaoua Festival Warm-Up Concerts, Essaouira Port", "description": "The iconic Gnaoua festival begins. Free outdoor stages on the port. World-class mâalems (gnaoua masters) perform spiritual trance music. Goes until 3am.", "link": "https://festival-gnaoua.net/en/"}],
+            49: [{"title": "Gnaoua World Music Festival — Main Weekend", "description": "The biggest night of the Gnaoua Festival. Multiple stages, fusion collaborations with international jazz and blues artists. The entire medina is a concert venue.", "link": "https://festival-gnaoua.net/en/"}],
+            52: [{"title": "Essaouira Wednesday Artisan Market", "description": "The souk outside Bab Doukkala has the best thuya wood craftsmen in Morocco. Photographers report golden-hour light at 6pm through the argan oil stalls.", "link": None}],
+            # === MARRAKECH (Days 56-90) ===
+            58: [{"title": "Rose Festival Day Trip — El Kelaa M'Gouna", "description": "Annual Damask rose harvest festival in the Dades Valley. 4h from Marrakech. Parades, Berber music, rose water market. Extremely photographic. Highly recommended as a weekend trip.", "link": "https://www.morocco.com/events/rose-festival/"}],
+            61: [{"title": "L'Boulevard Festival — Urban Music (Casablanca)", "description": "Morocco's biggest underground hip-hop, rap, and R&B festival in Casablanca. Day trip or overnight. Discover Morocco's best new urban artists.", "link": "https://www.blvd.ma/"}],
+            63: [{"title": "Jemaa el-Fnaa Storytellers — Halqa Night", "description": "Thursday is the best night for the traditional halqa (storytelling circle) in the main square. Storytellers, snake charmers, and fire performers all compete for the crowd.", "link": None}],
+            65: [{"title": "Tbourida Horses Show Rehearsal, Marrakech", "description": "A traditional Moroccan fantasia rehearsal at the hippodrome near Menara Gardens. Spectacular military horsemanship. Usually open to spectators. Free.", "link": None}],
+            70: [{"title": "Marrakech Biennale — Medina Installations", "description": "Avant-garde contemporary art installations throughout the historic medina. Pop-up exhibitions in riads, museums, and courtyards. Running since March — pick the best ones.", "link": "https://www.marrakechbiennale.org/"}],
+            75: [{"title": "Ourika Valley Berber Festival (Weekend)", "description": "In the Atlas foothills, the Ourika Valley hosts a smaller moussem (pilgrimage festival) in late May. Traditional Amazigh music and communal celebrations. Day trip from Marrakech.", "link": None}],
+            78: [{"title": "Fès Festival of World Sacred Music (Fez)", "description": "UNESCO-recognized gathering of spiritual music from 40+ countries. Free outdoor concerts at the Bab Makina stage. Incredible photography. Day trip from Marrakech if you missed it.", "link": "https://fesfestival.com/"}],
+            83: [{"title": "Marrakech Marathon Weekend Street Festival", "description": "The annual marathon brings influx of international runners and the city puts on street performers, musicians, and food stalls along the route for 2 days.", "link": None}],
+            87: [{"title": "Night Markets — End of Season Souk", "description": "Late-May night markets around Djemaa el-Fna extend until midnight with outdoor dining, musicians, and traditional artisans. The last big push before summer heat.", "link": None}],
         }
         
         day_entry["events"] = events_db.get(day_num, [])
+
         
         # Tangier (Days 1-14)
         if day_num <= 14:

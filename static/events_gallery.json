@@ -1,0 +1,125 @@
+{
+    "events": [
+        {
+            "id": "gnaoua-2026",
+            "title": "Gnaoua World Music Festival",
+            "date": "2026-05-29",
+            "city": "Essaouira",
+            "description": "One of Morocco's most iconic events. Spiritual Gnaoua music and trance dances take over the entire medina and port. Free outdoor stages all weekend.",
+            "image": "https://festival-gnaoua.net/wp-content/uploads/2024/04/gnaoua-festival-poster.jpg",
+            "link": "https://festival-gnaoua.net/en/",
+            "source_account": "festival_gnaoua",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "mawazine-2026",
+            "title": "Mawazine Festival, Rabat",
+            "date": "2026-04-25",
+            "city": "Rabat",
+            "description": "One of the world's biggest music festivals. Massive free outdoor stages along the Rabat coast. International headliners + Arab world stars. 2M+ attendees.",
+            "image": "https://www.mawazine.ma/wp-content/uploads/2024/01/mawazine-2024-affiche.jpg",
+            "link": "https://www.mawazine.ma/",
+            "source_account": "mawazineofficiel",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "jazzablanca-2026",
+            "title": "Jazzablanca, Casablanca",
+            "date": "2026-04-10",
+            "city": "Casablanca",
+            "description": "Morocco's premier jazz and world music festival, held in Casablanca's chic Anfa Park. International jazz acts + local talent.",
+            "image": "https://www.jazzablanca.com/wp-content/themes/jazzablanca/imgs/jazzablanca-logo.png",
+            "link": "https://www.jazzablanca.com/",
+            "source_account": "jazzablanca",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "rose-festival-2026",
+            "title": "Rose Festival, El Kelaa M'Gouna",
+            "date": "2026-05-08",
+            "city": "Marrakech region",
+            "description": "The Damask rose harvest celebrated in the Dades Valley. Parades, traditional Berber music + dance, artisan markets, and rose-everything. Day trip from Marrakech.",
+            "image": "https://www.morocco.com/wp-content/uploads/2016/04/rose-festival-kalaat-mgouna-morocco.jpg",
+            "link": "https://www.morocco.com/events/rose-festival/",
+            "source_account": "visitmorocco",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "eid-al-fitr-2026",
+            "title": "Eid al-Fitr — End of Ramadan",
+            "date": "2026-03-30",
+            "city": "All cities",
+            "description": "Nationwide celebrations marking the end of Ramadan. Night markets, traditional music, communal prayers at dawn, and extraordinary street atmosphere particularly in Fez and Chefchaouen.",
+            "image": null,
+            "link": "https://publicholidays.africa/morocco/eid-al-fitr/",
+            "source_account": null,
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "marrakech-biennale-2026",
+            "title": "Marrakech Biennale",
+            "date": "2026-03-15",
+            "city": "Marrakech",
+            "description": "Avant-garde contemporary art, literature and film across the Medina. Pop-up exhibitions, workshops, and debates. Free outdoor installations. Runs through May.",
+            "image": "https://www.marrakechbiennale.org/wp-content/uploads/2023/12/biennale-banner.jpg",
+            "link": "https://www.marrakechbiennale.org/",
+            "source_account": "marrakechbiennale",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "lblvd-2026",
+            "title": "L'Boulevard Festival",
+            "date": "2026-05-15",
+            "city": "Casablanca",
+            "description": "Underground festival showcasing Morocco's hip-hop, rap, reggae and rock scenes. Massive platform for emerging Moroccan urban artists. Expect insane energy.",
+            "image": "https://www.blvd.ma/wp-content/uploads/2023/01/lblvd-logo-dark.png",
+            "link": "https://www.blvd.ma/",
+            "source_account": "lblvd_maroc",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "tangier-photo-days-2026",
+            "title": "Tangier Photography Days",
+            "date": "2026-03-20",
+            "city": "Tangier",
+            "description": "Annual street photography festival in Tangier's medina. Workshops with leading Moroccan photographers, outdoor gallery along the harbour promenade.",
+            "image": null,
+            "link": "https://www.visitmorocco.com/",
+            "source_account": "photographietangier",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "fes-sacred-music-2026",
+            "title": "Festival of World Sacred Music, Fez",
+            "date": "2026-05-22",
+            "city": "Fez",
+            "description": "Gathering of musicians, scholars and artists from across the world in the UNESCO-listed Fez medina. Free outdoor concerts at Bab Makina. Runs 10 days.",
+            "image": "https://fesfestival.com/wp-content/uploads/2023/04/fes-festival-poster.jpg",
+            "link": "https://fesfestival.com/",
+            "source_account": "fesfestival",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "chefchaouen-blue-market-2026",
+            "title": "Chefchaouen Blue Market",
+            "date": "2026-03-28",
+            "city": "Chefchaouen",
+            "description": "Regular Thursday souk in the blue city. Local artisans, Rif mountain weavers, and regional food producers fill the Plaza Uta el-Hammam. Best photo opportunity in the city.",
+            "image": null,
+            "link": null,
+            "source_account": "chefchaouen_blueCity",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        },
+        {
+            "id": "essaouira-surf-comp-2026",
+            "title": "Essaouira Kitesurfing Competition",
+            "date": "2026-04-18",
+            "city": "Essaouira",
+            "description": "Annual kitesurfing and windsurfing championship on the Essaouira beach. Spectator-friendly with food trucks and live music on the beach. Morocco's windiest city earns its reputation.",
+            "image": null,
+            "link": "https://www.essaouira-mogador.com/",
+            "source_account": "essaouira_surf",
+            "timestamp_added": "2026-02-25T17:00:00Z"
+        }
+    ]
+}

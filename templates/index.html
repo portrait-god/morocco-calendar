@@ -63,11 +63,11 @@
                 class="emoji">📸</span>Photo</button>
         <button class="filter-btn" data-filter="transport" onclick="filterCards('transport', this)"><span
                 class="emoji">🚌</span>Transport</button>
-        <div style="flex-grow: 1;"></div>
         <button class="filter-btn loc-tab-btn" onclick="toggleLocTab(this)"><span
                 class="emoji">📍</span>Locations</button>
-        <button class="filter-btn map-tab-btn" onclick="toggleMapTab(this)"><span class="emoji">🗺️</span>Map
-            Route</button>
+        <button class="filter-btn map-tab-btn" onclick="toggleMapTab(this)"><span class="emoji">🗺️</span>Map</button>
+        <button class="filter-btn events-tab-btn" onclick="toggleEventsTab(this)"><span
+                class="emoji">🎟️</span>Events</button>
     </div>
 
     <!-- Map View (Hidden by default) -->
@@ -82,6 +82,32 @@
         <div class="loc-grid" id="loc-container"
             style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:24px;">
             <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <!-- Events Gallery Tab -->
+    <div id="tab-events" style="display:none; padding: 20px;">
+        <div
+            style="display:flex; gap: 10px; margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 12px;">
+            <button class="events-sub-btn active" onclick="switchEventSub('upcoming', this)"
+                style="background:var(--terracotta); color:#fff; border:none; padding:8px 18px; border-radius:20px; font-family:'Outfit',sans-serif; font-size:13px; font-weight:600; cursor:pointer;">📅
+                Upcoming</button>
+            <button class="events-sub-btn" onclick="switchEventSub('all', this)"
+                style="background:rgba(255,255,255,0.05); color:var(--text-secondary); border:1px solid var(--border); padding:8px 18px; border-radius:20px; font-family:'Outfit',sans-serif; font-size:13px; font-weight:600; cursor:pointer;">📋
+                All</button>
+            <button class="events-sub-btn" onclick="switchEventSub('new', this)"
+                style="background:rgba(255,255,255,0.05); color:var(--text-secondary); border:1px solid var(--border); padding:8px 18px; border-radius:20px; font-family:'Outfit',sans-serif; font-size:13px; font-weight:600; cursor:pointer;">🆕
+                New</button>
+        </div>
+        <div id="events-gallery"
+            style="display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+            <!-- Populated by JS from events_gallery.json -->
+        </div>
+        <div id="events-empty" style="display:none; text-align:center; padding:40px; color:var(--text-muted);">
+            <p style="font-size:32px; margin-bottom:12px;">🎭</p>
+            <p style="font-family:'Outfit',sans-serif; font-size:18px;">No events for this view yet.</p>
+            <p style="font-size:13px; margin-top:8px;">Run <code>python3 event_agent.py</code> to discover new events.
+            </p>
         </div>
     </div>
 
@@ -215,6 +241,16 @@
                         </div>
                     </div>
                     {% endif %}
+                    {% if day.photography and day.photography.subcultures %}
+                    <div class="detail-section">
+                        <h4>🎯 Subculture Targets</h4>
+                        <ul>
+                            {% for sub in day.photography.subcultures %}
+                            <li style="padding: 4px 0; font-size: 13px;">{{ sub }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
                     {% if day.photography.golden_hour_spot %}
                     <div class="detail-section">
                         <h4>🌅 Golden Hour
@@ -264,36 +300,20 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            // Build Compact Mobile Calendar Navigators (Swipeable Carousel)
-            const tabCalendar = document.getElementById('tab-calendar');
+            // Build Compact Mini Calendar inside each month-header (permanently visible on mobile)
             const months = document.querySelectorAll('.month-header');
-
-            // Create the main sticky carousel container
-            const carouselContainer = document.createElement('div');
-            carouselContainer.className = 'compact-carousel mobile-only';
-            carouselContainer.style.display = 'none'; // Overridden by media query
-
             months.forEach(header => {
-                const grid = header.nextElementSibling;
-                if (!grid || !grid.classList.contains('calendar-grid')) return;
+                const parentCol = header.closest('.month-column');
+                if (!parentCol) return;
+                const grid = parentCol.querySelector('.calendar-grid');
+                if (!grid) return;
 
                 const days = grid.querySelectorAll('.day-card');
                 const emptyPads = grid.querySelectorAll('.empty-day-pad');
-                const monthName = header.querySelector('h2').innerText;
 
                 const compactDiv = document.createElement('div');
-                compactDiv.className = 'compact-calendar';
-
-                // Add Month title within the mini grid
-                const monthTitle = document.createElement('div');
-                monthTitle.style.textAlign = 'center';
-                monthTitle.style.color = 'var(--gold)';
-                monthTitle.style.fontSize = '12px';
-                monthTitle.style.fontWeight = '600';
-                monthTitle.style.marginBottom = '6px';
-                monthTitle.style.fontFamily = "'Outfit', sans-serif";
-                monthTitle.innerText = monthName;
-                compactDiv.appendChild(monthTitle);
+                compactDiv.className = 'compact-calendar mobile-only';
+                compactDiv.style.display = 'none'; // shown by media query
 
                 const weekdaysRow = document.createElement('div');
                 weekdaysRow.className = 'compact-weekdays';
@@ -321,31 +341,27 @@
                         btn.style.boxShadow = 'inset 0 0 0 2px var(--cat-transport)';
                     }
                     btn.onclick = () => {
-                        const yOffset = -160; // larger offset because nav is taller and sticky
-                        const y = day.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                        window.scrollTo({ top: y, behavior: 'smooth' });
-
-                        // highlight selected card
-                        day.style.transition = 'transform 0.3s, box-shadow 0.3s';
-                        day.style.transform = 'scale(1.02)';
+                        const monthCol = day.closest('.month-column');
+                        if (window.innerWidth <= 768 && monthCol) {
+                            monthCol.scrollTo({ top: day.offsetTop - 200, behavior: 'smooth' });
+                        } else {
+                            const y = day.getBoundingClientRect().top + window.pageYOffset - 120;
+                            window.scrollTo({ top: y, behavior: 'smooth' });
+                        }
+                        day.style.transition = 'box-shadow 0.3s';
                         day.style.boxShadow = '0 0 0 2px var(--gold)';
-                        setTimeout(() => {
-                            day.style.transform = 'none';
-                            day.style.boxShadow = 'none';
-                        }, 1200);
+                        setTimeout(() => { day.style.boxShadow = 'none'; }, 1500);
                     };
                     compactGrid.appendChild(btn);
                 });
 
                 compactDiv.appendChild(weekdaysRow);
                 compactDiv.appendChild(compactGrid);
-                carouselContainer.appendChild(compactDiv);
+                header.appendChild(compactDiv);
             });
 
-            // Insert the master carousel at the very top of the calendar view
-            if (months.length > 0) {
-                tabCalendar.insertBefore(carouselContainer, tabCalendar.firstChild);
-            }
+            // Load Events Gallery
+            loadEventsGallery('upcoming');
         });
 
         function toggleCard(card) {
@@ -408,27 +424,115 @@
             const calTab = document.getElementById('tab-calendar');
             const mapTab = document.getElementById('tab-map');
             const locTab = document.getElementById('tab-locations');
+            const evTab = document.getElementById('tab-events');
             const timeline = document.getElementById('timeline');
 
             if (locTab.style.display === 'none') {
                 calTab.style.display = 'none';
                 mapTab.style.display = 'none';
+                evTab.style.display = 'none';
                 timeline.style.display = 'none';
                 locTab.style.display = 'block';
                 btn.classList.add('active');
                 document.querySelector('.map-tab-btn').classList.remove('active');
-                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+                document.querySelector('.events-tab-btn').classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
 
                 if (document.getElementById('loc-container').children.length === 0) {
                     initLocations();
                 }
             } else {
                 locTab.style.display = 'none';
-                calTab.style.display = 'block';
+                calTab.style.display = '';
                 timeline.style.display = 'flex';
                 btn.classList.remove('active');
-                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
             }
+        }
+
+        function toggleEventsTab(btn) {
+            const calTab = document.getElementById('tab-calendar');
+            const mapTab = document.getElementById('tab-map');
+            const locTab = document.getElementById('tab-locations');
+            const evTab = document.getElementById('tab-events');
+            const timeline = document.getElementById('timeline');
+
+            if (evTab.style.display === 'none') {
+                calTab.style.display = 'none';
+                mapTab.style.display = 'none';
+                locTab.style.display = 'none';
+                timeline.style.display = 'none';
+                evTab.style.display = 'block';
+                btn.classList.add('active');
+                document.querySelector('.map-tab-btn').classList.remove('active');
+                document.querySelector('.loc-tab-btn').classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '0.3'; b.style.pointerEvents = 'none'; });
+            } else {
+                evTab.style.display = 'none';
+                calTab.style.display = '';
+                timeline.style.display = 'flex';
+                btn.classList.remove('active');
+                document.querySelectorAll('.filter-btn:not(.map-tab-btn):not(.loc-tab-btn):not(.events-tab-btn)').forEach(b => { b.style.opacity = '1'; b.style.pointerEvents = 'auto'; });
+            }
+        }
+
+        let currentEventFilter = 'upcoming';
+        function switchEventSub(filter, btn) {
+            currentEventFilter = filter;
+            document.querySelectorAll('.events-sub-btn').forEach(b => {
+                b.style.background = 'rgba(255,255,255,0.05)';
+                b.style.color = 'var(--text-secondary)';
+                b.style.border = '1px solid var(--border)';
+            });
+            btn.style.background = 'var(--terracotta)';
+            btn.style.color = '#fff';
+            btn.style.border = 'none';
+            loadEventsGallery(filter);
+        }
+
+        async function loadEventsGallery(filter) {
+            const gallery = document.getElementById('events-gallery');
+            const empty = document.getElementById('events-empty');
+            gallery.innerHTML = '<p style="color:var(--text-muted); font-family: Outfit; padding:20px;">Loading events...</p>';
+
+            let events = [];
+            try {
+                const res = await fetch('/static/events_gallery.json');
+                const data = await res.json();
+                events = data.events || [];
+            } catch (e) {
+                gallery.innerHTML = '';
+                empty.style.display = 'block';
+                return;
+            }
+
+            const now = new Date().toISOString().split('T')[0];
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+            if (filter === 'upcoming') events = events.filter(e => e.date >= now);
+            else if (filter === 'new') events = events.filter(e => e.timestamp_added && e.timestamp_added >= yesterday);
+
+            events.sort((a, b) => a.date.localeCompare(b.date));
+
+            if (events.length === 0) {
+                gallery.innerHTML = '';
+                empty.style.display = 'block';
+                return;
+            }
+
+            empty.style.display = 'none';
+            gallery.innerHTML = events.map(ev => `
+                <div style="background:var(--surface); border:1px solid var(--border); border-radius:16px; overflow:hidden; cursor:pointer;" onclick="${ev.link ? `window.open('${ev.link}','_blank')` : ''}">
+                    ${ev.image ? `<img src="${ev.image}" alt="${ev.title}" style="width:100%; aspect-ratio:1/1; object-fit:cover;">` : `<div style="width:100%; aspect-ratio:1/1; background:var(--bg-secondary); display:flex; align-items:center; justify-content:center; font-size:48px;">🎭</div>`}
+                    <div style="padding:14px;">
+                        <div style="font-family:'Outfit',sans-serif; font-weight:700; font-size:15px; color:var(--text-primary); margin-bottom:4px;">${ev.title}</div>
+                        <div style="font-size:12px; color:var(--gold); margin-bottom:4px;">${ev.date} · ${ev.city || ''}</div>
+                        <div style="font-size:11px; color:var(--text-secondary); line-height:1.4; margin-bottom:8px;">${ev.description || ''}</div>
+                        ${ev.source_account ? `<div style="font-size:10px; color:var(--text-muted);">via @${ev.source_account}</div>` : ''}
+                        ${ev.link ? `<a href="${ev.link}" target="_blank" style="font-size:11px; font-weight:600; color:var(--terracotta); font-family:'Outfit',sans-serif;">Visit Website →</a>` : ''}
+                    </div>
+                </div>
+            `).join('');
         }
 
         function initLocations() {
