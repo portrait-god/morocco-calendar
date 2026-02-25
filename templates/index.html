@@ -245,6 +245,68 @@
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Build Compact Mobile Calendar Navigators
+            const months = document.querySelectorAll('.month-header');
+            months.forEach(header => {
+                const grid = header.nextElementSibling;
+                if (!grid || !grid.classList.contains('calendar-grid')) return;
+
+                const days = grid.querySelectorAll('.day-card');
+                const emptyPads = grid.querySelectorAll('.empty-day-pad');
+
+                const compactDiv = document.createElement('div');
+                compactDiv.className = 'compact-calendar mobile-only';
+                compactDiv.style.display = 'none'; // Overridden by media query
+
+                const weekdaysRow = document.createElement('div');
+                weekdaysRow.className = 'compact-weekdays';
+                ['M', 'T', 'W', 'T', 'F', 'S', 'S'].forEach(letter => {
+                    const d = document.createElement('div');
+                    d.innerText = letter;
+                    weekdaysRow.appendChild(d);
+                });
+
+                const compactGrid = document.createElement('div');
+                compactGrid.className = 'compact-grid';
+
+                for (let i = 0; i < emptyPads.length; i++) {
+                    const pad = document.createElement('div');
+                    compactGrid.appendChild(pad);
+                }
+
+                days.forEach(day => {
+                    const dayNum = day.querySelector('.card-day-num').innerText;
+                    const cityClass = day.classList[1];
+                    const btn = document.createElement('button');
+                    btn.className = `compact-day ${cityClass}`;
+                    btn.innerText = dayNum;
+                    if (day.classList.contains('transport-day')) {
+                        btn.style.boxShadow = 'inset 0 0 0 2px var(--cat-transport)';
+                    }
+                    btn.onclick = () => {
+                        const yOffset = -80; // offset for sticky headers
+                        const y = day.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+
+                        // highlight selected card
+                        day.style.transition = 'transform 0.3s, box-shadow 0.3s';
+                        day.style.transform = 'scale(1.02)';
+                        day.style.boxShadow = '0 0 0 2px var(--gold)';
+                        setTimeout(() => {
+                            day.style.transform = 'none';
+                            day.style.boxShadow = 'none';
+                        }, 1200);
+                    };
+                    compactGrid.appendChild(btn);
+                });
+
+                compactDiv.appendChild(weekdaysRow);
+                compactDiv.appendChild(compactGrid);
+                header.appendChild(compactDiv);
+            });
+        });
+
         function toggleCard(card) {
             card.classList.toggle('expanded');
         }

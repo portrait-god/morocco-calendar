@@ -131,7 +131,14 @@ def generate_data():
                 }
                 day_entry["notes"] = "Get Inwi or Maroc Telecom SIM on arrival."
             elif current_date.weekday() in [5, 6]:
-                 day_entry["notes"] = "Day Trip: Asilah (Arts Town). 45 min train from Tangier."
+                 day_entry["notes"] = "Day Trip: Asilah (Arts Town)."
+                 day_entry["transport"] = {"route": "Tangier → Asilah (Train/Taxi)", "duration": "45m", "cost": "20-40 MAD"}
+                 day_entry["hostel"] = {
+                     "name": "Christina's Asilah (Optional Overnight)",
+                     "price": "€12-15/night",
+                     "neighborhood": "Asilah Medina",
+                     "notes": "Cozy hostal if you decide not to return to Tangier"
+                 }
                  day_entry["photography"] = {
                      "off_beaten_path": ["Asilah Medina, Morocco", "Asilah ramparts over the ocean"],
                      "subcultures": ["Local mural painters, Asilah"],
@@ -165,7 +172,14 @@ def generate_data():
                 day_entry["content_plan"]["theme"] = "Labyrinth Arrival"
                 day_entry["transport"] = {"route": "Chefchaouen → Fez (CTM Bus)", "duration": "4h", "cost": "€7"}
             elif current_date.weekday() in [5, 6]:
-                day_entry["notes"] = "Day Trip: Sefrou (Cherry Capital). Easy 40 min grand taxi."
+                day_entry["notes"] = "Day Trip: Sefrou (Cherry Capital)."
+                day_entry["transport"] = {"route": "Fez → Sefrou (Grand Taxi)", "duration": "40m", "cost": "15-20 MAD"}
+                day_entry["hostel"] = {
+                    "name": "Local Sefrou Riad (Optional Overnight)",
+                    "price": "€15-20/night",
+                    "neighborhood": "Sefrou Medina",
+                    "notes": "Quiet escape from Fez if you stay late"
+                }
                 day_entry["photography"] = {
                      "off_beaten_path": ["Sefrou Medina waterfalls, Morocco", "Jewish Mellah, Sefrou"],
                      "subcultures": [],
@@ -200,7 +214,14 @@ def generate_data():
                 day_entry["content_plan"]["theme"] = "Coastal Escape South"
                 day_entry["transport"] = {"route": "Rabat → Essaouira (Train to Casa/Marrakech then Supratours)", "duration": "7-8h", "cost": "€18-25"}
             elif current_date.weekday() in [5, 6]:
-                day_entry["notes"] = "Day Trip: Imsouane (Surf Village) - Check out the longboard waves. 1h taxi."
+                day_entry["notes"] = "Day Trip: Imsouane (Surf Village) - Check out the longboard waves."
+                day_entry["transport"] = {"route": "Essaouira → Imsouane (Grand Taxi)", "duration": "1h 15m", "cost": "30-50 MAD"}
+                day_entry["hostel"] = {
+                    "name": "Imsouane Surf House (Optional Overnight)",
+                    "price": "€10-14/night",
+                    "neighborhood": "Imsouane Bay",
+                    "notes": "Surf hostel right on the break"
+                }
                 day_entry["photography"] = {
                      "off_beaten_path": ["Imsouane Bay, Morocco", "Local surf shacks, Imsouane"],
                      "subcultures": ["Vanlife surfers, Imsouane", "Local board shapers, Imsouane"],
@@ -240,9 +261,15 @@ def generate_data():
             }
             city_counters[city] += 1
             
-            # Additional day trip for Marrakech
             if city == "Marrakech" and current_date.weekday() in [5, 6]:
-                day_entry["notes"] = "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi."
+                day_entry["notes"] = "Day Trip: Ourika Valley (Atlas Mountains)."
+                day_entry["transport"] = {"route": "Marrakech → Ourika (Grand Taxi)", "duration": "1h", "cost": "40-60 MAD"}
+                day_entry["hostel"] = {
+                    "name": "Ourika Mountain Guesthouse (Optional)",
+                    "price": "€15-25/night",
+                    "neighborhood": "Setti Fatma area",
+                    "notes": "Riverside retreat in the mountains"
+                }
                 day_entry["photography"] = {
                      "off_beaten_path": ["Ourika Valley waterfalls, Morocco", "Berber mountain villages, Ourika"],
                      "subcultures": ["Atlas Mountain artisans, Ourika"],

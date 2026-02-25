@@ -131,38 +131,31 @@
       "day_number": 4,
       "card_number": 14,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Tangier \u2192 Asilah (Train/Taxi)",
+        "duration": "45m",
+        "cost": "20-40 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Asilah (Arts Town). 45 min train from Tangier.",
+      "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
-        "name": "The Medina Hostel Tangier",
-        "price": "\u20ac8-11/night",
-        "neighborhood": "Kasbah / Petit Socco",
-        "notes": "Rooftop ocean views, good wifi"
+        "name": "Christina's Asilah (Optional Overnight)",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Asilah Medina",
+        "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Tangier Deep Dive - Day 4",
-        "tiktok": "Daily observation",
-        "instagram": "Photo carousel",
-        "youtube": "B-roll collection"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Asilah Medina, Morocco",
-          "Asilah ramparts over the ocean"
-        ],
-        "subcultures": [
-          "Local mural painters, Asilah"
-        ],
-        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
-        "golden_hour_time": "18:47 - 19:32"
-      }
+      "photography": null
     },
     {
       "date": "2026-03-15",
@@ -170,38 +163,31 @@
       "day_number": 5,
       "card_number": 15,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Tangier \u2192 Asilah (Train/Taxi)",
+        "duration": "45m",
+        "cost": "20-40 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Asilah (Arts Town). 45 min train from Tangier.",
+      "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
-        "name": "The Medina Hostel Tangier",
-        "price": "\u20ac8-11/night",
-        "neighborhood": "Kasbah / Petit Socco",
-        "notes": "Rooftop ocean views, good wifi"
+        "name": "Christina's Asilah (Optional Overnight)",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Asilah Medina",
+        "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Tangier Deep Dive - Day 5",
-        "tiktok": "Daily observation",
-        "instagram": "Photo carousel",
-        "youtube": "B-roll collection"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Asilah Medina, Morocco",
-          "Asilah ramparts over the ocean"
-        ],
-        "subcultures": [
-          "Local mural painters, Asilah"
-        ],
-        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
-        "golden_hour_time": "18:48 - 19:33"
-      }
+      "photography": null
     },
     {
       "date": "2026-03-16",
@@ -404,38 +390,31 @@
       "day_number": 11,
       "card_number": 21,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Tangier \u2192 Asilah (Train/Taxi)",
+        "duration": "45m",
+        "cost": "20-40 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Asilah (Arts Town). 45 min train from Tangier.",
+      "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
-        "name": "The Medina Hostel Tangier",
-        "price": "\u20ac8-11/night",
-        "neighborhood": "Kasbah / Petit Socco",
-        "notes": "Rooftop ocean views, good wifi"
+        "name": "Christina's Asilah (Optional Overnight)",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Asilah Medina",
+        "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Tangier Deep Dive - Day 11",
-        "tiktok": "Daily observation",
-        "instagram": "Photo carousel",
-        "youtube": "B-roll collection"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Asilah Medina, Morocco",
-          "Asilah ramparts over the ocean"
-        ],
-        "subcultures": [
-          "Local mural painters, Asilah"
-        ],
-        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
-        "golden_hour_time": "18:52 - 19:37"
-      }
+      "photography": null
     },
     {
       "date": "2026-03-22",
@@ -443,38 +422,31 @@
       "day_number": 12,
       "card_number": 22,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Tangier \u2192 Asilah (Train/Taxi)",
+        "duration": "45m",
+        "cost": "20-40 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Asilah (Arts Town). 45 min train from Tangier.",
+      "notes": "Day Trip: Asilah (Arts Town).",
       "city": "Tangier",
       "city_emoji": "\ud83c\udfd9\ufe0f",
       "hostel": {
-        "name": "The Medina Hostel Tangier",
-        "price": "\u20ac8-11/night",
-        "neighborhood": "Kasbah / Petit Socco",
-        "notes": "Rooftop ocean views, good wifi"
+        "name": "Christina's Asilah (Optional Overnight)",
+        "price": "\u20ac12-15/night",
+        "neighborhood": "Asilah Medina",
+        "notes": "Cozy hostal if you decide not to return to Tangier"
       },
       "content_plan": {
-        "theme": "Tangier Deep Dive - Day 12",
-        "tiktok": "Daily observation",
-        "instagram": "Photo carousel",
-        "youtube": "B-roll collection"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Asilah Medina, Morocco",
-          "Asilah ramparts over the ocean"
-        ],
-        "subcultures": [
-          "Local mural painters, Asilah"
-        ],
-        "golden_hour_spot": "Caraquia Viewpoint, Asilah, Morocco",
-        "golden_hour_time": "18:53 - 19:38"
-      }
+      "photography": null
     },
     {
       "date": "2026-03-23",
@@ -698,35 +670,31 @@
       "day_number": 19,
       "card_number": 29,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Fez \u2192 Sefrou (Grand Taxi)",
+        "duration": "40m",
+        "cost": "15-20 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Sefrou (Cherry Capital). Easy 40 min grand taxi.",
+      "notes": "Day Trip: Sefrou (Cherry Capital).",
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
-        "name": "Funky Fes",
-        "price": "\u20ac8-12/night",
-        "neighborhood": "Fes el-Bali",
-        "notes": "Wifi throughout, free breakfast + dinner"
+        "name": "Local Sefrou Riad (Optional Overnight)",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Sefrou Medina",
+        "notes": "Quiet escape from Fez if you stay late"
       },
       "content_plan": {
-        "theme": "Ancient Fez - Day 2",
-        "tiktok": "Labyrinth medina POV",
-        "youtube": "Fez mini-doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Sefrou Medina waterfalls, Morocco",
-          "Jewish Mellah, Sefrou"
-        ],
-        "subcultures": [],
-        "golden_hour_spot": "Sefrou hills overlooking town",
-        "golden_hour_time": "18:59 - 19:44"
-      }
+      "photography": null
     },
     {
       "date": "2026-03-30",
@@ -924,35 +892,31 @@
       "day_number": 25,
       "card_number": 4,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Fez \u2192 Sefrou (Grand Taxi)",
+        "duration": "40m",
+        "cost": "15-20 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Sefrou (Cherry Capital). Easy 40 min grand taxi.",
+      "notes": "Day Trip: Sefrou (Cherry Capital).",
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
-        "name": "Funky Fes",
-        "price": "\u20ac8-12/night",
-        "neighborhood": "Fes el-Bali",
-        "notes": "Wifi throughout, free breakfast + dinner"
+        "name": "Local Sefrou Riad (Optional Overnight)",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Sefrou Medina",
+        "notes": "Quiet escape from Fez if you stay late"
       },
       "content_plan": {
-        "theme": "Ancient Fez - Day 8",
-        "tiktok": "Labyrinth medina POV",
-        "youtube": "Fez mini-doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Sefrou Medina waterfalls, Morocco",
-          "Jewish Mellah, Sefrou"
-        ],
-        "subcultures": [],
-        "golden_hour_spot": "Sefrou hills overlooking town",
-        "golden_hour_time": "19:03 - 19:48"
-      }
+      "photography": null
     },
     {
       "date": "2026-04-05",
@@ -960,35 +924,31 @@
       "day_number": 26,
       "card_number": 5,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Fez \u2192 Sefrou (Grand Taxi)",
+        "duration": "40m",
+        "cost": "15-20 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Sefrou (Cherry Capital). Easy 40 min grand taxi.",
+      "notes": "Day Trip: Sefrou (Cherry Capital).",
       "city": "Fez",
       "city_emoji": "\ud83c\udffa",
       "hostel": {
-        "name": "Funky Fes",
-        "price": "\u20ac8-12/night",
-        "neighborhood": "Fes el-Bali",
-        "notes": "Wifi throughout, free breakfast + dinner"
+        "name": "Local Sefrou Riad (Optional Overnight)",
+        "price": "\u20ac15-20/night",
+        "neighborhood": "Sefrou Medina",
+        "notes": "Quiet escape from Fez if you stay late"
       },
       "content_plan": {
-        "theme": "Ancient Fez - Day 9",
-        "tiktok": "Labyrinth medina POV",
-        "youtube": "Fez mini-doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Sefrou Medina waterfalls, Morocco",
-          "Jewish Mellah, Sefrou"
-        ],
-        "subcultures": [],
-        "golden_hour_spot": "Sefrou hills overlooking town",
-        "golden_hour_time": "19:04 - 19:49"
-      }
+      "photography": null
     },
     {
       "date": "2026-04-06",
@@ -1693,38 +1653,31 @@
       "day_number": 46,
       "card_number": 25,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
+        "duration": "1h 15m",
+        "cost": "30-50 MAD"
+      },
       "categories": [
         "photo",
-        "surf"
+        "transport"
       ],
-      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves. 1h taxi.",
+      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
-        "name": "Moga Hostel",
-        "price": "\u20ac9-12/night",
-        "neighborhood": "Heart of medina",
-        "notes": "Popular with surfers + nomads"
+        "name": "Imsouane Surf House (Optional Overnight)",
+        "price": "\u20ac10-14/night",
+        "neighborhood": "Imsouane Bay",
+        "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Windy City - Day 6",
-        "tiktok": "Ocean breeze vibes",
-        "instagram": "Surf action shots",
-        "youtube": "Sidi Kaouki surf doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Imsouane Bay, Morocco",
-          "Local surf shacks, Imsouane"
-        ],
-        "subcultures": [
-          "Vanlife surfers, Imsouane",
-          "Local board shapers, Imsouane"
-        ],
-        "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:20 - 20:05"
-      }
+      "photography": null
     },
     {
       "date": "2026-04-26",
@@ -1732,38 +1685,31 @@
       "day_number": 47,
       "card_number": 26,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
+        "duration": "1h 15m",
+        "cost": "30-50 MAD"
+      },
       "categories": [
         "photo",
-        "surf"
+        "transport"
       ],
-      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves. 1h taxi.",
+      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
-        "name": "Moga Hostel",
-        "price": "\u20ac9-12/night",
-        "neighborhood": "Heart of medina",
-        "notes": "Popular with surfers + nomads"
+        "name": "Imsouane Surf House (Optional Overnight)",
+        "price": "\u20ac10-14/night",
+        "neighborhood": "Imsouane Bay",
+        "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Windy City - Day 7",
-        "tiktok": "Ocean breeze vibes",
-        "instagram": "Surf action shots",
-        "youtube": "Sidi Kaouki surf doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Imsouane Bay, Morocco",
-          "Local surf shacks, Imsouane"
-        ],
-        "subcultures": [
-          "Vanlife surfers, Imsouane",
-          "Local board shapers, Imsouane"
-        ],
-        "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:20 - 20:05"
-      }
+      "photography": null
     },
     {
       "date": "2026-04-27",
@@ -1961,38 +1907,31 @@
       "day_number": 53,
       "card_number": 2,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
+        "duration": "1h 15m",
+        "cost": "30-50 MAD"
+      },
       "categories": [
         "photo",
-        "surf"
+        "transport"
       ],
-      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves. 1h taxi.",
+      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
-        "name": "Moga Hostel",
-        "price": "\u20ac9-12/night",
-        "neighborhood": "Heart of medina",
-        "notes": "Popular with surfers + nomads"
+        "name": "Imsouane Surf House (Optional Overnight)",
+        "price": "\u20ac10-14/night",
+        "neighborhood": "Imsouane Bay",
+        "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Windy City - Day 13",
-        "tiktok": "Ocean breeze vibes",
-        "instagram": "Surf action shots",
-        "youtube": "Sidi Kaouki surf doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Imsouane Bay, Morocco",
-          "Local surf shacks, Imsouane"
-        ],
-        "subcultures": [
-          "Vanlife surfers, Imsouane",
-          "Local board shapers, Imsouane"
-        ],
-        "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:25 - 20:10"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-03",
@@ -2000,38 +1939,31 @@
       "day_number": 54,
       "card_number": 3,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Essaouira \u2192 Imsouane (Grand Taxi)",
+        "duration": "1h 15m",
+        "cost": "30-50 MAD"
+      },
       "categories": [
         "photo",
-        "surf"
+        "transport"
       ],
-      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves. 1h taxi.",
+      "notes": "Day Trip: Imsouane (Surf Village) - Check out the longboard waves.",
       "city": "Essaouira",
       "city_emoji": "\ud83c\udf0a",
       "hostel": {
-        "name": "Moga Hostel",
-        "price": "\u20ac9-12/night",
-        "neighborhood": "Heart of medina",
-        "notes": "Popular with surfers + nomads"
+        "name": "Imsouane Surf House (Optional Overnight)",
+        "price": "\u20ac10-14/night",
+        "neighborhood": "Imsouane Bay",
+        "notes": "Surf hostel right on the break"
       },
       "content_plan": {
-        "theme": "Windy City - Day 14",
-        "tiktok": "Ocean breeze vibes",
-        "instagram": "Surf action shots",
-        "youtube": "Sidi Kaouki surf doc"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Imsouane Bay, Morocco",
-          "Local surf shacks, Imsouane"
-        ],
-        "subcultures": [
-          "Vanlife surfers, Imsouane",
-          "Local board shapers, Imsouane"
-        ],
-        "golden_hour_spot": "Imsouane cliffs sunset",
-        "golden_hour_time": "19:26 - 20:11"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-04",
@@ -2226,38 +2158,31 @@
       "day_number": 60,
       "card_number": 9,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 5",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:31 - 20:16"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-10",
@@ -2265,38 +2190,31 @@
       "day_number": 61,
       "card_number": 10,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 6",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:31 - 20:16"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-11",
@@ -2499,38 +2417,31 @@
       "day_number": 67,
       "card_number": 16,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 12",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:36 - 20:21"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-17",
@@ -2538,38 +2449,31 @@
       "day_number": 68,
       "card_number": 17,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 13",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:37 - 20:22"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-18",
@@ -2772,38 +2676,31 @@
       "day_number": 74,
       "card_number": 23,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 19",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:41 - 20:26"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-24",
@@ -2811,38 +2708,31 @@
       "day_number": 75,
       "card_number": 24,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 20",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:42 - 20:27"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-25",
@@ -3045,38 +2935,31 @@
       "day_number": 81,
       "card_number": 30,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 26",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:47 - 20:32"
-      }
+      "photography": null
     },
     {
       "date": "2026-05-31",
@@ -3084,38 +2967,31 @@
       "day_number": 82,
       "card_number": 31,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 27",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:48 - 20:33"
-      }
+      "photography": null
     },
     {
       "date": "2026-06-01",
@@ -3318,38 +3194,31 @@
       "day_number": 88,
       "card_number": 6,
       "weekday": 5,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 33",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:52 - 20:37"
-      }
+      "photography": null
     },
     {
       "date": "2026-06-07",
@@ -3357,38 +3226,31 @@
       "day_number": 89,
       "card_number": 7,
       "weekday": 6,
-      "transport": null,
+      "transport": {
+        "route": "Marrakech \u2192 Ourika (Grand Taxi)",
+        "duration": "1h",
+        "cost": "40-60 MAD"
+      },
       "categories": [
         "photo",
-        "skate",
-        "music"
+        "transport"
       ],
-      "notes": "Day Trip: Ourika Valley (Atlas Mountains). 1h Grand Taxi.",
+      "notes": "Day Trip: Ourika Valley (Atlas Mountains).",
       "city": "Marrakech",
       "city_emoji": "\ud83d\udc2a",
       "hostel": {
-        "name": "Equity Point Marrakech",
-        "price": "\u20ac9-13/night",
-        "neighborhood": "Medina near Jemaa el-Fna",
-        "notes": "Pool, good wifi, social"
+        "name": "Ourika Mountain Guesthouse (Optional)",
+        "price": "\u20ac15-25/night",
+        "neighborhood": "Setti Fatma area",
+        "notes": "Riverside retreat in the mountains"
       },
       "content_plan": {
-        "theme": "Red City Hustle - Day 34",
-        "tiktok": "Souk chaos",
-        "instagram": "Tbourida prep",
-        "youtube": "Marrakech Nomad Doc & Wrap-up"
+        "theme": "Travel & Editing Day",
+        "tiktok": "Transit aesthetic & vlog",
+        "instagram": "Photo culling & lightroom sessions",
+        "youtube": "File backup / Organizing footage"
       },
-      "photography": {
-        "off_beaten_path": [
-          "Ourika Valley waterfalls, Morocco",
-          "Berber mountain villages, Ourika"
-        ],
-        "subcultures": [
-          "Atlas Mountain artisans, Ourika"
-        ],
-        "golden_hour_spot": "Setti Fatma, Ourika Valley",
-        "golden_hour_time": "19:53 - 20:38"
-      }
+      "photography": null
     },
     {
       "date": "2026-06-08",
